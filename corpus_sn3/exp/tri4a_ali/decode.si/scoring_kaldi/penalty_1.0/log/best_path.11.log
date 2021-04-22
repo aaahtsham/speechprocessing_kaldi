@@ -1,0 +1,1428 @@
+# lattice-scale --inv-acoustic-scale=11 "ark:gunzip -c exp/tri4a_ali/decode.si/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/tri4a_ali/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/tri4a_ali/graph/words.txt | cat > exp/tri4a_ali/decode.si/scoring_kaldi/penalty_1.0/11.txt 
+# Started at Thu Apr 22 16:10:30 PKT 2021
+#
+lattice-scale --inv-acoustic-scale=11 'ark:gunzip -c exp/tri4a_ali/decode.si/lat.*.gz|' ark:- 
+lattice-best-path --word-symbol-table=exp/tri4a_ali/graph/words.txt ark:- ark,t:- 
+lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_001, best cost 108.087 + 5966.13 = 6074.22 over 890 frames.
+20030005_001 لولی کن اوڑھ پر شیڈو رسول 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_002, best cost 113.415 + 5831.53 = 5944.94 over 873 frames.
+20030005_002 بلگرامی ممبر زنگ اور یہ میں جوہی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_003, best cost 81.7425 + 6323.24 = 6404.98 over 914 frames.
+20030005_003 سامعین مشن عمل اوڑھ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_004, best cost 108.176 + 5403.98 = 5512.16 over 807 frames.
+20030005_004 باوجود لومڑ میں کر ڈیوڈ گڈریے میں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_005, best cost 115.194 + 5813.55 = 5928.74 over 855 frames.
+20030005_005 برتن گڑبڑ تھیم اوڈ کر کا اور سوئمنگ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_006, best cost 114.524 + 4543.57 = 4658.1 over 679 frames.
+20030005_006 کڑوے میل باہر والے میں والا پونچھ وومن 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_007, best cost 79.8235 + 4907.79 = 4987.62 over 727 frames.
+20030005_007 وارڈ سے سورج جھوم جائے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_008, best cost 11.9899 + 4963.7 = 4975.69 over 706 frames.
+20030005_008 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_009, best cost 131.533 + 4840.09 = 4971.63 over 757 frames.
+20030005_009 بنولہ بھینٹ غوث فارم اور برڈ کار نو جوہر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_010, best cost 46.785 + 4528.94 = 4575.72 over 660 frames.
+20030005_010 بنگلے چادر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_011, best cost 58.2726 + 5308.24 = 5366.51 over 773 frames.
+20030005_011 جوے میچ کو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_012, best cost 53.5625 + 5072.18 = 5125.74 over 726 frames.
+20030005_012 بلین بڑھ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_013, best cost 127.776 + 6450.85 = 6578.63 over 957 frames.
+20030005_013 بروے جوس انہی سنگل در ذیل کے مگ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_014, best cost 99.3201 + 5247.37 = 5346.69 over 753 frames.
+20030005_014 ریسٹورنٹ جڑ میں بھی لوگ کڑوے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_015, best cost 152.7 + 5980.78 = 6133.48 over 916 frames.
+20030005_015 پور موجوں حق کونین سیرگاہ اور شوہر سبب مشن کرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_016, best cost 150.738 + 4232.55 = 4383.29 over 667 frames.
+20030005_016 رزلٹ جو والرس تعلق وورس بسائیں تو آنے زمین بسا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_017, best cost 171.55 + 4022.74 = 4194.29 over 645 frames.
+20030005_017 صلح اور والے کھولے عمل پالیسی سے بچاؤ و یہ نوے خود کو نواب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_018, best cost 110.664 + 4938.84 = 5049.51 over 783 frames.
+20030005_018 زلزلے منجھی ون سوا اونس علم اور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_019, best cost 155.08 + 4756.39 = 4911.47 over 720 frames.
+20030005_019 سربراہ سنگل <oov> کے گڑبڑ اور لوٹ تو زلزلے کروڑوں چھولے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_020, best cost 54.0777 + 3085.05 = 3139.13 over 478 frames.
+20030005_020 خبر بد درج ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_021, best cost 97.1127 + 2596.04 = 2693.15 over 407 frames.
+20030005_021 اس سفر مدفون بلوغت اور ڈھل لیبر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_022, best cost 59.5613 + 3884.86 = 3944.43 over 599 frames.
+20030005_022 میں درجے عمر اور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_023, best cost 65.013 + 3326.81 = 3391.82 over 511 frames.
+20030005_023 گوشوں میں میں کی کوشش گے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_024, best cost 187.702 + 3738.77 = 3926.47 over 651 frames.
+20030005_024 کوش دو کو کڑوی تبدیلیاں پلڑا اوڑھ سارز غوث کے جڑیں موعود ہوا کو بوس کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_025, best cost 112.803 + 3447.75 = 3560.55 over 544 frames.
+20030005_025 ملین متاثرین سِکھوں چبھ کو ہنوز محسن کو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_026, best cost 163.418 + 4855.18 = 5018.6 over 800 frames.
+20030005_026 خوفوں منظم اگلی قل شالا بااصول محسن سالگرہ کو چاہئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_027, best cost 109.743 + 2989.29 = 3099.03 over 495 frames.
+20030005_027 بولو سمجھنے سحر بلوں کا لوئر کھولے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_028, best cost 121.164 + 3092.64 = 3213.81 over 520 frames.
+20030005_028 سوم ٹیوب و زود دو قیوم جوہر کر کی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_029, best cost 147.583 + 3936.99 = 4084.57 over 610 frames.
+20030005_029 جڑ قبل اور اور ڈالوں بڑ فولاد سروس کلوننگ اجاڑ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_030, best cost 149.895 + 2876.76 = 3026.66 over 478 frames.
+20030005_030 کرو لوگوں کو چھوئے کھود منگل خواص اس سنگل بارے مگر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_031, best cost 104.029 + 4309.29 = 4413.32 over 671 frames.
+20030005_031 اڑا ہو پور اپنے عمریں علم گلے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_032, best cost 147.415 + 3865.75 = 4013.17 over 626 frames.
+20030005_032 کو ملزوم گوہ نشئی پھلوں چوڑی کن میں قدرے چھڑیاں اور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_033, best cost 116.676 + 4604.46 = 4721.14 over 705 frames.
+20030005_033 کرنا عمل بورڈ ظہیر کو چور پور اور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_034, best cost 167.984 + 3372.83 = 3540.82 over 577 frames.
+20030005_034 کو برس حکومت یہ پورا قومیائے تو <oov> اور کی گریڈ اور گلوبل برڈ مٹھن 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_035, best cost 153.84 + 3557.52 = 3711.36 over 638 frames.
+20030005_035 چوزوں کا جو گلریز سوئی لاشیں بنگلہ لاشوں والے قیام ڈور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_036, best cost 147.997 + 4069.34 = 4217.33 over 713 frames.
+20030005_036 میں مہیب برقرار نے گورے قیم جلد میں کر کے وہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_037, best cost 69.8524 + 3229.04 = 3298.89 over 469 frames.
+20030005_037 جرم اندھیروں کا اور انگور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_038, best cost 180.612 + 4233.52 = 4414.14 over 753 frames.
+20030005_038 سلور نہر دو مگر پر سنگھاڑے اگائے تو بچہ کھلکھلا کر پھدکتا ہوا وہاں آ اور گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_039, best cost 91.2051 + 1938.08 = 2029.28 over 336 frames.
+20030005_039 لباس کو ہجوں کے شوکیسوں کی پر جون ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_040, best cost 165.37 + 3188.36 = 3353.73 over 534 frames.
+20030005_040 شور کلیم گوگل شیئرنگ ایمبولینس کے نشر کیلئے لیب ڈانس سوا اور کھر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_041, best cost 101.919 + 2888.36 = 2990.28 over 459 frames.
+20030005_041 دوروں کلیئر لال والڈ اور ناقابل افورڈ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_042, best cost 171.055 + 4204.87 = 4375.93 over 712 frames.
+20030005_042 میرے مطابق آپ بڑا کھاد سکیپ گروہ کرے خول قیم بجے ریڑھی بھیج 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_043, best cost 116.519 + 2474.34 = 2590.86 over 428 frames.
+20030005_043 درج میں دھوئے سیراب جگر بورڈ بڑی روپے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_044, best cost 157.269 + 4577.28 = 4734.54 over 802 frames.
+20030005_044 کرو بالغوں مچولی کیوں میں ہے پور پارلیمنٹرین گمشدہ تمغہ ڈھونڈھ رہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_045, best cost 89.4751 + 2383.48 = 2472.95 over 393 frames.
+20030005_045 محسن پوجا تو لاگت چوم جوے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_046, best cost 119.466 + 2793.29 = 2912.76 over 455 frames.
+20030005_046 شروع میں سروس سویلین بجھی بو بچھو گھڑی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_047, best cost 140.64 + 4219.73 = 4360.37 over 676 frames.
+20030005_047 شوکت شیلٹر پور چوکھٹ پر پنچھی غوث اواخر ڈبو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_048, best cost 142.537 + 4136.62 = 4279.15 over 694 frames.
+20030005_048 فیوچر باقر پرچم تلے مجیب میں گرل اوور کفار اگلا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_049, best cost 130.205 + 3206.64 = 3336.85 over 524 frames.
+20030005_049 عمل گروہوں سے تھوڑا رگ اونے ڈاگ نشر بوجھ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_050, best cost 190.489 + 3913.55 = 4104.04 over 693 frames.
+20030005_050 شیر کا اور کے ٹری شوخ خیر پبلشنگ میں پیش اور و حوصلہ جا اس رسیا اور ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_051, best cost 155.167 + 3093.24 = 3248.4 over 526 frames.
+20030005_051 میں پڑ نوگو بڑ مرچ کوآرڈینیٹر اڑنے باہر کو ہراساں گھیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_052, best cost 141.447 + 3451.91 = 3593.35 over 578 frames.
+20030005_052 کرے انٹر ہوے اس ہوئے سوشلزم کیلئے بہاؤ علم بلند 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_053, best cost 138.352 + 3338.23 = 3476.58 over 584 frames.
+20030005_053 مواضعات میں بنگالی مندری گھر و شون بیچلر جایا کر ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_054, best cost 72.8209 + 2905.78 = 2978.6 over 463 frames.
+20030005_054 بہن ڈیل گھی ہوئی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_055, best cost 129.069 + 2944.92 = 3073.99 over 480 frames.
+20030005_055 صحبتوں میں گروہ اور سوڈا اور مچولی جو ابھر جو ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_056, best cost 132.64 + 3685.72 = 3818.36 over 614 frames.
+20030005_056 فولڈر باب شوخ کوڑی رائج گا جو والا فوڈ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_057, best cost 139.538 + 2992.01 = 3131.55 over 496 frames.
+20030005_057 ولد کوڑھ اوڈ شرکت دشت اور بچھونا اور درود پڑھنے کی کوشش کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_058, best cost 104.196 + 3032.42 = 3136.62 over 469 frames.
+20030005_058 جوہر تو سوسو اور کلیئر امجد امجد کرو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_059, best cost 109.85 + 2178.87 = 2288.72 over 364 frames.
+20030005_059 گردش کرو گڈ گائنی وارڈ ملیشیا برڈ ٹریبیونل ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_060, best cost 145.697 + 3948.26 = 4093.96 over 648 frames.
+20030005_060 بس سن جو مؤخر میں بے آ اور پر بہ حصہ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_061, best cost 128.02 + 2825.5 = 2953.52 over 470 frames.
+20030005_061 نعیم ڈار برش یا کریو ریسرچ تھو جگ مل بورڈ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_062, best cost 99.739 + 3995.02 = 4094.76 over 626 frames.
+20030005_062 جھولوں سوم عرصہ سوئم لشکر و 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_063, best cost 16.8939 + 2487.1 = 2503.99 over 353 frames.
+20030005_063 کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_064, best cost 11.7583 + 2678.99 = 2690.75 over 361 frames.
+20030005_064 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_065, best cost 179.929 + 5343.43 = 5523.36 over 1028 frames.
+20030005_065 میئر جنم بھڑ میں فول داؤ اے پہنچی کہا سرمایے کہا بہائیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_066, best cost 16.6083 + 3848.7 = 3865.31 over 550 frames.
+20030005_066 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_067, best cost 49.7391 + 4814.48 = 4864.22 over 748 frames.
+20030005_067 پور کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_068, best cost 111.29 + 2699.96 = 2811.25 over 443 frames.
+20030005_068 فاؤل درجن انور شے بورڈ وجود میں آڑھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_069, best cost 92.5683 + 2932.08 = 3024.65 over 492 frames.
+20030005_069 یعنی میں عجز ساری گاڑیاں پسماندہ بنائیں ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_070, best cost 153.722 + 4154.64 = 4308.36 over 675 frames.
+20030005_070 مڑ چیر برس اب کو روزمرہ میں جا اور لوئی گو کرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_071, best cost 104.651 + 3189.33 = 3293.98 over 503 frames.
+20030005_071 گھوم کر امن جدون گولوں مڑ اشد 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_072, best cost 131.123 + 6027.35 = 6158.47 over 933 frames.
+20030005_072 گوہ کی مرلہ فول بوجوہ شوہر دوڑ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_073, best cost 64.7087 + 3025.34 = 3090.05 over 449 frames.
+20030005_073 کو بانجھ ارب الجھ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_074, best cost 42.923 + 2761.65 = 2804.57 over 401 frames.
+20030005_074 خروش میمن 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_075, best cost 87.259 + 4482.4 = 4569.66 over 700 frames.
+20030005_075 مدون کی بش ابھر روے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_076, best cost 106.725 + 5967.64 = 6074.37 over 920 frames.
+20030005_076 بہن اوجھڑی دو خون ضعف شروع اور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_077, best cost 77.9282 + 3880.81 = 3958.74 over 591 frames.
+20030005_077 پرسوز شعاع امور کر سمجھ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_078, best cost 86.3857 + 3543.32 = 3629.71 over 547 frames.
+20030005_078 میں جالندھری شعوری عمل ملحق 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_079, best cost 31.9658 + 2980.77 = 3012.73 over 459 frames.
+20030005_079 جوہر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_080, best cost 79.8701 + 3618.5 = 3698.37 over 563 frames.
+20030005_080 اوور میں ثمر اوڈ تولید 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_081, best cost 91.087 + 2991.8 = 3082.88 over 463 frames.
+20030005_081 ٹشو نے ملیریا اور کے ملی پور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_082, best cost 56.2419 + 4698.46 = 4754.71 over 710 frames.
+20030005_082 اوڑھ جوے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_083, best cost 172.957 + 4842.63 = 5015.59 over 739 frames.
+20030005_083 موو چمن اوور بخوبی میں موقف اور پولیس اور کر تناؤ سب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_084, best cost 150.801 + 5251.05 = 5401.85 over 825 frames.
+20030005_084 بڑ کوڑھ براں شہرہ ہجوم اوئے دورے گل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_085, best cost 88.0778 + 5004.87 = 5092.95 over 744 frames.
+20030005_085 جشن عشرے ووڈ اور چوزے بھی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_086, best cost 166.166 + 7172.05 = 7338.22 over 1109 frames.
+20030005_086 شنید اوڑھ ممد انگور کی پور کلیئر کی پہنچی اور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_087, best cost 177.08 + 5998.92 = 6176 over 961 frames.
+20030005_087 زمین رہ بھولا اوڑھ ٹریڈ وہ سو اس کرنے گھرے شل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_088, best cost 46.7457 + 4143.25 = 4189.99 over 615 frames.
+20030005_088 گنا اوڑھ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_089, best cost 159.672 + 4883.4 = 5043.07 over 786 frames.
+20030005_089 گولوں ملنے کرو اور میں گریڈ پَلوں پور جوش و خروش 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_090, best cost 85.6296 + 3994.17 = 4079.79 over 605 frames.
+20030005_090 برسوں ہینڈ بلور وومن 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_091, best cost 171.112 + 4644.32 = 4815.43 over 737 frames.
+20030005_091 شل برڈ شل وقوع مؤخر اوڈ پَلوں پَلوں کی شوخی ریڈ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_092, best cost 131.034 + 4131.31 = 4262.35 over 667 frames.
+20030005_092 کولن مدح شل شل بارے چیخ ہنگامی کر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_093, best cost 39.0157 + 2884.67 = 2923.69 over 429 frames.
+20030005_093 سوویں کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_094, best cost 32.5758 + 3285.72 = 3318.29 over 515 frames.
+20030005_094 معصوم بچہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_095, best cost 161.236 + 5505.32 = 5666.56 over 887 frames.
+20030005_095 امیگریشن پروگراموں کی ابزرور اوہو ملین بلوں کر منیب اوجھل ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_096, best cost 65.7369 + 5180.98 = 5246.72 over 765 frames.
+20030005_096 میئر و ڈی کو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_097, best cost 115.328 + 3975.27 = 4090.59 over 615 frames.
+20030005_097 مہلت فورس گوگل عمل غور و بڑی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_098, best cost 181.796 + 5141.55 = 5323.35 over 858 frames.
+20030005_098 مگ لیکن شعرا رنگ شوہر حلقہ فورم اشفاق کی مذہبی حدود ہوئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_099, best cost 147.854 + 6354.89 = 6502.74 over 987 frames.
+20030005_099 اوڈ اقربا اور اوپر جھوم اوور کوڈ و پالمر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_100, best cost 60.3483 + 4737.27 = 4797.61 over 694 frames.
+20030005_100 دودھ علم گول 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_101, best cost 196.57 + 4741.06 = 4937.63 over 761 frames.
+20030005_101 کی جکھرانی نیون برطرفی مدح فوراً وولر سوڈا کھول جوش منش تلخ گڑگڑا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_102, best cost 102.709 + 3835.99 = 3938.7 over 585 frames.
+20030005_102 ارشد علوی کلیئر چاول اور جو دوسرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_103, best cost 172.256 + 4566.61 = 4738.86 over 747 frames.
+20030005_103 کی اوہو قیوم چوم لباس گڑبڑ نشو اوڑھ دو شیل عمل معشوق ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_104, best cost 159.523 + 4853.9 = 5013.43 over 784 frames.
+20030005_104 ملوں سول گوہ عوام مردوں شون اور شعر نے پر تشویش ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_105, best cost 199.333 + 6965.57 = 7164.9 over 1148 frames.
+20030005_105 <oov> میں عمر جوق اور میئر کو اول اور میں اولڈ سول سربراہ پھول 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_106, best cost 356.497 + 7964.15 = 8320.65 over 1547 frames.
+20030005_106 دوسرا ان چیل اور دواؤں آ میں اس صلح مہر گورنر شعاع میں رینگتے منگل تھیری میں ریوڑ درس میل گل برڈ سے ٹریڈ جیوئش احسن مذاکرات کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_107, best cost 160.325 + 5286.53 = 5446.86 over 920 frames.
+20030005_107 سول اور بھی بو میں چوہوں شعوری خون شوہر ثمر ڈھونڈ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_108, best cost 224.092 + 5828.03 = 6052.12 over 955 frames.
+20030005_108 ملک خون بہو لیلی جونیئر ناشتہ والوں خلاف بڑھ گھور کمروں عہدے گوشت بوقت بھی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_109, best cost 127.476 + 4907.32 = 5034.8 over 787 frames.
+20030005_109 بڑ میں مقصود کھوکھلا سوراخ گھنیری کی روؤں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_110, best cost 26.4719 + 4437.46 = 4463.93 over 667 frames.
+20030005_110 جو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_111, best cost 72.5302 + 3961.2 = 4033.73 over 625 frames.
+20030005_111 انجنیئر فوڈ دباؤ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_112, best cost 98.2181 + 2704.06 = 2802.28 over 452 frames.
+20030005_112 ڈھا اور کے بچار کو شون گے شہید 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_113, best cost 158.996 + 3155.22 = 3314.21 over 526 frames.
+20030005_113 کر معمر جدید اور و اور وڈیروں نقل گردش ان دھولیں توجہ پر بات کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_114, best cost 199.785 + 3820.23 = 4020.02 over 672 frames.
+20030005_114 قدرے شل ہول نشر و پر شاہ اور کے میں بقول اگلی پور کچرے رضوی مدمقابل ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_115, best cost 124.731 + 3805.96 = 3930.7 over 618 frames.
+20030005_115 ہو واقعہ کی کونسل ریڈ علم ڈالنے کو برقرار رکھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_116, best cost 61.5174 + 5767.69 = 5829.21 over 840 frames.
+20030005_116 اوڈ یا مشن 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_117, best cost 45.8147 + 2433.64 = 2479.45 over 385 frames.
+20030005_117 موثر شروع 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_118, best cost 265.45 + 6097.88 = 6363.33 over 1095 frames.
+20030005_118 پڑ بوقت تو شل چڑ تابش ہنگامہ سوئس لینے کنگڈم گاؤن تو گوٹھ ہو جذبات کوکھ خسرو ابواب کر لیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_119, best cost 174.667 + 4797.19 = 4971.86 over 794 frames.
+20030005_119 شل شل اور عبدالحئی میں تبدیل ہو کر لو حوض آ پھسل بنگلہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_120, best cost 161.554 + 4517.4 = 4678.96 over 736 frames.
+20030005_120 شوہر نثار کلیئر کو موقع تدابیر بھونڈی پور بسر جوہی سیڑھیاں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_121, best cost 168.647 + 4433.07 = 4601.71 over 739 frames.
+20030005_121 جا اور شاعر اور شیلڈ کیولری اور شعر سے اور شوخ ووڈ مؤثر ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_122, best cost 149.119 + 2869.27 = 3018.38 over 493 frames.
+20030005_122 فنگس کام میں خوض علی جھیلیں اور پور چوروں مڈھ حسن ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_123, best cost 120.376 + 2290.51 = 2410.88 over 391 frames.
+20030005_123 <oov> گھیا مرچوں ممبر لوگوں اوہو کو بچاؤ لیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_124, best cost 188.077 + 4000.86 = 4188.94 over 697 frames.
+20030005_124 کبیر بری قرار شعر و ٹرین کئے کو سکیں بو اشیا کھاؤ بروز شوہر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_125, best cost 180.327 + 4296.59 = 4476.91 over 730 frames.
+20030005_125 ارشد تلے ہو لائبریرین ملین وورس میمن اجر انٹر کبڈی عمیق معائنہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_126, best cost 109.869 + 2882.3 = 2992.17 over 517 frames.
+20030005_126 اور اوڑھنا خیمے کر قدوقامت میں بڑ ٹھل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_127, best cost 234.712 + 4279.73 = 4514.44 over 780 frames.
+20030005_127 <oov> اور اناڑی اوڑھا بھی کے شفاف سبھا والے کر مولا اور اشد کا اوہو لنڈ سمجھ نیور بخیر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_128, best cost 144.808 + 4572.71 = 4717.52 over 769 frames.
+20030005_128 میں معا شیلڈ فلو سوویں کو کو کلیئر بیچے میں کا سوچا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_129, best cost 174.261 + 4191.98 = 4366.24 over 734 frames.
+20030005_129 ازبک صبروتحمل ایلیٹ برس کے کے آؤ میں اچانک مرشد کو اور مالدار بن ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_130, best cost 178.794 + 3631.15 = 3809.95 over 626 frames.
+20030005_130 اور ریشوں وزارت میں <oov> بل کو تساہل <oov> یونہی جلسہ مغلوب بلا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_131, best cost 228.531 + 5317.21 = 5545.74 over 942 frames.
+20030005_131 فلو گاؤن میں دھینگا مشتی اور تشدد کے بقعہ منیب شو اور نمک شبلی صلح موجزن خبر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_132, best cost 131.965 + 2344.19 = 2476.15 over 420 frames.
+20030005_132 کھول عشق بلوں گو کو مشعر اور جنگجو بلا عابد 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_133, best cost 163.911 + 3359.08 = 3522.99 over 595 frames.
+20030005_133 جلو شل بےاختیار ویسے ہی عابد کیچڑ میں پہنچ لیا حالانکہ ہمارے ہجوم میں کھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_134, best cost 213.432 + 5008.31 = 5221.74 over 947 frames.
+20030005_134 چوم عمل مونچھوں شدہ محلوں کر شل کن کلوز اور معید چڑیل شل کم کھلنڈرا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_135, best cost 197.061 + 4520.94 = 4718 over 831 frames.
+20030005_135 کاؤنٹی مواصلات کام اور دباؤ قبیح ارشد کر کھسوٹ صلح بیلٹ آسرا اور اجاڑ دیکھ رہا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_136, best cost 252.898 + 5574.21 = 5827.11 over 1049 frames.
+20030005_136 دلربا اور چلیں میں تجرد پور ڈیڈ گریڈ سربراہ عمل پور گروہوں نے معمر عمل لوہا ڈھلک درج ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_137, best cost 197.432 + 4985.68 = 5183.11 over 868 frames.
+20030005_137 کو بخود علی خلیے نیل گھریلو شامل نمبر موقر پور غور زخمی کی دلجوئی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_138, best cost 147.101 + 4176.93 = 4324.04 over 712 frames.
+20030005_138 پریشر انٹیلجنس ریوڑ غول رول وولر کے متعلق عملا ترقی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_139, best cost 221.7 + 5514.41 = 5736.11 over 935 frames.
+20030005_139 گھروں نے شوہر باؤنڈری بیسمنٹ عمل بڈھا بھی شوہر اوس خمار میٹھی آ اور عمیق زیبرا اور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_140, best cost 183.229 + 4076.99 = 4260.22 over 734 frames.
+20030005_140 لاابالی بلور اوڈ بہ ہر میں گرمجوشی شیڈ کہا ڈھونڈھ کو اثر مارے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_141, best cost 109.45 + 3964.95 = 4074.4 over 646 frames.
+20030005_141 مفر در کر کبھی نشر وورس 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_142, best cost 165.139 + 3326.47 = 3491.61 over 551 frames.
+20030005_142 بہو اور شور قدرے شمس جلد چراغ کے تو گڑگڑا کلیئر کرے شون ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_143, best cost 129.742 + 2518.86 = 2648.6 over 420 frames.
+20030005_143 وارڈ درجے میں کو برج شل بیچلر تو عبور چبھ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_144, best cost 228.756 + 4596.81 = 4825.57 over 819 frames.
+20030005_144 آر جوں گول عرصہ اب غربت اور انگشت کی اور عشق اپیلیں کرے میں بولوں پور رائج گہرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_145, best cost 181.425 + 3676.71 = 3858.13 over 635 frames.
+20030005_145 گول ریونیو خواری عجلت وے ٹیوب جلسہ اور گولڈ فشر اولڈ سڑنے لے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_146, best cost 156.252 + 3760.42 = 3916.68 over 641 frames.
+20030005_146 شاہد شہاب شیڈ دلخراش اور مغیث تم ظہیر کو قبول کر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_147, best cost 187.955 + 4206.02 = 4393.97 over 751 frames.
+20030005_147 گلوز نگاور شعرا کھلواڑ آڑھا باب کرے تو شہریوں کردار فقر یاب ہو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_148, best cost 307.843 + 6822.54 = 7130.39 over 1196 frames.
+20030005_148 بوجوہ صاف کشف میرا اوڈ کر لکھا اور لینگویج اوڈ شوخ پڑھو پور شہرہ اگر مل جو ڈبہ اور پور صداقت کہا بارش 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_149, best cost 142.953 + 3742.42 = 3885.38 over 609 frames.
+20030005_149 بلا بغور شمسی یوریا اور اور صرف خوشہ سب پر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_150, best cost 219.695 + 4765.09 = 4984.78 over 816 frames.
+20030005_150 موجودہ ایونیو بلوچوں کے چہرے تو وہ کر جون گلگشت بغور خوض شل عشق کے کاروبار میں مستغرق 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_151, best cost 161.031 + 4698.83 = 4859.86 over 817 frames.
+20030005_151 کر مآب پر دن مینگل گردش ڈور و اقوام ممبر پرنسپل کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_152, best cost 167.333 + 3093.61 = 3260.95 over 525 frames.
+20030005_152 فروش اور علاوہ اور ہوش میں لاکھ اور شش اکرم مسائل مشعر دیر بے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_153, best cost 153.788 + 2954.79 = 3108.58 over 515 frames.
+20030005_153 اور گردش انٹر جلو انور بعدازاں اور شاعر ٹینک سجاد اور طلب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_154, best cost 175.854 + 4270.24 = 4446.09 over 714 frames.
+20030005_154 وزیراعلی نہ انجمن کے متحدہ کنونشن میں بَلّا در راؤ مدعا کی اٹھوا پلیئر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_155, best cost 242.956 + 4893.18 = 5136.14 over 812 frames.
+20030005_155 بڑی کا میسر لہجے مشن اور کا اور نے مسخرے منگوا غلاف کاربن ڈور اور لیفٹننٹ قم عرصہ اوج کر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_156, best cost 209.53 + 5443.34 = 5652.87 over 955 frames.
+20030005_156 یا اور ورژن میں سیونگ اور جیوری میں تنظیم سروں ظہر انٹر باب خادم ایئر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_157, best cost 213.134 + 5226.96 = 5440.09 over 951 frames.
+20030005_157 موثر گھونگٹ نڈر زنجیر رزلٹ و اور معلومات ڈی ہجر حقوق یورپی سے کھر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_158, best cost 224.088 + 4677.25 = 4901.33 over 855 frames.
+20030005_158 باہر حق اکھڑ ہیڈ ہتھوڑے ٹیوب اگر سے تقریباً افضل تنہا ابزرور غدود برڈ کھو حضور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_159, best cost 192.596 + 6668.1 = 6860.7 over 1102 frames.
+20030005_159 ضوفشاں و ٹشو و گوگل لالچی لوگو پور شب خول شگاف بولوں ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_160, best cost 121.765 + 4072.14 = 4193.9 over 676 frames.
+20030005_160 سروں گروپ بھورا لیڈر ترچھی خون اواخر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_161, best cost 252.294 + 6720.8 = 6973.09 over 1178 frames.
+20030005_161 چراغاں کا کہلوا پھول کا بونس اگر شفقت جا اور کی کر بھی و اور مرشد پر شعور چھلکا کا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_162, best cost 217.076 + 5495.42 = 5712.49 over 935 frames.
+20030005_162 بے بزور غصہ آشوب پور ملغوبہ لو <oov> عابد کے شعر اوڈ کیو پھسل کو ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_163, best cost 177.857 + 5320.46 = 5498.32 over 921 frames.
+20030005_163 رضوان عشق موقر غور کمرے میں گوہر علی سیب پورے مقابلے کیلئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_164, best cost 163.657 + 5380.96 = 5544.61 over 887 frames.
+20030005_164 پریس ہوش والرس کوڈ ایشو حریت اوڑھے پور رباب بچھ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_165, best cost 200.246 + 6395.33 = 6595.58 over 1102 frames.
+20030005_165 جسٹس کلیم صلح رویے کلیئر تشبیہ اور رحیل مشغلہ جَلد لیس ذہنی رجوع کی کیلئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_166, best cost 188.417 + 5598.2 = 5786.61 over 961 frames.
+20030005_166 گو ابھرا شگاف گوبر ڈویژن کر اولڈ اوڈ پھر عارضی سن کر پہنچا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_167, best cost 181.248 + 4056.6 = 4237.85 over 728 frames.
+20030005_167 جرگہ اور اور ہول ڈینٹل تحفوں پر شعور شعر وگ بلڈ جلد ابلاغ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_168, best cost 203.89 + 4343.88 = 4547.77 over 799 frames.
+20030005_168 سدباب گوگل کھوج عابد کو شہید تعوذ اور کوڑی بھیجا کوڈ ہوش وہاب دھوئے یہی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_169, best cost 133.456 + 4445.44 = 4578.89 over 754 frames.
+20030005_169 <oov> لوگوں کے کلونجی عفو اولڈ سوئس کرشنگ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_170, best cost 133.578 + 4689.95 = 4823.53 over 854 frames.
+20030005_170 ٹریلر میں گھروں ملحق قالین زیرقیادت ریوڑ کلیئر غصب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_171, best cost 185.64 + 3391.17 = 3576.81 over 658 frames.
+20030005_171 برڈ ڈیڑھ برڈ اوہو روڈ میں محقق سنور سے اور پلڑے لیے مقرر کی ڈیڈ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_172, best cost 194.475 + 5655.27 = 5849.75 over 1005 frames.
+20030005_172 اوپر چائلڈ کے پر اللہ ویئرز پڑ کرے کار بھی قحط قضہ کسی ہوئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_173, best cost 135.714 + 3976 = 4111.72 over 710 frames.
+20030005_173 جن کالجز اسکواڈ کر ورلڈ کر غشی اور کو تسلیم 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_174, best cost 206.475 + 6088.48 = 6294.95 over 1083 frames.
+20030005_174 جا اور عشرہ اور کا گا اور فول بیراج فی پیڑی پور کے جو میں تحفوں ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_175, best cost 205.854 + 5277.31 = 5483.17 over 972 frames.
+20030005_175 اگر ہیروئن امروہی گڑبڑ بعد بچھڑا پر تباہی فوڈ تحفے اور جھلی بار سنبھل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_176, best cost 235.736 + 5447.84 = 5683.58 over 975 frames.
+20030005_176 مظہر میوزک میل جوں گوہ وڈ بش شہاب سے شاگرد خواہاں کر دوردراز پہاڑوں پر کھو اگر کا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_177, best cost 187.077 + 5273.85 = 5460.93 over 914 frames.
+20030005_177 جھرنے موہوم کھاؤ براڈ کی پرچم افیون اوباش اور چیفس سے الجھ پڑے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_178, best cost 209.657 + 4445.94 = 4655.6 over 770 frames.
+20030005_178 ڈیتھ چوہدری ٹریڈ ڈیلی ڈچ کی جوئیں وارڈ سو حشر رسوئی اور آپ کو ڈبوئیں گی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_179, best cost 230.99 + 6212.02 = 6443.01 over 1184 frames.
+20030005_179 چیونگم میں گوشہ افشا علی کے ماؤنٹ میرے شے محسن ایچ راہگیر گوشہ کہو آیا پھوار 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_180, best cost 259.429 + 5878.08 = 6137.51 over 1091 frames.
+20030005_180 کی دو اور شعر و اشعار کے مجموعے ونڈوز سے بے جھیلے ٹیوب شوگر بیوروکریسی شعرا ٹری بڑا اور بیخ فون ریلی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_181, best cost 191.302 + 5250.62 = 5441.93 over 917 frames.
+20030005_181 گڈ چہرے آ میں شیلٹر کھلاڑی لیڈر گرہیں گلیشئر کی بڈھا اور کر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_182, best cost 225.623 + 4832.27 = 5057.89 over 874 frames.
+20030005_182 پڑھے فرقان صاف قدرے شے ٹریڈ ڈبو علوی میں وڈ کر و ہوا ڈبلیو سربراہ ریڈ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_183, best cost 214.606 + 6056.96 = 6271.57 over 1077 frames.
+20030005_183 پھول کا اور پر بلا گوہ شیڈ بے بھگدڑ بچہ یہی الحاج ایلویٹ اواخر <oov> 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_184, best cost 184.169 + 6132.1 = 6316.27 over 1040 frames.
+20030005_184 شوگر جھلی ریڈ بورڈ بیلٹ رزق ہی گہرا تخریب مرچ علم 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_185, best cost 191.289 + 5235.79 = 5427.08 over 912 frames.
+20030005_185 گڑبڑ دلفریب باب گڑبڑ ٹریڈ بے ڈیبٹ ہوئی پر میری بلور کو حدود 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_186, best cost 159.878 + 4265.48 = 4425.36 over 784 frames.
+20030005_186 بڑے کے بدلو ہوئے بُدھو اوہو کرو ہو سو غور میں و کرو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_187, best cost 179.103 + 4911.41 = 5090.51 over 872 frames.
+20030005_187 اوس سیل جوہری بھی بے میں ایک بشاش بنگالی سَیل ریشوں باڑہ گہر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_188, best cost 134.865 + 5360.68 = 5495.55 over 893 frames.
+20030005_188 بڑھ مفقود بورڈ جگر گہرا کر گہر کہا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_189, best cost 230.744 + 6847.23 = 7077.97 over 1249 frames.
+20030005_189 ابرار بے جشن شیو کھوسٹ ہوئے عیب اخبار قیوم براڈ جن آپ انہی رزق پر بیلچہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_190, best cost 186.725 + 4874.33 = 5061.06 over 876 frames.
+20030005_190 آپ چودھری شوخ سیاحت سربراہ چڑھ لانچنگ کا باہر گہر آ بلا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_191, best cost 204.014 + 6048.12 = 6252.13 over 1135 frames.
+20030005_191 اس سوویں ان گریڈ بےقصور متوفی منیر گوہر و بلی چل جا مل خاصے عزیز تھے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_192, best cost 202.637 + 4498.21 = 4700.84 over 875 frames.
+20030005_192 حروں اکھنڈ سندھو بنگالی بڑا آئے کو کو اہم دو میں جوئیں جگر کچھوؤں لوں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_193, best cost 251.953 + 6315.95 = 6567.9 over 1246 frames.
+20030005_193 سپرنٹنڈنٹ جگہ لارا کنڑ آؤ کو جنگوں ٹریڈ جشن اور شعر افضل ریڑھی کرشنگ چڑ چادر تھے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_194, best cost 181.135 + 5210.13 = 5391.27 over 1028 frames.
+20030005_194 یا گوند میں نوے بارے میں کھیلوں ہیں پر شگاف پور پھول چھانٹ رہی تھی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_195, best cost 192.833 + 5577.94 = 5770.77 over 1086 frames.
+20030005_195 بدہضمی فورم گونج بروری شیلٹر بااصول حملوں بروکلی بنوری اوڑھ بھورا پڑ گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_196, best cost 237.82 + 5964.53 = 6202.35 over 1150 frames.
+20030005_196 بڑھ عشرہ اور لوگو افسوس محور گھر ڈبو افورڈ اخروٹ میں کر دو وقوعہ اثر اور پیٹ چیز ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_197, best cost 232.336 + 6366.42 = 6598.75 over 1259 frames.
+20030005_197 شون کی تہذیب سرعام محسن تو وحشی چلو اٹھی تشہیر ڈے گڑبڑ غور کر ہی ہول ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_198, best cost 185.207 + 4923.51 = 5108.72 over 939 frames.
+20030005_198 بلکہ میں انٹر جائے شون شوق کھو اور آکر دوڑائیں اول ہول بڑھاوں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_199, best cost 230.656 + 7209.47 = 7440.13 over 1368 frames.
+20030005_199 جلد کے مفلوج اپروچ سلور کھلے ریڈ کے گورے بلین دھول روے خلل باعث ہوئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_200, best cost 124.99 + 3578.23 = 3703.22 over 632 frames.
+20030005_200 سویرے بھی جوڑ اوہو جھگڑالو ہجر غربت لیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_201, best cost 265.939 + 6785.73 = 7051.67 over 1368 frames.
+20030005_201 نشئی زون فنڈز والے ابواب کو کیو گوگل جذبات محبوب بھی خول مغز اوہو خول غرارے لگانے والو ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_202, best cost 211.02 + 5531.12 = 5742.14 over 1060 frames.
+20030005_202 لوڈ گڑیا پر شہروں اور رابعہ افگن بھی میں نصیحت کو شل کی وجہ سے فلڈ ہر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_203, best cost 233.595 + 5550.08 = 5783.68 over 1048 frames.
+20030005_203 بھاؤ گھی جھلک منظوم گھوم اور جرم کرو شوہر پیش کڑوا والا کھلواڑ پور بہو رزلٹ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_204, best cost 223.774 + 5555.57 = 5779.35 over 1067 frames.
+20030005_204 بڑ پور ڈور شعر و غلاف کی برش بلین کر پروگرام در در در زوال ہول 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_205, best cost 300.443 + 7173.16 = 7473.6 over 1496 frames.
+20030005_205 موقعوں دعا و فرض بے میں میں کر ٹھٹھر جوہر میں رنگوں کھڑا والو کر ہلاک اوور کاؤچ سوزش دورے تنازع راجیہ سبھا رہ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_206, best cost 210.225 + 5469.96 = 5680.18 over 1067 frames.
+20030005_206 فروغ شغل ہیڈ باب گروتھ سو ڈیوڈ جڑ ہے خول رزلٹ میں براوو کا اجرا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_207, best cost 215.544 + 7119.03 = 7334.57 over 1336 frames.
+20030005_207 ویلیو باب اوڑھ بیورو سحر ڈالر دباؤ ہنگری کھر اور انگور کلونجی ملحوظ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_208, best cost 219.072 + 6072.06 = 6291.14 over 1137 frames.
+20030005_208 بہو اور کوچوں کہو آ لوں مڑ سوم بلڈ جوے پرنٹ ریوڑ شعار قم ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_209, best cost 286.975 + 7139.37 = 7426.34 over 1380 frames.
+20030005_209 کسی سہاگہ پڑ رزلٹ ڈگر گڈ ٹرفس گروں ہر مشہور چھور بلڈ کا اور اشیا اور اوورہیڈ والوں کی جگہ بھی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_210, best cost 294.827 + 7036.56 = 7331.39 over 1419 frames.
+20030005_210 تحصیلوں وے مولا لیب سے موو کی موو ہیئر گوہ بَلّا اور بڑ دن قدم ماؤف چیل بڑھا اور فروغ سورج کر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_211, best cost 352.643 + 8747.41 = 9100.05 over 1745 frames.
+20030005_211 جون دھوم دھولیں مس بروکلی منقش اور کھلیں پرکھا اور ایئر گوہ خُو اوہو روور گشت عشرہ اور مرغ بوم پور باگ راولا فوجوں اگر ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_212, best cost 173.696 + 4859.69 = 5033.39 over 907 frames.
+20030005_212 جادوگر قبیلے اور بڑوں بلور فرقہ بیلٹ گولڑوی گدڑی میں رہ رکھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_213, best cost 240.623 + 6562.91 = 6803.53 over 1297 frames.
+20030005_213 بڑے معاف میں کسی جھوٹ پارلر کلیئر کثیرالقومی ریزولوشن جونیئر گو ویڈیو معائنہ بلڈ بیلٹ ڈھونڈیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_214, best cost 177.453 + 3838.67 = 4016.12 over 721 frames.
+20030005_214 تحفہ ذوق آؤ فولاد سرخ دبوچ غلاف کے شبہے میں گھل کو تشریف لائیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_215, best cost 164.044 + 5330.5 = 5494.54 over 1022 frames.
+20030005_215 ماحول بااللہ حشر ریڈ گنجلک کر عمل دو کے بجاآوری کر ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_216, best cost 331.082 + 8853.88 = 9184.96 over 1777 frames.
+20030005_216 کوڈ جوکھوں اوور بولو کو میں ڈالر جوہر بڑ محرر بھی شل خوض عمل برخلاف مہذب باڑہ ملحق بزنس در دل کھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_217, best cost 231.845 + 5156.75 = 5388.59 over 996 frames.
+20030005_217 سول مظہر ولد لڑائی غصہ اس گاؤن کہا کرشنگ اور گڑگڑا غوں گھائل رخصت محرر بہائیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_218, best cost 196.647 + 4319.09 = 4515.74 over 830 frames.
+20030005_218 پلڑا قدروں معلوم ہیرو اور ایئر پھول رہیں سلوک کسوں افق گروہوں کھا کر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_219, best cost 203.549 + 4557.12 = 4760.67 over 894 frames.
+20030005_219 نو شہری تقسیم کے بادشاہ چاق و موقع ہجوم کا اور مہیب چوہوں قابل کر گلے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_220, best cost 231.119 + 4763.88 = 4995 over 952 frames.
+20030005_220 اوجھل دل بغاوت بھرٹ کا جوہر میں کر مفید پور تلخی سچل ٹرفس صحیح ابواب دیں اوکھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_221, best cost 125.682 + 2413.19 = 2538.88 over 491 frames.
+20030005_221 چمچہ شیرے مگ لوگو گھنگرو ہولوں اوور رکھو آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_222, best cost 168.986 + 4176.81 = 4345.79 over 804 frames.
+20030005_222 آپ ٹرانزسٹر شل ممکن پہنچ ابواب ورلڈ معمر گیگا آرٹلری پر وولر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_223, best cost 180.09 + 3926.58 = 4106.67 over 760 frames.
+20030005_223 باعث بھر اولڈ گھریلو ویلیو سوویں رکھے تو ہوش رافعہ کی سمجھ آتی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_224, best cost 174.743 + 4215.88 = 4390.62 over 843 frames.
+20030005_224 تصدق اور ہول کوڑھ کر بڑھاوں پور عقلمندی شیلٹر دور بنگلہ تک پہنچ گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_225, best cost 218.983 + 5054.25 = 5273.23 over 971 frames.
+20030005_225 کفار کی فحش یہ قورمہ اور شہاب بُدھو بھی کو قریب بھی گدڑی کوڑھ اٹھوا کی ضرورت ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_226, best cost 195.416 + 5001.41 = 5196.83 over 1022 frames.
+20030005_226 سوچوں مل کنڑ پور پاکیزگی خون تو کفر میں انسولین گڑبڑ سوال رہیں ہوتی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_227, best cost 263.728 + 6883.86 = 7147.59 over 1400 frames.
+20030005_227 کو بہت چاچو رزلٹ اکھنڈ بلور فوقیت فاخرہ کامیاب در پور شستہ فیچر لیڈر کو ہو بری فولڈر ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_228, best cost 194.714 + 3730.39 = 3925.11 over 740 frames.
+20030005_228 شہرہ گل کروڈ ٹریڈ رنگوں کا ذکر اور گہرا کوڈ پر افورڈ بلڈ بیسٹ کمرے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_229, best cost 219.069 + 6479.51 = 6698.58 over 1214 frames.
+20030005_229 مشعر کا مقصد وائرس کنٹرول ہر بڑا اوڑھ جھوٹ میں فصل کے مدعا اوہو روؤں بلڈ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_230, best cost 244.806 + 7113.69 = 7358.5 over 1425 frames.
+20030005_230 تلوں کر باغ میں گیا چیلنج گھیا فول کھیل گوشہ دبایا تو میں کھدر گو جنگجو ڈالوں کاؤچ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_231, best cost 234.593 + 5633.25 = 5867.85 over 1124 frames.
+20030005_231 بدچلنی میں منظم و قابل وڈ کلیئر رویہ گیا رپورٹ پرچم سیو کئے مطالبے کا ذکر کھل ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_232, best cost 251.532 + 6300.39 = 6551.92 over 1227 frames.
+20030005_232 دس میں قورمہ قضہ اور میں کو دل قل گذاروں کو کامیاب کنونشن کے اخراجات شیئرنگ میں کی سمجھ گرہیں آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_233, best cost 127.068 + 2790.5 = 2917.57 over 542 frames.
+20030005_233 بولو جوہر چنگل فورس ہلاک کے پنجرے جھوم بھرٹ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_234, best cost 225.293 + 4743.67 = 4968.97 over 945 frames.
+20030005_234 بلین بلڈ تباہی آمدنی گوہر ورلڈ کرے کو گوہ نے تحفوں حبس غور خلاف ساحل آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_235, best cost 193.619 + 5454.7 = 5648.32 over 1035 frames.
+20030005_235 سدھو بدظن مکھڑے ریڈ صاف بگھی گوٹھ اور شخصے ملا ساحل بھی ظریفی حوصلہ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_236, best cost 204.978 + 4715.28 = 4920.26 over 907 frames.
+20030005_236 برسوں ہو قابل واچ اور تم ڈبلیو فورم کلیئر دوبھر ہے حالانکہ پرسوز لکھا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_237, best cost 233.774 + 4963.16 = 5196.94 over 1009 frames.
+20030005_237 بس کا گروہوں برتن اشرف کی چیل ہول گانٹھوں کھو الجھا منگل باگ جلووں کا اور گروہوں کھینچیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_238, best cost 214.352 + 5942.49 = 6156.84 over 1118 frames.
+20030005_238 ملحقہ لومڑ ہمیں خروش اوجھڑی کی وجود اور کی براوو اور خبریں باخبر انگلی روز میں ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_239, best cost 182.182 + 4747.9 = 4930.08 over 926 frames.
+20030005_239 پنجروں گھی شہرت معاشرے مڈل کرشنگ بورڈ جل سرویئر کے مظفر کھر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_240, best cost 186.313 + 4693.84 = 4880.16 over 926 frames.
+20030005_240 مصور کر ڈالر جڑ میں کا عاشور قورمہ گھر کر سایہ میں کو بڑ کا آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_241, best cost 199.388 + 4602.77 = 4802.16 over 862 frames.
+20030005_241 مشاغل کلوز جلووں چئر کو رنگوں ٹریڈ اشعار آپ کو فن وفود کلیدی چوائس تھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_242, best cost 203.292 + 6127.16 = 6330.45 over 1137 frames.
+20030005_242 محسن کو عام اور گہرے مجلے آبشار سے پرجوش کے کسوں آگ پر زبوں بھیجی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_243, best cost 231.209 + 6459.02 = 6690.23 over 1259 frames.
+20030005_243 فورم قوس گورنر کرنے سکیں بوقت کو گوہ تو کو مقابلے کھولو اگلا کو ہو اور اوڑھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_244, best cost 226.06 + 6022.95 = 6249.02 over 1163 frames.
+20030005_244 گدھا مکھیوں گوہ انٹرمیڈیٹ بلڈ شو ٹھیس اواخر کا اور شوروم مہم کر پور دبوچ اور رہا تھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_245, best cost 255.268 + 7209.7 = 7464.96 over 1425 frames.
+20030005_245 گروہوں اور میں کے کمرے میں قریب بھی پور شروعات بھیگی پیشکش برس فورم گولڈ کی روؤں بے اڑا رہا تھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_246, best cost 230.095 + 6194.44 = 6424.54 over 1201 frames.
+20030005_246 بااصول دو بلڈ بااصول راؤنڈر چیز ضلع کہو ہوئیں جوق بلی گولوں کبیر کی کو ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_247, best cost 206.639 + 4869.18 = 5075.82 over 939 frames.
+20030005_247 بدلے نفسیاتی اوڑھ شوگر قہوے دور ان پی بھی ڈیجیٹل گز اور تھیری افضل ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_248, best cost 225.824 + 6329.87 = 6555.7 over 1233 frames.
+20030005_248 لیزنگ کی خبر شوالا گھورنے اوڑھ ٹھل حیثیت اسرائیلی فاؤنڈیشن کرا اور افضل کرے دولہا اندھے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_249, best cost 213.842 + 4465.25 = 4679.09 over 856 frames.
+20030005_249 پرکھا اور معاشرے ممبر خُو میل دوم گا اور اسلوب صلح شو عمل لیڈر چیلہ اڑائیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_250, best cost 252.483 + 5510.42 = 5762.91 over 1105 frames.
+20030005_250 بچوں میں اور شوربہ اور مصوروں حوصلے نصب جوہی گوہ تحفہ اور دی ہیئر پور بڑ جی ڈرل چل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_251, best cost 261.245 + 5632.4 = 5893.64 over 1105 frames.
+20030005_251 کمسن ٹھل دوم جھیلوں چیر شوخ اور عمر کوچ حملے صرف پھٹ لیلی کو گنجلک خول داغ بہی ہوا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_252, best cost 153.765 + 4210.27 = 4364.03 over 804 frames.
+20030005_252 ایلیٹ کے گجر بڑھ کو تشخیص پر عدالت اور کرکے افشا کے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_253, best cost 249.328 + 6747.2 = 6996.53 over 1278 frames.
+20030005_253 کمپیوٹرائزڈ گوہ گوہر غور کو گوہ عرصہ خصال گھنیری جھیل میں خول شگوفے پور تلخیاں عبور جانا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_254, best cost 244.801 + 5445.62 = 5690.42 over 1105 frames.
+20030005_254 اچھے پور بوس اوہو مسلم مظفر میں ملیریا اور انجری گو پرکھا خول فوجوں گو عمل رمزی بیلز دیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_255, best cost 189.396 + 4630.65 = 4820.04 over 920 frames.
+20030005_255 شہری چڑیل کی ہجویہ آواز ہندسوں گھر چیف چنگ خوف فنڈز چئر قوس گئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_256, best cost 213.056 + 5788.39 = 6001.44 over 1176 frames.
+20030005_256 دو اگر اور اٹھائیس گورے ملیشیا کی پہاڑی والی دیوہیکل جیل ٹیوب باغ بلوں بلور بھی میں روئیں گے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_257, best cost 232.292 + 7038.82 = 7271.11 over 1323 frames.
+20030005_257 سوئفٹ کرے ابجد سیکھنے کلیئر کا ٹریلر پہنچ کر ڈاؤن کے تصفیے کے اور اور کر کی صفوں میچ آ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_258, best cost 181.625 + 5086.55 = 5268.18 over 1060 frames.
+20030005_258 بلونگڑے مطمئن ہو کر دیوداس کے فاسٹ قم گولڈ میڈیسن کی ہزارویں مٹھل کھا رہے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_259, best cost 237.885 + 5726.38 = 5964.26 over 1112 frames.
+20030005_259 پہاڑ ملک سامان سالگرہ شوق کر کفار سَیل قارئین فارورڈ بلڈ کو کریش کرنے کلیئر ہمسفر تھے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_260, best cost 205.012 + 4770.36 = 4975.38 over 958 frames.
+20030005_260 سویاں موو مراد بلی گڈ مآب یا کے موہن شو چوہوں باغ غرارے لکھو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_261, best cost 259.179 + 6942.02 = 7201.2 over 1380 frames.
+20030005_261 کھمبیوں کے وفاق کرشنگ میں آنکھیں چنگل آدھے شروع گھیرے مخبری چل منصوبے میں مدعی ڈیڑھ ٹری اور کہا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_262, best cost 221.001 + 6257.28 = 6478.28 over 1278 frames.
+20030005_262 کرفیو میں گھرے جنگجوؤں عمر پھنسے بنگلے سوال نگاور شیشے نے سوئی تو اور شروع وھیل کو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_263, best cost 292.972 + 9842.17 = 10135.1 over 1937 frames.
+20030005_263 معاشرے فورم خوراک سلور جل بے پیٹ کے وین فورس اہم سکول تصویر سوا اونی ڈائینوسارز پر بارے غوغا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_264, best cost 224.548 + 4630.82 = 4855.37 over 913 frames.
+20030005_264 <oov> چلو حلقہ اوہو اوڑھ قدغن مرہون جیل دو اگلا اور ٹھٹھر کھل کر ٹھٹھر در 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_265, best cost 232.174 + 5398.47 = 5630.64 over 1086 frames.
+20030005_265 عذاب پڑ زون چون بورڈ مگ دھل ہے ریوڑ جواب کس ستھرے مرجھا اور میں مخلوق ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_266, best cost 254.161 + 6169.73 = 6423.89 over 1188 frames.
+20030005_266 بحث سونگ فورم مرغ سے مرثیے میں ٹریجڈی دھوم ایئر کے باب پر رم بیڈ پور کو میں بلڈ کے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_267, best cost 192.516 + 4466.04 = 4658.56 over 907 frames.
+20030005_267 معاف ہول ڈگری کے باعث بچنے آنسو سوویں احسن گڑھ کو انجام گہرے ڈسٹرکٹ کے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_268, best cost 229.816 + 4835.67 = 5065.49 over 939 frames.
+20030005_268 خوگر مرغوں چولہے اسبغول شیلڈ خون ٹریڈ گا میں گولڈ جھنڈے پور مسحور مگر دل ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_269, best cost 201.27 + 6020.76 = 6222.03 over 1208 frames.
+20030005_269 عالمی ادب عملا پھنس جگہ تقرری زنگ کرنے کے ڈیبیٹ ریڈیو مصر رینجرز کھلنڈرا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_270, best cost 236.59 + 5570.8 = 5807.39 over 1099 frames.
+20030005_270 رافعہ میں کوچوں ملحوظ عرس نیڈل تھے مرکزی گوشے میں دبیز سینگ شیلڈ کے شبلی بھرے دس بیچیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_271, best cost 230.593 + 5089.15 = 5319.74 over 1041 frames.
+20030005_271 ٹرین کھل شل دل چئر کرا ہے و میں مورخ ٹریڈ ڈور اور جلد ٹھل منور بکھرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_272, best cost 239.186 + 6515.51 = 6754.7 over 1246 frames.
+20030005_272 کی شاعر اوڑھ افق ہرگز عذاب کانجی کی گانٹھ غیب سیرت سوویں گیدڑ بھی در مگ بیڑا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_273, best cost 279.287 + 6716.19 = 6995.48 over 1265 frames.
+20030005_273 حملے مسز میرے شیلڈ بس میں اس سلفیٹ کئی ساخت کہا قدم اہم بسا آگ بوقت جڑ اڑایا جا سکتا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_274, best cost 192.197 + 4962.51 = 5154.7 over 939 frames.
+20030005_274 کھر لوہار فخر کھو ہو کا ریڈ ساحل ہے اوڑھ شعوری کے دعائیہ حوصلہ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_275, best cost 307.18 + 8137.87 = 8445.05 over 1598 frames.
+20030005_275 اداکارائیں ریوڑ تارڑ میئر گھروں نے درخت کے کہف باقی گوشوں بھی کلیئر بنا گھل مکعب دل فیلڈ اور گیگا منشور بااللہ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_276, best cost 310.609 + 7183.04 = 7493.65 over 1393 frames.
+20030005_276 ورلڈ چھور پور اوہو عقاب خوراک جہاں گورے شیئر بورڈر سے بوقت کر کھبے ملا کہو جھوم کے باہر مقبوضہ پھاہے پر لارا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_277, best cost 248.672 + 5836.2 = 6084.87 over 1131 frames.
+20030005_277 ذیل رپورٹ تجویز میں شوہر معید عرف موچی گھروں مرلی ٹریڈ کھاؤ اگلی مغفور کی بس چل کی درست 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_278, best cost 167.798 + 4420.11 = 4587.91 over 798 frames.
+20030005_278 مرثیے ملحق اور شاخ اگر ساخت میٹھی فورم پرسش غزل کرنے میں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_279, best cost 185.143 + 5204.62 = 5389.76 over 958 frames.
+20030005_279 اہم چون گریڈ کر کر سینگ اعظم فیڈرل گھیا اور بڑا آپ کرنے پھسل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_280, best cost 221.385 + 5865.15 = 6086.53 over 1086 frames.
+20030005_280 چینی شخصیت ملت دل کی منڈیوں میں کنگھی ٹھیک پور اوس سوری انگور اور حامل کی بات کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_281, best cost 215.608 + 6425.09 = 6640.7 over 1195 frames.
+20030005_281 براوو اوڑھ شیفرڈ سے ٹریلر گھر شگون ابرار روضے شعائر کے باب اکھنڈ چوکھٹ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_282, best cost 187.529 + 5353.71 = 5541.24 over 996 frames.
+20030005_282 سوری رونگٹے تنوع کوڑھ سیل لکھی غزلیں تاخیر سے شہر بھر میں بوکھلاہٹ کے ساتھ چھپوائیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_283, best cost 223.931 + 6979.49 = 7203.42 over 1323 frames.
+20030005_283 ڈبو و غور و سوسو کوسوں واقعہ پور شیئر سیکھی قل گراؤنڈ کوڈ چوتھے روز چلا گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_284, best cost 243.864 + 6259.64 = 6503.51 over 1195 frames.
+20030005_284 بلند کھولو بڑ موقعوں گوہ آؤ ہول بڑھیا میں گولڈ کڑوے صرف پہلے نشیب میں چلے جاؤ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_285, best cost 182.052 + 4331.04 = 4513.09 over 830 frames.
+20030005_285 بحث ماضی گاؤں مدفن ہیں گستاخی بدروح روحیں گولڈ چوہدری ابواب سوا خلل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_286, best cost 213.761 + 6013.41 = 6227.17 over 1150 frames.
+20030005_286 اسلحہ سیریلز گڑبڑ ہو خسارے میں سے بچنے ٹریلر شیشے گا بو فروغ سوویں بڑھائے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_287, best cost 191.205 + 5439.36 = 5630.56 over 964 frames.
+20030005_287 ڈیل کے عرصے میں ادھم مچانے اور محرر سے مکھن کی مرلہ کر بشیر ویسے ہی رہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_288, best cost 267.249 + 7444.59 = 7711.84 over 1438 frames.
+20030005_288 بلور ٹھیس ارشد اوج مل قفس سویرے چوہوں آئے ہولوں مخبری ذہن کی پیروی بلڈ سوم مل کر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_289, best cost 212.63 + 7347.41 = 7560.04 over 1304 frames.
+20030005_289 گوہ فورس لیا کو خورشید کہو کرو بینات کھاؤ اور مسز زندگی جنم گیر کی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_290, best cost 185.972 + 4170.75 = 4356.72 over 798 frames.
+20030005_290 مطہرہ گلوبل ہے کو جھولوں اور دیکھا قیوم گویا خوشی ڈیڑھ یا لوگوں موہوم ڈیڈ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_291, best cost 297.561 + 6803.92 = 7101.48 over 1252 frames.
+20030005_291 اس لاؤ مثال کو واہلہ پنچھی ورلڈ گوہ گڑھ کرشنگ کر ڈراپ پھول وہاب شروع قیود اور اور کر وائرل بن چائلڈ بھی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_292, best cost 308.002 + 7494.77 = 7802.77 over 1432 frames.
+20030005_292 جوہر اینگرو ڈچ چولی دل اقربا اور آ گوند فروغ ورک مڈل آ کھڑا کریں اور و ورک تیز گوشوں حقوق شروع کھر ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_293, best cost 217.485 + 6789.14 = 7006.63 over 1227 frames.
+20030005_293 گروتھ ضلع واقعے جنگ ریڈ پر کر گڑبڑ حنیف ٹھہرنے جیب پہنچ لڑکا کیا گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_294, best cost 325.494 + 9888.62 = 10214.1 over 1880 frames.
+20030005_294 شیرے کوڈ پیسنے ٹھوڑی دیر باگ ویڈیو آ چھڑا کر ویمن چڑیا چیل کو شیڈ سمیت بروری ٹھیک تعارف جوش گروہ لائی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_295, best cost 235.409 + 6521.83 = 6757.24 over 1188 frames.
+20030005_295 بلکہ نہ خبر ریڈ جلو مشعر اوس میں ڈیرے ڈور بخشش میں گیَر پور عہدے بڑا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_296, best cost 332.677 + 8719.44 = 9052.12 over 1713 frames.
+20030005_296 شوز سے موقع شوروم مگ گروہوں اڑنے چودھری کھا کر کب بھرے اوڑھ دل فارم گھڑی پلنٹی کی ڈور پر نیورو نشے بجھوا کرائے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_297, best cost 244.298 + 6315.12 = 6559.41 over 1163 frames.
+20030005_297 میری اینڈ گھیا کے ثمر بھی نہایت اور کیڑے بگ جہانگیر یہ ہوں کلیئر کی دونوں چائلڈ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_298, best cost 253.437 + 6161.7 = 6415.13 over 1150 frames.
+20030005_298 کلیرنس چھڑنے مہذب اچھی گوبر گڑبڑ میں مہاجر بنا عدلیہ اوڑھا اور جل پور یونہی کر چار بچھڑ گا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_299, best cost 188.018 + 4793.79 = 4981.81 over 862 frames.
+20030005_299 رزلٹ بھرٹ صلح روؤں کر پورے پور نے بچھڑے برعکس شوہر آنکھ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_300, best cost 217.737 + 6173.71 = 6391.45 over 1156 frames.
+20030005_300 اور بھنگڑا ڈام میں کلیئر کم سنور کر کسے کر اور اور شروع غصہ آقا کھر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_301, best cost 232.417 + 6382.52 = 6614.94 over 1188 frames.
+20030005_301 شعائر اور سومرو ڈیوڈ بھینٹ کے ہی محسن پور کچہری میں پر سزائیں میرٹ کا اور بہائیں ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_302, best cost 195.043 + 5961.33 = 6156.37 over 1112 frames.
+20030005_302 صاحب کموڈور خوشہ خوشہ عمر کھونے جوہری موئسچرائزنگ منشور حصوں مشتعل ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_303, best cost 209.455 + 5412.77 = 5622.23 over 1022 frames.
+20030005_303 پالمر نقشبندی کوچہ مہندی پانچوں ہو تخم بہاؤ مغز خوف تعفن ٹریجڈی بہو جوائنٹ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_304, best cost 204.523 + 6113.09 = 6317.62 over 1188 frames.
+20030005_304 انور پروگرام پہل شل آ چھوڑ درد ڈیلی غائب جواب دیا اور جا کا اب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_305, best cost 200.032 + 5593.5 = 5793.53 over 1041 frames.
+20030005_305 کیوں گوہر شعوری کرنے اوڑھ ترچھا ہینگر چوہوں میں پھیل کر لاریب شوروم کی طرف چلا گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_306, best cost 177.128 + 4059.86 = 4236.99 over 753 frames.
+20030005_306 کوڈ کرشنگ میں برسوں انگور یہ سن ڈیڈ گوگل اوہو پتھریاں گھیرے ہوے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_307, best cost 170.52 + 5072.82 = 5243.34 over 952 frames.
+20030005_307 میں والڈ جھاڑیوں افق میں جعلی روؤں کموڈور پور کبڈی مٹھائیاں ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_308, best cost 212.086 + 4941.98 = 5154.07 over 894 frames.
+20030005_308 بارش عمر گورے کہا اختر فیصد سیکھ بم قدرے مرغوں ممنوع رسول ٹریولرز بھی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_309, best cost 243.051 + 5392.29 = 5635.34 over 1035 frames.
+20030005_309 نوزل ٹھیک ذخائر کے بعد بستر پر شور اخوان کو کیا عاشور جھیل چئرمین ڈار ٹشو اور گو چھڑ ضلع 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_310, best cost 252.968 + 7308.56 = 7561.53 over 1361 frames.
+20030005_310 گھروں پہنچا کھل اور کر میں ایم یوزر اوہو دو اپنی فٹ سلور پرکھا اور پڑھے یا پڑا والڈ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_311, best cost 299.143 + 8718.33 = 9017.47 over 1668 frames.
+20030005_311 شعاع کر چولی کہو آقا گھاؤ اور نے بیڈ سے پہلے ڈیرے نشے مولا محرر کے ڈراؤنی گروہوں ٹریڈ ڈینٹل ہیئت 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_312, best cost 193.441 + 4837 = 5030.44 over 894 frames.
+20030005_312 بچار کے باہر ٹیوب گورے ٹھہرو کر شعرا شوق ریڈ بلور کر کی رہے گا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_313, best cost 204.231 + 5549.76 = 5753.99 over 1016 frames.
+20030005_313 وارڈ چئر نقرس اس چوہوں ٹھہرنے آڑ پر اور بوجوہ اینٹھن مقابلوں گڈ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_314, best cost 189.696 + 5999.12 = 6188.82 over 1169 frames.
+20030005_314 بڑی فٹ ویلز کیریئر چوہدری کو اور کی اوکاڑوی بھنڈی پور یاب تناول کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_315, best cost 223.683 + 7393.94 = 7617.62 over 1316 frames.
+20030005_315 اضلاع آفرین میرے کرنے والے عہدہ سنگھ چوڑا چوڑا عرصے میں گاؤن پہنے آپ شہر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_316, best cost 337.66 + 9783.32 = 10121 over 1841 frames.
+20030005_316 چولہے ڈھب گا اور بینچ بلا غوغا کر صاف عشرہ میں قائم ریڑھ چھوڑ اولڈ نرگس گڈ سینٹر ٹریڈ بو کو آگے یاب ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_317, best cost 229.236 + 6698.47 = 6927.71 over 1227 frames.
+20030005_317 <oov> میں سکول منشیات میں ابواب اور اوہو رو <oov> گھنیری اور غوغا علی چونگی صفیں دیکھیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_318, best cost 236.412 + 6957.12 = 7193.53 over 1265 frames.
+20030005_318 پہل وزارت قرار میں کر چہرے کی ڈیرے پر لیاقت چراغ بحثیں شعائر کے بیچوں بیچ مکھیاں آپ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_319, best cost 288.049 + 7261.76 = 7549.81 over 1304 frames.
+20030005_319 مہندی گڑگڑا خون خوشہ ڈور دل شیلڈ کر گہرے چینی چئر اب کے آ اور اصحاب کو شواہد آؤ ہوش میں رکھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_320, best cost 232.498 + 7309.46 = 7541.96 over 1361 frames.
+20030005_320 پگڑی و ڈگر گریڈ گولوں دھول برڈ علی اجر کر کوڑھ ہو میئر کی بگھی نگاور کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_321, best cost 215.14 + 5618.96 = 5834.1 over 1118 frames.
+20030005_321 خوان لائن ٹریڈنگ ملوں کو چیونگم صلح دوشیزہ کوسوں شیرے پونے میں گولڈ مگر کا رہی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_322, best cost 307.489 + 7339.57 = 7647.06 over 1432 frames.
+20030005_322 فروغ لوں میڈیا ڈیوڈ سَیل بھرٹ خون دھوپ رہا کھوئے عید بڑ جون بڑھا اگر عہدے پلڑا اور خون بھری پگڑیاں سامنے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_323, best cost 233.253 + 6163.92 = 6397.17 over 1156 frames.
+20030005_323 چیل شون نقرس علی ریلیز اول میں کا محور جوائنٹ تھیری ٹھہرنے نقرس کے جگہ ارب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_324, best cost 255.626 + 7189.48 = 7445.11 over 1400 frames.
+20030005_324 بری تھیم آؤ فعل بیسن چئر کھڑا اوڈ بو <oov> لارا دوروں گروہوں نے تھے مقابلے کا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_325, best cost 177.213 + 4726.21 = 4903.42 over 913 frames.
+20030005_325 جہل اور چھائیاں ہونے کی وجہ سے رضا لتھڑے ہوے سبجیکٹ میں کو کو قدم رہیں واقعہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_326, best cost 219.043 + 7031.59 = 7250.63 over 1361 frames.
+20030005_326 چڑوں کئی میمن خلل کو کھلے کے پرسش ٹھل باگ بلوں <oov> اوکھا خون براں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_327, best cost 288.372 + 6816.61 = 7104.98 over 1329 frames.
+20030005_327 بھورا ٹھل شہاب بھی ریڈ پور صابر مٹھن اور پر ہموار اپنی رزلٹ علی کر مینگل باگ گاؤ اشد گوجر خوگر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_328, best cost 290.081 + 7115.26 = 7405.34 over 1329 frames.
+20030005_328 اور جل عہدے کو لغزش کفار قیم مخل کا اور بو ہجوم بڑی چل بلڈ بہاؤ اگلا اور بروز جھوم اور یکساں ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_329, best cost 251.465 + 5688.14 = 5939.61 over 1035 frames.
+20030005_329 برعظیم شعلوں و عجز چل کھویا انگوٹھا گذریں مشعر ٹھل سہارے ٹریلر دوسروں ٹریلر سبزی بنگلہ کر ٹھٹھر گا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_330, best cost 286.452 + 6688.08 = 6974.53 over 1316 frames.
+20030005_330 وومن گھس مرچ الجھ ریڈ ڈونگا چنگل ڈھول ٹھل ہے بدل ڈول جھولے اور منگل شہرہ علوی جلو اچھل ملا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_331, best cost 187.317 + 5261.67 = 5448.99 over 1009 frames.
+20030005_331 کی مینڈھا اور مٹھائیاں مانگنے گھرے پڑتا مان چل براڈ بچھانے مل گوشہ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_332, best cost 227.622 + 4853.28 = 5080.9 over 907 frames.
+20030005_332 مونا موڈم گھر کر میں کے کو ہجوم قل بھرے اسود دوسرا علی فروش اور شیئرنگ ریڈ آ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_333, best cost 202.333 + 5773.87 = 5976.2 over 1086 frames.
+20030005_333 دوم یہ کیجیے گوشت قہوے ٹھیلے فین کے فشنگ پہلے رپورٹ کو بیٹھ کرو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_334, best cost 297.064 + 7466.82 = 7763.88 over 1444 frames.
+20030005_334 کچرا اوڑھ بورڈ ٹریڈ پڑ گارلینڈ فورس میں جھگڑا گھونٹ کر خول بیس گارلینڈ بلڈ دل اٹھیں کہا چوڑا اوہو شون 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_335, best cost 206.078 + 4810.4 = 5016.47 over 926 frames.
+20030005_335 داخل مٹھن اولڈ چیر کوٹھری گھرے شیل لگا ہیڈ کو گول کوڈ عذاب سامنے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_336, best cost 196.198 + 4377.13 = 4573.33 over 792 frames.
+20030005_336 فاجر داؤ عمر کسے اور خوراک کوڑھ پرنٹ بڑ کی بہائیں گڈ شرکت عدلیہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_337, best cost 299.023 + 7926.64 = 8225.66 over 1553 frames.
+20030005_337 براوو اٹھی دہلوی شیوخ گورے مضروب بھی شہر اینڈ پہاڑ میں بھجن شالا کروائیں اوڑھا ریڈ باؤلر سے صلح رساؤ کو پوچھیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_338, best cost 192.532 + 6567.46 = 6759.99 over 1227 frames.
+20030005_338 دوجے وبائی ورلڈ گھی کوڑھ لیا کی میں چھوئیں ٹریڈ رزلٹ میں ترویج 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_339, best cost 279.76 + 7738.05 = 8017.81 over 1432 frames.
+20030005_339 <oov> جولانی گڑھ قیصر فعل کے کھر شے گوہ روؤں باؤلر تعوذ سو علم کا و عفو ہو خلاف کرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_340, best cost 270.813 + 8792.23 = 9063.04 over 1662 frames.
+20030005_340 ساؤتھ ہر اور چائلڈ اہم راقم اہل کر بلا پور بَلّا آڑھا پورے گڑبڑ ٹراؤزر گوہ پوچھو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_341, best cost 431.469 + 11786.6 = 12218 over 2180 frames.
+20030005_341 نشے اور علم میں ووڈ کر چاچو ڈیڈ کا گڈا کھبے گونج اور معا اصغر بھینٹ چاقو اور اوڑھا خول شوہر چاق کہف طیب درجے بورڈ ہے شوہر سَیل ویمپ میرے آدھ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_342, best cost 258.737 + 6825.49 = 7084.23 over 1252 frames.
+20030005_342 بورڈ سنٹر اول ورلڈکپ شیلڈ برڈ فلو فلڈ اوپر لے شہر معاشرے ارشد تامل کر راہبر والا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_343, best cost 248.733 + 6087.12 = 6335.85 over 1137 frames.
+20030005_343 چیل اور نشر ہر چئر ریڈ چلیں گولوں شیلڈ کر میں اٹھی لو افورڈ اور رکھاؤ عرف پیروی گھرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_344, best cost 332.83 + 9424.38 = 9757.21 over 1726 frames.
+20030005_344 لیبر گلشن یا مڈل ڈور پہلووں ریڈ مہلت میرے عشرے کے سڑک پرنٹ کو زیڈ پر لینڈ نے اجڑی اوس جوے یوزر آئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_345, best cost 359.83 + 8850.89 = 9210.72 over 1732 frames.
+20030005_345 بڑی ڈام کوڈ ڈار شو پریشر سڑک سرکا کوڈ قل کی آواز شہر پور خون آؤ گگن تلے ریڈ بہ حروں ہوئے نوازوں میں کہلوا گریڈ بھرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_346, best cost 223.971 + 6464.29 = 6688.27 over 1195 frames.
+20030005_346 بلڈوزر سَیل کوڈ بلڈ پڑ کہا فورم خویش سہاگہ پھیریں کے باقر احسن میں اوور وولر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_347, best cost 250.893 + 6931.57 = 7182.46 over 1272 frames.
+20030005_347 شوہر سیو آف فرینڈ مرغ سورج کی شل فارغ کلیئر قسم یا آ سیو اور منجھی ہوئی زندگی بسر کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_348, best cost 249.368 + 7260.89 = 7510.26 over 1355 frames.
+20030005_348 شعلے ہوئی زلیخا سہیلی کی مندری کی خبر سے کوٹھی کوڈ بھروسہ گڈ میرے چوڑیاں باڑہ سَیل خاصی رقم میں خریدے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_349, best cost 346.181 + 9942.21 = 10288.4 over 1969 frames.
+20030005_349 برش گوگل قہوے اور پر کا دوم تو خارجہ پبلشنگ میں چھری دیں بڑ دیر چل خلیے مل شوگر میں کے ٹھل روؤں سَیل جڑی کہانی چھڑ جائے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_350, best cost 167.96 + 4495.73 = 4663.69 over 817 frames.
+20030005_350 پہلے باوجود بونس گڑبڑ نیٹو ڈھانپ میں گریڈ پور اقرار ہوش کرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_351, best cost 246.43 + 6665.54 = 6911.97 over 1246 frames.
+20030005_351 فارورڈ ضعیف شل ریڈ بلبل گو آسمان ڈیڈ مل باؤنڈری یا ایسڈ سیڈ ڈالنے کی کوشش کرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_352, best cost 243.439 + 7053 = 7296.44 over 1291 frames.
+20030005_352 بچے گود آکر پور فوڈ ٹھگ سے بچاؤ گریڈ ٹوہ اوورہیڈ آپ پلگ اگلا قرار پیچوٹری 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_353, best cost 330.876 + 8282.75 = 8613.63 over 1515 frames.
+20030005_353 ابرار آ کالج کے انٹر شل شے تھی شیرے بڑے میں بارے کھل ٹیکنالوجیز کے اصلاحات کلیئر ٹرین سے باب کے کھاؤ اور میں بڑا رہے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_354, best cost 144.451 + 3838.11 = 3982.56 over 702 frames.
+20030005_354 آٹھ رزلٹ ڈیویلپمنٹ کنونشن کے کمپیرنگ انٹر ٹریژری چلائیں لکھے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_355, best cost 470.475 + 11667.4 = 12137.9 over 2148 frames.
+20030005_355 شبہ رزلٹ ازالہ اور و فلک بیورو آرگنائزنگ ٹریڈ لیجنڈری صدر چور ریڈ اوہام روے میئر گذاروں اور غور و کوڑھ ہوزری و کھو بقایا ٹھڈے پرکھا اوہو میلہ ٹشو مظہر زیادہ عذاب آ بیڈ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_356, best cost 194.441 + 6055.98 = 6250.42 over 1163 frames.
+20030005_356 پھولدار جوڑے مہر آئیے بارے آؤ خُو ابصار بگڑ کی جاوید ٹھہراؤ ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_357, best cost 174.316 + 4223.95 = 4398.26 over 792 frames.
+20030005_357 مرض میں اور شعار کہا گھاس گا خوض صاحب کریش بویا کر کا ہر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_358, best cost 88.0287 + 3634.38 = 3722.41 over 689 frames.
+20030005_358 مشورہ زبوں جوس میں ڈبو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_359, best cost 121.563 + 3922.74 = 4044.3 over 728 frames.
+20030005_359 کیو سوم کھلنڈرا اعظم گورے ٹھوڑی رکھتا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_360, best cost 171.601 + 4708.8 = 4880.4 over 843 frames.
+20030005_360 ضلع شو فارم پیشگی مداخلت کے براڈ خوف روضہ اور نیٹو جا رہا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_361, best cost 151.86 + 4128.18 = 4280.04 over 772 frames.
+20030005_361 پر شعاع چھوئے ڈیڈ بیٹھی پر ہول دینے ہر رپورٹ اڈے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_362, best cost 142.209 + 3712.42 = 3854.63 over 696 frames.
+20030005_362 گھور بیلٹ کسوں اڑا بڑھا ہیڈ ٹھیک سزا ڈی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_363, best cost 100.497 + 2685.35 = 2785.85 over 504 frames.
+20030005_363 محرر بینگن خرید گڑبڑ کر جوں جل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_364, best cost 117.751 + 2839.63 = 2957.39 over 529 frames.
+20030005_364 ہنسیں گائیں پور شہر آئے کروڑ میں کا لیبر ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_365, best cost 175.775 + 5319.8 = 5495.58 over 1035 frames.
+20030005_365 خول زوار سیل شگون گاڑھا چراغ جواب جوار کھل کھایا گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_366, best cost 127.849 + 2894.89 = 3022.74 over 561 frames.
+20030005_366 شون ریڈ کے صاف ٹریڈ بس صرف مین سے لایا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_367, best cost 136.882 + 3314.18 = 3451.07 over 632 frames.
+20030005_367 کثرت پہلی سویٹر دعا گڑبڑ میرٹ گہرے باب بقایا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_368, best cost 89.5433 + 2327.4 = 2416.94 over 427 frames.
+20030005_368 نقرس فیاض ٹریڈ گہرے بارے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_369, best cost 81.2419 + 3585.58 = 3666.83 over 670 frames.
+20030005_369 چیل نشر گڑبڑ کو برابر ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_370, best cost 103.189 + 3107.58 = 3210.77 over 548 frames.
+20030005_370 سیکھو قلم محقق تسلسل شو کر کا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_371, best cost 171.474 + 4470.68 = 4642.16 over 836 frames.
+20030005_371 دھیرے جھٹکے بھرٹ جوہر جوکھوں ہڈ آکر عقاب بیگ آقا کو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_372, best cost 90.4576 + 2700.17 = 2790.63 over 491 frames.
+20030005_372 بڑی بحث اوڈ یا کے بعد فیصلہ ہوا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_373, best cost 118.787 + 4278.63 = 4397.42 over 836 frames.
+20030005_373 ڈاہا آفس کہا ترویج نوحہ کے اچیومنٹ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_374, best cost 118.252 + 3337.71 = 3455.96 over 657 frames.
+20030005_374 جل ٹریژری دکھ خواہ ارشاد مظہر جڑی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_375, best cost 110.561 + 3983.78 = 4094.34 over 708 frames.
+20030005_375 وزیرداخلہ قیصر چنگیزی اسمبلی اجلاس دماغ سروں ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_376, best cost 188.668 + 5103.36 = 5292.03 over 1016 frames.
+20030005_376 جسم در سے براوو انگوٹھیاں محلوں حلف رو بہو ابھرے انداز رہا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_377, best cost 142.978 + 3066.16 = 3209.14 over 593 frames.
+20030005_377 چلے میں شیڈ گھیا شیلڈ مشین ٹریڈ کھاؤ میں مصروف کھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_378, best cost 133.095 + 4046.16 = 4179.26 over 721 frames.
+20030005_378 گرج اولڈ کا اور صاف بہن گریڈ سیل خرچ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_379, best cost 119.069 + 2339.33 = 2458.4 over 433 frames.
+20030005_379 جلسوں جھٹکے کرا پھاہے کسوں والڈ کا گا کا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_380, best cost 194.667 + 5484.86 = 5679.53 over 1028 frames.
+20030005_380 کوڑھ اٹھے اداکاراؤں پر مبنی فارسی انڈسٹری شریف کوڈ کمزور فوریکس ٹریڈ احسن ہوئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_381, best cost 166.845 + 4498.32 = 4665.17 over 868 frames.
+20030005_381 شعری براڈ اور کا با خسارے دل میں جلد زیر ہونے کا خدشہ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_382, best cost 196.033 + 5251.58 = 5447.61 over 1022 frames.
+20030005_382 آؤ میں چھوٹے ریسٹورنٹ کے مشروبات پٹھان ہیڈ صلح اعزہ ارب اب سیڈ کھایا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_383, best cost 132.856 + 3688.89 = 3821.75 over 683 frames.
+20030005_383 ٹوئنٹی ٹوئنٹی ٹورنامنٹ کی وجہ سے اگلا فارم چھوئے مرتبہ رہ گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_384, best cost 204.981 + 5763.57 = 5968.55 over 1086 frames.
+20030005_384 اور شش غزلوں بارش کرشنگ گفٹ کس بہو ہجے ٹریڈ کر یہ ماحول کے پاس گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_385, best cost 210.282 + 4953.63 = 5163.91 over 939 frames.
+20030005_385 موسم گرما لینڈ قندیل کے عشرہ میں قورمہ بجلی کی روشنی اور سَیل گھڑیوں اور گھروں کو روشن رکھو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_386, best cost 169.164 + 4952.86 = 5122.03 over 920 frames.
+20030005_386 لیفٹننٹ سوال جعفری جھنجھلاہٹ سے مغلوب ہوا تو گڑبڑ شیل کا نعوذ لیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_387, best cost 196.399 + 5292.22 = 5488.62 over 1099 frames.
+20030005_387 شش گڑگڑا بلڈ برڈ سگریٹ رہ راشد کھلے شہری فرینڈلی گریڈ کا پلیئر ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_388, best cost 239.323 + 6403.8 = 6643.12 over 1220 frames.
+20030005_388 کہا کہ درمیان قاضی سچل سومرو روؤں کی پرائیویسی گجر سگریٹ ڈیڈ کے تو محقق کر ٹریلر والڈ ڈائریکٹر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_389, best cost 286.683 + 7834.11 = 8120.8 over 1489 frames.
+20030005_389 مچھیروں کے قضہ گروہوں میرٹ پیشقدمی ٹریڈ کر ہوئے عزت ٹریڈ کاروائیوں کنٹرول کھڑا فول غزل کرے میں ٹھڈے مڈھ لیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_390, best cost 204.932 + 5995.14 = 6200.08 over 1118 frames.
+20030005_390 جوڑ جوڑا کرنے والے باقی پیروکاروں گڈ سمجھائے ٹریڈ قیم بے مائنڈڈ خوشحالی تلاش کرنا چھوڑ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_391, best cost 386.15 + 9929.77 = 10315.9 over 1867 frames.
+20030005_391 بولوں آ قلزم اور میں کہا کسے وڈ سوسائٹی تک میں مشروط حق لینے میل شور اوہو ہوئے ہے عمر کر گول اور اوہو کی بولنگ کیلئے پر در کھو متوجہ اگر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_392, best cost 140.574 + 3422.35 = 3562.92 over 632 frames.
+20030005_392 علم چمچ سحر گارلینڈ اوورہیڈ شل جلد سائیڈ پراٹھے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_393, best cost 221.153 + 5559.83 = 5780.98 over 1035 frames.
+20030005_393 پنج سالہ بجٹ ڈھل بچیوں کفار دے ٹریجڈی دراڑیں شیڈ عرس ماڈل کونسلر سیلزمین جوق کرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_394, best cost 127.823 + 4209.89 = 4337.71 over 728 frames.
+20030005_394 آرٹلری کر شل گا اور اپنے ترجیحات بازیاب کرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_395, best cost 245.502 + 6232.01 = 6477.52 over 1150 frames.
+20030005_395 سیل سرزمین ریڈ بوریت کئے مشقت گڑھ کرے باب بَلّا اور خیل بینظیر بھٹو ثمر دور کھبے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_396, best cost 264.128 + 7041.41 = 7305.53 over 1252 frames.
+20030005_396 گوہ ٹریڈ کوآرڈینیٹر میچ اور ابواب قاری ٹوئنٹی رو افورڈ میں بہاؤ اٹھے معاصر کفر یہی عرصہ لیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_397, best cost 195.158 + 6209.33 = 6404.49 over 1144 frames.
+20030005_397 پڑھائی خاموش یہ تارڑ پور کو ہو کوڑھ پنجگانہ گاؤ باشعور محسن سیکھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_398, best cost 151.838 + 4652.76 = 4804.59 over 862 frames.
+20030005_398 مدرسوں میں ترمذی شریف اور مہمل اور جوہر پڑا ہڈ جاتی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_399, best cost 84.4708 + 2600.69 = 2685.16 over 484 frames.
+20030005_399 اور بہن ووڈ سے فرینڈ لے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_400, best cost 152.36 + 3433.33 = 3585.69 over 644 frames.
+20030005_400 جوائنٹ ڈیویلپر مبشر فیوض بھی میں خاموشی سے اپنے فرائض السی فائر گڑگڑا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_401, best cost 195.269 + 4953.18 = 5148.45 over 920 frames.
+20030005_401 بہن ٹیوشن ریڈ بڑے ٹوہ قہوے ہیڈ جوہر خول رزلٹ فروش درخور ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_402, best cost 124.705 + 3805.02 = 3929.73 over 683 frames.
+20030005_402 ویلیو گڑیا بادشاہ بیڈروم کھو گڑیا کی جاتی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_403, best cost 99.5121 + 2596.23 = 2695.74 over 497 frames.
+20030005_403 گلشن حصے بچے ریڈ شل ہوئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_404, best cost 142.438 + 4060.07 = 4202.51 over 753 frames.
+20030005_404 گوہ ترشول اول گریڈ دوبارہ اتفاق کر ٹریڈ لڑھک 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_405, best cost 231.033 + 4835.24 = 5066.28 over 913 frames.
+20030005_405 برسنے مرض سیل گھور گھٹا اچھائی کے ایک علم میں کے لیے در کا تم اٹھاؤ غلیل داؤ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_406, best cost 112.714 + 2715.53 = 2828.24 over 497 frames.
+20030005_406 جرگہ چاہے تو مجرم کو عدالت کی شیڈو میں پیش ڈیڈ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_407, best cost 202.017 + 4929.16 = 5131.17 over 907 frames.
+20030005_407 بڑ نشر چئر میلہ بوئے ٹھیلے مجرد کو کہا ریوڑ جسم مترادف اور اچک ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_408, best cost 170.065 + 5463.13 = 5633.19 over 1041 frames.
+20030005_408 شہید کر چل بوبی پنچولی اور شرحوں میں گریڈ پہنچا جونیئر گوہر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_409, best cost 263.767 + 7034.39 = 7298.16 over 1329 frames.
+20030005_409 کوچوں حضرات گریجویشن گھرے مونگ دوم مہلت غور و سوویں امن فروغ غوروخوض زنگ ہو کر شون شیلٹر کرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_410, best cost 250.438 + 5881.55 = 6131.99 over 1156 frames.
+20030005_410 بل والرس لینڈ سبزواری بے اقربا اور اور بیلٹ پوجا مردوں کی میٹھی خوشخبری پڑ یہ شیڈ ڈیڈ نے گریڈ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_411, best cost 249.742 + 6619.05 = 6868.8 over 1233 frames.
+20030005_411 سروں ماچس یہ مارشل گروں موذی شہابیے نوحے دیگر بیوروکریٹس خوف ہو مشن شہروں آ گوہ میں ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_412, best cost 171.651 + 4472.92 = 4644.57 over 843 frames.
+20030005_412 برڈ فلو سے متاثرہ گھریلو مرغا خون مڑ بھی ساغر مقوی لہریں اختر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_413, best cost 231.846 + 6130.44 = 6362.29 over 1163 frames.
+20030005_413 حریفوں جیسے ممالک عمل چوہدری لو اور دو حقوق تقسیم اعزہ شرحوں کو غیور ہو سخت آکر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_414, best cost 218.857 + 5685.27 = 5904.12 over 1080 frames.
+20030005_414 گہماگہمی کے موقعوں پر حروں تصویر چاہیے تماشائیوں اللہ عشرے دل کھود ٹرانسفر لینا شاعر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_415, best cost 324.756 + 7205.45 = 7530.21 over 1374 frames.
+20030005_415 حسیں نوحہ شبلی یہ موصول گروں مرلی شیڈ بھرٹ ریلیف بورڈ دوسرا شش آ لاکھ چیڑھ بوس و تو آ میل کو ہو عمریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_416, best cost 245.329 + 7065.61 = 7310.94 over 1329 frames.
+20030005_416 اور فراہم ذریعے چیر ڈھیلا تلخ چوہدری ساجد ٹرین کے اب میں فرمایا محسن شروع جلو آسرا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_417, best cost 233.449 + 5563.98 = 5797.43 over 1041 frames.
+20030005_417 مشن لوئر اہل کو اقربا اوہام ہندسوں واجب گروہوں بڑا اوہو شہر چیر آکر بیہوش اوور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_418, best cost 168.982 + 4286.95 = 4455.93 over 804 frames.
+20030005_418 شاہ سے بااللہ روزنامہ جھم کھیر پہلی ترجیح ہیڈ جو ہوشیاری شمار کے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_419, best cost 202.648 + 4825.42 = 5028.07 over 900 frames.
+20030005_419 عمریں ٹریلر گارلینڈ اوڑھ شوگر ٹریڈ پڑ درہم دھڑام دب اشفاق سے اہم ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_420, best cost 147.763 + 4013.56 = 4161.32 over 766 frames.
+20030005_420 کی بھرٹ اور عہدہ بردار فاریسٹ عشرہ اور کھاؤ <oov> ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_421, best cost 184.623 + 4598.45 = 4783.08 over 862 frames.
+20030005_421 رزلٹ شعرا اور یا اوہو شیلٹر اوہو ٹری ٹریڈ کر شون درجوں والی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_422, best cost 161.659 + 4299.63 = 4461.29 over 804 frames.
+20030005_422 ہو ہول ٹریڈ اوور چیر باب بانسری میں تبدیلی صحتمند شعور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_423, best cost 206.205 + 5114.27 = 5320.47 over 984 frames.
+20030005_423 آرٹلری یہ بہن ہچکچاہٹ جعل جون خازن قیم دوا میں شیلٹر رپورٹ میں کر پوچھیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_424, best cost 159.7 + 4488.65 = 4648.35 over 830 frames.
+20030005_424 پہلے پیروی سرفراز دہلوی اوور لغو دلوں منگل ظہیر رکھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_425, best cost 293.709 + 8217.11 = 8510.82 over 1617 frames.
+20030005_425 مثلاً آٹھ لوں پر آبرو کھاؤ کا و گوشوں میں اوہو ہی جوہی واقعے موومنٹ کا بھڑاس شعاع ہو گول آپ کا اور ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_426, best cost 199.309 + 5991.04 = 6190.35 over 1048 frames.
+20030005_426 عشرے شیلٹر جن شیوخ جڑ دیکھا قل برسوں قوام مشق علم جلو جا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_427, best cost 162.12 + 6314.97 = 6477.09 over 1124 frames.
+20030005_427 مگر سیل کو عشرے برڈ صلح جگر خرچ اہلیہ پریوں ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_428, best cost 254.635 + 5963.01 = 6217.65 over 1092 frames.
+20030005_428 بلڈ ریڈ لینڈ اب کرم کو اصل دن ایئر سوشل سروے ایڈونچر چیر نوازوں اور قدرے اصغر ڈراپ بھی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_429, best cost 168.553 + 5315.91 = 5484.46 over 977 frames.
+20030005_429 فرینڈ جلوس کہا اینگرو اولڈ میں ٹھوس نواب ریڈ اداروں اور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_430, best cost 373.122 + 11734.2 = 12107.4 over 2206 frames.
+20030005_430 ڈھول آف تعالی ہلاک ٹریڈ کر شوہر شیرے بوجھ گورے اور مہینے باب بڑی کوششوں حفظ زیڈ کرے لاؤ کرتے ہوئے شاہ انہی افگن میں عزیزواقارب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_431, best cost 208.14 + 5598.88 = 5807.02 over 984 frames.
+20030005_431 جوش انوالومنٹ کے چاول اوجھل کوڑھ تہیں آقا اور آ ٹریڈ افراد خلاف ٹریڈ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_432, best cost 195.864 + 5431.53 = 5627.4 over 1003 frames.
+20030005_432 اور انجمن اب اقربا آف خیال جلدی شوگر ٹیڑھا اور اہلیہ پہنچ ہفتے منتظر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_433, best cost 211.45 + 5918.69 = 6130.14 over 1054 frames.
+20030005_433 بسا اوقات بیشتر اپنی ہمشیرہ اور لیا مہم دوسرا چیخ ریڈ دو فروغ گریڈ الجھے رہتے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_434, best cost 174.93 + 6146.5 = 6321.43 over 1105 frames.
+20030005_434 مراد غور پور ٹریڈ میں شیئرنگ کی رعشہ اور شب باقر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_435, best cost 274.834 + 8441.33 = 8716.16 over 1540 frames.
+20030005_435 امیج بگھار میں کلیئر کوڈ جبڑے شے بچھے کیلئے رضوان اپنے ایئر پیشروؤں کو <oov> کی کوٹھیوں اٹھے دولخت اور گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_436, best cost 201.62 + 6548.69 = 6750.31 over 1201 frames.
+20030005_436 عہدے بے مقروض قومی وزیر و ہزار بلڈ پریشر بیلٹ کر اگلا اور اوڑھ کر لیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_437, best cost 201.932 + 7840.63 = 8042.56 over 1406 frames.
+20030005_437 گا سوویں میں مہلت بیڑا گولڈ زیڈ باب دہلی ٹریڈ ہوش بلڈ اصغر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_438, best cost 155.195 + 3641.74 = 3796.93 over 676 frames.
+20030005_438 اور دل ٹرانسفر ڈرل عابد لینڈ سلائیڈنگ گینگ ہو ہوئے ہو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_439, best cost 201.847 + 5194.22 = 5396.06 over 977 frames.
+20030005_439 میجر خلیل یوروپیئن ٹریڈ ہوسٹس کی زلفوں قسم ڈالر کھول کر فرینڈ منڈھے کا اور اوپر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_440, best cost 247.111 + 5975.33 = 6222.44 over 1118 frames.
+20030005_440 ٹشو کاغذ سے چہرے اوڑھ کو اٹھنے مشین ہے چئر باب تلور ایکسیڈنٹ براوو سنٹر فاسٹ بیڈ اڈے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_441, best cost 137.893 + 3378.09 = 3515.99 over 632 frames.
+20030005_441 کا اور شہری زیب بھربھری چیزیں ریڈ سے راؤ کر ہو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_442, best cost 222.136 + 6161.26 = 6383.39 over 1137 frames.
+20030005_442 آرتھو پر ڈیپریشن ٹھہراؤ آ فرینڈ میڈیسن پر ریڈ بولوں شعاع میرے خوشگوار آپ تجربہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_443, best cost 193.486 + 5438.37 = 5631.85 over 1041 frames.
+20030005_443 عمل ایڈن بزدل کو اگر دل روپے بیوروکریٹس چیر اندھیروں میں چل ٹریلر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_444, best cost 291.492 + 10965.8 = 11257.3 over 2020 frames.
+20030005_444 کو میں آخرالزمان میں اواخر احوال شیرے شہر شیڈ چہرے گریڈ راگ سے زبردست فروغ گلیشئر سوئے پور عرصہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_445, best cost 221.976 + 5228.77 = 5450.75 over 945 frames.
+20030005_445 ڈول ایک سے تراشوں تعلق ریڑھی اپنے لکھو اللہ اور شہاب ٹھل رساؤ <oov> اگلا اور اپنی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_446, best cost 293.162 + 7460.93 = 7754.09 over 1483 frames.
+20030005_446 بروکلی شل کر بہت میئر رقص ملا کوڑھ کر عمل یورپی ایریا گوہر کھلے نشے انگشت اوڑھ شگون بلا اور گھیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_447, best cost 181.591 + 5448.58 = 5630.17 over 977 frames.
+20030005_447 پور با اور بھگوئیں گروپ رپورٹ لوڈ لیڈر سربراہ میں جوہر جو کرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_448, best cost 290.954 + 8473.33 = 8764.29 over 1585 frames.
+20030005_448 سوا گھاگرا تشیع چیڑھ میرا اوڑھ علاوہ سویرے سربراہ کی گا نقشہ بظاہر تخلیق شعر بہو اور عہدے ٹری 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_449, best cost 301.413 + 7693.47 = 7994.89 over 1419 frames.
+20030005_449 بہو جس سے رہا شو حصے اور کھو ہو کرواؤ ہول بہرحال چولی مینڈھا اور عبور شون جوہی بوجھ ہی اوڑھا ریڈ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_450, best cost 224.247 + 6257.42 = 6481.67 over 1150 frames.
+20030005_450 براوو اللہ مل باب بہی جوبلی پراٹھے شوہر کوڑھ عمریں علم امور یہ پھسل کی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_451, best cost 289.655 + 7612.09 = 7901.75 over 1438 frames.
+20030005_451 جلو عہدے گروہ آرٹلری کوچوں اور موقعے مہجور ٹوائلٹ کو عمل کرکے تصویر جیم رہ ڈھل کلیدی بڑھیا گورنر ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_452, best cost 238.015 + 5694.96 = 5932.97 over 1086 frames.
+20030005_452 بارش لاشیں اب آخری ظہیر اور جو آڑھا راشد چغتائی ویئرز شو اور اور سے نظم ہے کہ تصحیح کرائی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_453, best cost 167.238 + 4268.18 = 4435.42 over 779 frames.
+20030005_453 کھل ٹریڈ گلریز کھو عمل ٹریلر فروخت سوجھ جوہر آپ پور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_454, best cost 267.367 + 7131.47 = 7398.83 over 1348 frames.
+20030005_454 براوو خوفوں مشعر شیل شل بڑی بورڈ گچھوں آبدوزیں ایئر رویوں سوم خوفوں ہو آ سے لباس ضلع اور ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_455, best cost 362.49 + 8846.86 = 9209.35 over 1553 frames.
+20030005_455 نشئی منگل شہروں غور اور جگ مگ دوسری سیاسی اوڑھے ورچوئل جس سرور باب کر گرج بورڈ کہو آقا عرصہ اور آ کے سوواں پیشوا کا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_456, best cost 137.749 + 4412.84 = 4550.59 over 798 frames.
+20030005_456 میں ڈراپ بیڈ کروڑوں مجبور وہ خون شیڈ سیکھو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_457, best cost 230.994 + 6191.94 = 6422.93 over 1150 frames.
+20030005_457 خوار باب بہو گوہر شعائر بے اور سوم چئر کئی سالمیت گی شبہ کھاؤ مسئلہ دریافت کرو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_458, best cost 249.205 + 6773.98 = 7023.18 over 1291 frames.
+20030005_458 بلوچ کو ٹریڈ بہو آ قیوم کو آ ہے کھولے کی بو اہم علم عہدے صاحب وجود آ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_459, best cost 132.096 + 4473.78 = 4605.88 over 785 frames.
+20030005_459 کرو اور بیباک رفیق گریڈ اڑنے صنف و گوہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_460, best cost 208.087 + 6795.41 = 7003.49 over 1233 frames.
+20030005_460 ساڑھے چوبیس ہزار جوبلی چوہوں شعر بیوی ٹریلر یہ میوہ اور سمیت تبدیلی جا سکتی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_461, best cost 143.731 + 4573.01 = 4716.74 over 843 frames.
+20030005_461 بگاڑنے نشر الجھاؤ ہو وزیر باڑہ بڑا و آپ بَلّا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_462, best cost 278.237 + 6103.45 = 6381.69 over 1137 frames.
+20030005_462 سنئے پرسوز سومرو مہلت چاہیے ڈیوڈ خواہش اور راگ شعرا آن ہر نے اشعار کھل فلو شل کر باغ ہو آؤ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_463, best cost 119.688 + 3686.43 = 3806.12 over 657 frames.
+20030005_463 کوڑھ کا اور گوبر لاکھ جھجھک ہمیں پیش گاجر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_464, best cost 256.098 + 6637.83 = 6893.93 over 1272 frames.
+20030005_464 <oov> تلوں آڑھا آڑ صنف بم شیم ایئر کیڑے فیڈرل انٹر شہر ریڈ کہا رزلٹ سو یہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_465, best cost 147.218 + 4207.66 = 4354.88 over 772 frames.
+20030005_465 بڑا زوردار دھماکہ ہوا اور آرٹلری میں داؤ اگر ریجنل گہرا سوراخ پڑا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_466, best cost 181.453 + 5350.85 = 5532.3 over 1035 frames.
+20030005_466 ہمیں ہول بڑے گریڈ بوئنگ چوڑا میرے کا مفید زیر اوڑھا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_467, best cost 112.999 + 3226.2 = 3339.2 over 619 frames.
+20030005_467 میرا مرزا فاروق امجد ذیل گرل آ غور و 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_468, best cost 156.398 + 4741.79 = 4898.19 over 952 frames.
+20030005_468 سوسو اٹھی مختلف حادثے بڑے پرہجوم شل رکھیے مقوی پر انور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_469, best cost 233.862 + 4823.24 = 5057.1 over 894 frames.
+20030005_469 اصحاب گڑگڑا کھیر بَلّا قہوے ادھار افسوس گم مشن ٹھیک اگر گیسو رول میں گھر پھیر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_470, best cost 185.759 + 6189.39 = 6375.14 over 1163 frames.
+20030005_470 ذوق گوہ کو شاعر میئر مظہر کا اور آپ دھیمی ہوئے بلی ہوئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_471, best cost 248.775 + 7740.99 = 7989.76 over 1457 frames.
+20030005_471 جدول شوہر شعرا مرچوں اور اول جیولری شل فرینڈ باب کر گومگو خالد مصر دو جوہر ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_472, best cost 274.425 + 7603.84 = 7878.27 over 1438 frames.
+20030005_472 مترجم گوہ جہانگیر محسن مگ صلح برطرفی ٹھل اور شیلڈ ریڑھ گو میڈیا دفتر ہڈ کو خون کھل آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_473, best cost 259.636 + 7634.01 = 7893.65 over 1393 frames.
+20030005_473 گل جلسہ کلو شہرت سلسلے ہیں قیوم و ہے اور بقعہ چلیں رزلٹ کلومیٹر پر الجھ آخری جا سکتی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_474, best cost 174.881 + 5116.64 = 5291.52 over 952 frames.
+20030005_474 میں سرگرمیوں در امروہی فاروق خوان رم بو گچھوں مقصد کتھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_475, best cost 157.065 + 4401.94 = 4559 over 817 frames.
+20030005_475 پہلوان میں گرل ہو میں گھول پنجابی وزراء ہمیشہ واہلہ ڈاگ ڈیرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_476, best cost 222.836 + 7294.7 = 7517.54 over 1336 frames.
+20030005_476 رزلٹ فلسطینی نقشوں اوس شلجم گروہوں گلیشئیر چیڑھ خول میں منشور میجر ہو ریشوں بلی کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_477, best cost 180.358 + 5787.21 = 5967.56 over 1028 frames.
+20030005_477 مزدوروں کے مقابلے پر وہ بھڑ محرر منگوا کر اور اور افورڈ قبیلے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_478, best cost 309.19 + 8631.34 = 8940.53 over 1598 frames.
+20030005_478 فوراً موو خواری آؤ سبزیوں میں دوروں جلوسوں لغو مرچ لینے موو وارڈ گروہ معالجے کلیئر نواب فوم امن اور ریزرو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_479, best cost 160.964 + 4643.6 = 4804.57 over 843 frames.
+20030005_479 ڈیوڈ اور سوویں رسول میں اڑا محور جو آرزو حرفوں جانا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_480, best cost 152.212 + 3553.54 = 3705.75 over 676 frames.
+20030005_480 بچار مکعب یونہی گو شعلوں واقع باب کھڑا اور جستجو ہوئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_481, best cost 232.1 + 5813.99 = 6046.09 over 1086 frames.
+20030005_481 دکھیں معلوم بام مسز فروغ روحیں آ مشہور گود بے اپنے دو اور لکھیں شور ہو ہوتے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_482, best cost 135.015 + 5499.1 = 5634.11 over 1028 frames.
+20030005_482 میرا بیڈروم کا اور گروہوں دل وظیفہ ادھورا آ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_483, best cost 151.389 + 3770.33 = 3921.71 over 689 frames.
+20030005_483 بڑھ سیکھا میں آباواجداد گی رہ گھور راجباہوں پر حملہ گڑگڑا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_484, best cost 126.533 + 3121.18 = 3247.71 over 587 frames.
+20030005_484 فولڈر انجکشن گہرے مرتب فورم کی فہرست میں دہی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_485, best cost 208.802 + 6219.93 = 6428.73 over 1188 frames.
+20030005_485 چوم رزلٹ کر پولیس گیلری جل چھولے کو ویب گریڈ کی بلڈ جھلی ہوئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_486, best cost 186.422 + 4944.68 = 5131.1 over 900 frames.
+20030005_486 شاخوں واقع شیئر گوہ بلوں کا اور موضوع ڈیوڈ کرواؤ چور کبھی زیردست 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_487, best cost 253.262 + 4776.44 = 5029.7 over 900 frames.
+20030005_487 ملے نرغے مجھے نڈر راہبر بڑھا خچر اڑا میں گا تعفن میں گریڈ کھوج شیلڈ زوار بہی اوسط کر ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_488, best cost 163.88 + 4453.45 = 4617.33 over 824 frames.
+20030005_488 گڑگڑاہٹ رزلٹ گاؤں ہو گوند مورخہ اور جوں میں شرحوں محلوں ہوا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_489, best cost 214.743 + 5994.17 = 6208.91 over 1176 frames.
+20030005_489 کی ملغوبہ آپ کہا پرچہ زیڈ میں گریڈ پنجروں ٹریڈ جکڑن بڈھا خلل گراؤنڈ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_490, best cost 181.209 + 5428.33 = 5609.54 over 1060 frames.
+20030005_490 گروہوں ہلکی معیت میں مخدوم لو آپ گارلینڈ ٹھل اور اینڈ اور بے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_491, best cost 185.408 + 5084.57 = 5269.98 over 945 frames.
+20030005_491 ٹورنامنٹ رپورٹ شیرے کو اور گوہ برڈ ایفا اور مکعب پور کر پہنچا آؤ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_492, best cost 178.062 + 5003.99 = 5182.05 over 900 frames.
+20030005_492 بورڈ فروش میں موسم آر بل شنید شیل ٹریبیونل ڈومین ڈیڈ خرید لیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_493, best cost 201.259 + 5334.14 = 5535.4 over 1009 frames.
+20030005_493 فلک گیلری تحریروں آ اوور منیر ہیئر میں ڈپلومیسی شیڈ گڑگڑا عالمی فوبیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_494, best cost 124.924 + 3775.82 = 3900.74 over 708 frames.
+20030005_494 گڈ دس کے ہارویسٹر ہجر قبضے میرٹ مقید ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_495, best cost 217.885 + 5787.28 = 6005.17 over 1105 frames.
+20030005_495 عمل بھروسہ عمل شہری کی روور شل فریب زنگ ڈول ٹھہرو فرینڈ ڈچ کر بولوں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_496, best cost 160.213 + 4513.84 = 4674.05 over 849 frames.
+20030005_496 قوی بہبود گھیا اور امن گڑگڑاہٹ گوہ شرکت سیڈ تصویریں کرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_497, best cost 144.959 + 4895.05 = 5040.01 over 907 frames.
+20030005_497 جا اور بھی لے کو میاں اگلا اور جنگجوؤں گہرا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_498, best cost 131.06 + 3330.7 = 3461.76 over 606 frames.
+20030005_498 آپ کر ہوئی رہیں کی بچّی یہ جھولے میں پیشاب کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_499, best cost 133.21 + 5138.92 = 5272.13 over 952 frames.
+20030005_499 میں اوور شوہر لیزر بھی بڑا کی گڑبڑ گڑگڑا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_500, best cost 180.655 + 4074.25 = 4254.91 over 792 frames.
+20030005_500 رہائش شیڈ ریشوں رم کرو اہم جید ہو بہو پرسوز رائے جایا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_501, best cost 203.863 + 7555.92 = 7759.78 over 1444 frames.
+20030005_501 جگر روور اینڈ پہنے احسن گھونگٹ اگلا چئر فعال سَیل اپنے پروفائل تھے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_502, best cost 268.255 + 6773.17 = 7041.43 over 1259 frames.
+20030005_502 بڑھ عشرے ریکارڈ ریڈ ٹریڈ موضع سیڈ جو حصے ٹریولرز تھا قرضے میل بقعہ اور اٹھے فاجر کرے لگا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_503, best cost 219.145 + 6217.14 = 6436.29 over 1188 frames.
+20030005_503 میں ڈھونگ والرس و کچھوؤں ٹریڈ خودکشیوں تھے خون شغل مہیا اور چیڑھ جنگجوؤں مسز ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_504, best cost 145.2 + 4862.64 = 5007.84 over 926 frames.
+20030005_504 کوسوں اوس دراوڑی ذخائر نقش چھوا بیڈ سیڈ اجاگر ہوئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_505, best cost 235.417 + 7246.41 = 7481.83 over 1387 frames.
+20030005_505 مارے شہید اور شوہر نے چیر ملے انگوٹھے جیل امرود فوڈ سیل گذر قوس سے غوغا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_506, best cost 146.816 + 4383.66 = 4530.48 over 824 frames.
+20030005_506 شوخ مچھلیاں قورمہ ہی مغلیہ عیاشی چیل زمرے میں آپ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_507, best cost 150.168 + 4648.69 = 4798.86 over 862 frames.
+20030005_507 سیل ابصار دوعالم کو اجرت اضافے کے کہو بھی راؤ ہوئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_508, best cost 149.593 + 4373.25 = 4522.84 over 836 frames.
+20030005_508 بارے منشیوں اس سروں وے کھجلی رسولی گا شوکت ساختہ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_509, best cost 229.486 + 6440.19 = 6669.68 over 1227 frames.
+20030005_509 کی دور بھی عمل کسی کی آؤ ہوئیں اور شہروں گوہ ریڈ جو آ بے جو سویرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_510, best cost 108.844 + 2831 = 2939.85 over 510 frames.
+20030005_510 بقیہ حدیث کے ترجمان صفحہ چونچلے پر دیکھی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_511, best cost 205.067 + 4525.97 = 4731.04 over 881 frames.
+20030005_511 سوواں سَیل موڑ شل حلقہ سوواں تو سحر کر میں کھاؤں مسخ باب صغری جا کا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_512, best cost 160.224 + 5029.61 = 5189.84 over 990 frames.
+20030005_512 پرکھے لیبر اوور کے کو ظاہر نشے افیم کی حوصلہ معشوق اور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_513, best cost 194.884 + 5327.55 = 5522.43 over 1054 frames.
+20030005_513 گوجری بھاشا میں شعار لے قوی گڑبڑ شروع گوہ خود روزافزوں ہو کر کلیدی بل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_514, best cost 196.916 + 4881.61 = 5078.53 over 888 frames.
+20030005_514 بقول شغل اس سحر جمہوریت چیر السی ایئر <oov> رساؤ آ خودرو گوہ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_515, best cost 276.311 + 9021.12 = 9297.43 over 1771 frames.
+20030005_515 جو معشوق اس سبزیوں کو کوسوں گوہ اڑوں <oov> مکھڑا کو موو خالد مورخین کو ہوں بوجھ اوہو ہوئی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_516, best cost 256.522 + 6970.71 = 7227.23 over 1304 frames.
+20030005_516 موزوں بوجھ گدھو محسن سوں انٹر مطلوبہ سوری دو سوجھ گھور خون فروغ ضلع کی اور راسخ کہا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_517, best cost 242.582 + 5685.56 = 5928.14 over 1086 frames.
+20030005_517 دنگ ہول جو حصہ چینی بوجھ اور ازسرنو کو ہر اضافہ اور قبیلے مرتبہ دھوم رچاؤ اثر کہا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_518, best cost 184.696 + 5711.15 = 5895.84 over 1067 frames.
+20030005_518 جا لقب فوراً والا آبرو ہو سوک ٹھل اور کی خون سیڑھیاں موڑ گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_519, best cost 205.345 + 6292.25 = 6497.6 over 1220 frames.
+20030005_519 سنگین جھگڑوں چیر چیز سوک سیل دل چوہوں میں وہ لوہا کھل ہو کر اور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_520, best cost 205.102 + 6064.92 = 6270.02 over 1150 frames.
+20030005_520 شیرے یوم دیو اول اوہو ہندوؤں گلے گو ہجر اوہو میئر خون 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_521, best cost 180.424 + 5083.47 = 5263.89 over 945 frames.
+20030005_521 لومڑ کھلے جوہر چیڑھ گوہر شون خون سیکھی سرور شگاف کھل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_522, best cost 128.976 + 2685.75 = 2814.72 over 497 frames.
+20030005_522 فورس ہر پر گیا برڈ ٹریولرز سو ہو کر پڑ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_523, best cost 195.385 + 5626.53 = 5821.91 over 1073 frames.
+20030005_523 موہوم کی کا گھڑیوں عمیق سوم کھو اندھیرے چہلم جگہ اور آ میں ملوث 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_524, best cost 176.918 + 5888.65 = 6065.57 over 1131 frames.
+20030005_524 مصنف حملے ڈیوڈ ابلاغ وھیل رسول انگلی عمل دور میں اوہو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_525, best cost 194.744 + 5851.39 = 6046.14 over 1131 frames.
+20030005_525 جور شل فولڈر کو میں ملحق کو چلے جی جان میں سَیل حوصلے میں ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_526, best cost 176.361 + 5895.19 = 6071.55 over 1105 frames.
+20030005_526 جوڈیشل ایگزامینر منتقل بچھڑوں کی پراسسنگ کی زور شور اوہو عمل کر کا کا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_527, best cost 215.201 + 6194.48 = 6409.68 over 1208 frames.
+20030005_527 صارفین اپنے کہو کلیئر دلوں کے بہتری گرل یہ مشین میں مزدوروں ہو کوسوں مؤخر ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_528, best cost 151.06 + 4372.62 = 4523.68 over 824 frames.
+20030005_528 سول دل پر سوویں گاڑھا گوہ ساتھیوں پلیئر ڈھونڈ لال 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_529, best cost 198.28 + 4782.89 = 4981.17 over 900 frames.
+20030005_529 میں سوم گوگل شوہر کو اور اوہو اس سنگل بدل کر امن دل قل جھگڑا آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_530, best cost 176.91 + 4504 = 4680.91 over 856 frames.
+20030005_530 صابر بل خول دس خلق چیز کلیئر موڈم ہول مسخ لایا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_531, best cost 174.617 + 4933.65 = 5108.26 over 932 frames.
+20030005_531 اپنے کمینگی حاوی کرنے کلیئر کو افضل کو اور میں نزدیک چورنگی حصے کھسک گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_532, best cost 155.085 + 4273.61 = 4428.7 over 824 frames.
+20030005_532 دکھوں میئر انگور نے کھو کوڑھ خون سوئس لونگ اور اگر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_533, best cost 175.078 + 5099.56 = 5274.64 over 971 frames.
+20030005_533 مہلت جنگ سے شیلٹر بلڈوزروں کسوں مغلوب جاؤں میں باؤلر ہول کڑوی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_534, best cost 262.845 + 7193.7 = 7456.54 over 1336 frames.
+20030005_534 وومن کالجوں کی سول گل جوبلی سرگرمیوں خون گوہ کی دوغلی سوم جیو ہو سو حصے خصوصی گلشن ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_535, best cost 202.408 + 7110.74 = 7313.14 over 1348 frames.
+20030005_535 مرغن فوراً جوڈیشری کی تضحیک خاتمے کیلئے محفل ڈنگ کر خوشہ انہیں ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_536, best cost 168.548 + 5421.33 = 5589.88 over 971 frames.
+20030005_536 سٹوڈیوز حرفوں روزہ شل گوہ آ اور کو اشد کچل جوہر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_537, best cost 247.929 + 6657.54 = 6905.47 over 1240 frames.
+20030005_537 راگ چاول عفو اوہو بہاؤ بی جلسہ اور اوڑھ بدلے تو <oov> کو غوغا اور و سلوک اوسط گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_538, best cost 192.529 + 5167.05 = 5359.58 over 926 frames.
+20030005_538 سندھی رقص لے گھنگرو بدشگونی گول دوڑنے ایئر اوڑھ برڈ ریڈ برس کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_539, best cost 287.34 + 8571.62 = 8858.96 over 1675 frames.
+20030005_539 موہن گلشن گورے ہی خول اوپر مرتب کرکے رعیت گھول گروں نے کی حملوں چیر رسولی زیور ہو کر موخر ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_540, best cost 152.749 + 4265.53 = 4418.28 over 811 frames.
+20030005_540 جھوم غور مواصلات یہ اخروٹ گونج کھر در آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_541, best cost 236.472 + 7958.85 = 8195.32 over 1470 frames.
+20030005_541 اس سوبرز فرمایا قیود سو ہوزری سکنجبین پیئں لہو گاؤ اگر گوہر بوڑھی بھی لاٹھی دکھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_542, best cost 142.868 + 5020.95 = 5163.82 over 939 frames.
+20030005_542 سومرو صلح اوور ڈگر چئر عظمی اور غور نسل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_543, best cost 149.211 + 4871.88 = 5021.09 over 875 frames.
+20030005_543 ہر علوی کا اور چئر لینا کو ابھرا ہودہ بچھونا بنایا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_544, best cost 200.12 + 5014.24 = 5214.36 over 990 frames.
+20030005_544 میرزا شہاب عہدے و والدین میں مومن پر عشرہ کو لوں میں اوہو کی کرے ڈیلیوری 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_545, best cost 325.651 + 7842.56 = 8168.21 over 1438 frames.
+20030005_545 اللہ چوہدری مبین گردیزی گیر دل رسیا اور اگلا اور از سروں لوئر کبھی بھی بگ پھیر ہولوں محسن عمر اوس کاشف اوہو ابھرے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_546, best cost 232.58 + 6729.84 = 6962.42 over 1272 frames.
+20030005_546 کنفیوژن گروں عرصہ اثر کوڑھ انہی جل کھل کمروں جوڑ اوہو دہلی تھی دل تھے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_547, best cost 201.403 + 6169.93 = 6371.33 over 1150 frames.
+20030005_547 سدھریں ہرگز صابر گولوں ہوئے بلی سَیل خلل خود بہت مصیبت میں افضل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_548, best cost 205.207 + 5616.58 = 5821.79 over 1028 frames.
+20030005_548 مدعا عہدہ جنگ لو کی بیویوں حق سَیل شوربہ اوہو والا کھا اثر سیکھے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_549, best cost 205.911 + 5727.07 = 5932.98 over 1086 frames.
+20030005_549 سبسڈی محسن رکھنے سحر نجی فصل اہل کی بھی ہو معشوق کی بھینٹ جلد لیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_550, best cost 288.6 + 8844.96 = 9133.56 over 1668 frames.
+20030005_550 اثر بلین ہو صوفیہ پور بچاؤ لیکوئڈ اور چیڑھ دھولیں سیل بوقت اور گھروں والوں مرحوم پور عود کی بلا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_551, best cost 152.164 + 4936.5 = 5088.66 over 900 frames.
+20030005_551 مقید لیاقت چدھڑ دیں کہا عمل چودھری چڑ ڈیرے ہولوں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_552, best cost 224.426 + 6456.21 = 6680.64 over 1233 frames.
+20030005_552 شعور قزلباش سحر گوگل بلڈ تصور اوہو دھری چئر کی جلد بے چہرے ریڈ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_553, best cost 194.038 + 7137.48 = 7331.52 over 1304 frames.
+20030005_553 رکھیے اور میں ڈرل کو کے مقوی میں جنرک الیکڑانکس عشروں اوہو کی گول 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_554, best cost 226.812 + 6310.72 = 6537.53 over 1144 frames.
+20030005_554 بارہواں ابھریں نو گڈ بلوچی لیجنڈ ظہر سوئس ثقافت اور اور دہرایا والا قل شون آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_555, best cost 238.234 + 6455.75 = 6693.98 over 1278 frames.
+20030005_555 گذر اوہو تجزیوں کس سوک کو والوں فارم کی یوں آف نااہلی منگل قہوے سندھی بغور ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_556, best cost 196.559 + 5941.75 = 6138.31 over 1124 frames.
+20030005_556 زمین کی گزشتہ کی رہی غور و حصے اسکواڈ دوغلے عمیق سروے اثر خوگر گی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_557, best cost 236.279 + 5959.35 = 6195.63 over 1163 frames.
+20030005_557 ہودہ گرنے گوہ بولو ہو منگوا اور ملغوبہ اور وی مہلک بھی بھولیے جوہر ہوئیں میں ممکن ہوئی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_558, best cost 249.945 + 9406.9 = 9656.84 over 1796 frames.
+20030005_558 منشیوں حق ریڈیو ہو کے ملوں جلد اور اتھلیٹس چیل خروش سوڈا سوم کے ہمراہ جلدازجلد منتقل ہو گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_559, best cost 210.826 + 5099.38 = 5310.2 over 964 frames.
+20030005_559 جو گڈریے مدعا حملوں گروں عمر حاشیے چیخ زوجین دوزخ بلا صلح آپ کو حصوں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_560, best cost 196.038 + 7004.41 = 7200.44 over 1329 frames.
+20030005_560 کی محسن قبیلے نل فقیر میسر چنگ اس سے میئر تقدس شوروم آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_561, best cost 213.62 + 6885.33 = 7098.94 over 1284 frames.
+20030005_561 الیکشن پلیئر اور سوویں انگور کو حشر آ عہدے ہجوم میں بڑ حرفوں <oov> ہوئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_562, best cost 176.054 + 5876.55 = 6052.6 over 1137 frames.
+20030005_562 انشااللہ خوف خورشید انور فولڈر چل جھوم گھمبیر گل دکھائیں گے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_563, best cost 217.433 + 7134.47 = 7351.9 over 1374 frames.
+20030005_563 ملحوظ کر جھلی ریڈ ازدواجی گولوں غور میں ناامیدی گمبھیر بدھ گو شعر نے پر ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_564, best cost 218.032 + 5035.88 = 5253.91 over 977 frames.
+20030005_564 برس سے نشے رکھو آ مرلی ہو ہول چھوڑ و ممبر کوڑھ شل قونصل دو لہریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_565, best cost 184.681 + 5388.85 = 5573.53 over 996 frames.
+20030005_565 رزلٹ ریڑھ ڈیزاسٹر سے شون کی یہی بوم بھرے شیلڈ چھڑا کھڑے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_566, best cost 277.101 + 6892.37 = 7169.47 over 1284 frames.
+20030005_566 ہجر کی گڑبڑ شیوخ گوہ ڈومین گروہوں ہول صلاحیت دم ذہنی ٹوہ خلیے ڈے سیڈ ساؤتھ ڈراپ رکھو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_567, best cost 216.409 + 6320.71 = 6537.12 over 1112 frames.
+20030005_567 لوٹ ریڈ گریڈ قیم ہو وحشی لومڑی کی سرحد و میں ثقل اور رزلٹ گورے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_568, best cost 222.56 + 6226.62 = 6449.19 over 1124 frames.
+20030005_568 برقرار کر لباس سے آ دب اور کیو ہو فحش رساؤ حفظ بجھی حلقہ قہوے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_569, best cost 137.493 + 4622.63 = 4760.13 over 862 frames.
+20030005_569 بھڑ کروڑ کر درد گورے آڑھا عمریں جنریشن ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_570, best cost 210.687 + 7035.8 = 7246.49 over 1297 frames.
+20030005_570 فجور رہ ریڈ گجراتی بار شہروں گریڈ جلدی ڈور بری میجر چڑیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_571, best cost 268.45 + 7452.7 = 7721.15 over 1438 frames.
+20030005_571 استغاثہ آؤ میں نوحہ نیرو چیڑھ تکمیل ساحل کر ٹریڈ لوہا دم عمل غور و والڈ شیڈ گریز کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_572, best cost 323.585 + 10984.8 = 11308.4 over 2078 frames.
+20030005_572 کی عشروں اور ریڈ وم کر نے نوے میل ٹری دن ڈاہا ہی سیلز سیریلز اس پلو اوس ہی کو ہو شون کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_573, best cost 172.696 + 6323.06 = 6495.75 over 1220 frames.
+20030005_573 چوڑا احسن قبل دودھیا بھی جی بڑا عفو کھیلتے راہو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_574, best cost 242.865 + 6968 = 7210.86 over 1310 frames.
+20030005_574 مڑ علم سرہندی نصف گردش انحصار کیو تحفوں ہو اول فاخرہ کھلنے ملا جلد لہریں کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_575, best cost 190.809 + 5309.71 = 5500.52 over 996 frames.
+20030005_575 عرصے مقرر برڈ کینیڈین فوج شہریوں مصر ہنگامی انخلا بکھر پھوار انور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_576, best cost 235.155 + 6333.88 = 6569.04 over 1208 frames.
+20030005_576 باب میں بوڑھی میں کہلوا لومڑ شعاع احیا کھیل حدود ٹوہ کو ہجوم کر میں کلیئر کہا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_577, best cost 289.969 + 7873.86 = 8163.83 over 1521 frames.
+20030005_577 ایشیائیوں کی رزلٹ قضہ غور و میں جو آف آڑ لیے بورڈر امریکی بزرگ گھروں فارغ گوگل رہی تھی کرا بولے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_578, best cost 224.358 + 7041.13 = 7265.49 over 1336 frames.
+20030005_578 لچک کے بارش ہو انٹر سے گنہگار جرم مگ کو اور اوہو بگ ذریعے قونصلیٹ بخشی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_579, best cost 211.389 + 6054.72 = 6266.11 over 1156 frames.
+20030005_579 محسن سنور جیگوار مشینری ٹھیس سروس شعار سمیت دھو نشر کرا مصر ریڈ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_580, best cost 119.957 + 3281.93 = 3401.88 over 600 frames.
+20030005_580 انگریزی اسٹورز ٹریڈ کلچر خشخاش ہرگز ذخیرہ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_581, best cost 285.144 + 7141.97 = 7427.11 over 1374 frames.
+20030005_581 ریسٹورنٹ شبہ اور آ عرس سمیت دوا جیل تصویریں ٹھل شہر کوآرڈینیٹر بکھیر گیارہ کو گزیر شاعر گورے تعاقب رہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_582, best cost 152.24 + 3724.95 = 3877.19 over 702 frames.
+20030005_582 کموڈور ملی خوض کہو بورڈ گوہ شبلی کھا عشرے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_583, best cost 186.198 + 5451.35 = 5637.55 over 1041 frames.
+20030005_583 والرس رویوں ٹھیلے منگوا شوخ رہ سنگین صحیح ڈائیگرام کو حصول اوہو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_584, best cost 194.742 + 4921.95 = 5116.69 over 926 frames.
+20030005_584 ہو سوئم گوہ اور رزلٹ رقوم کھیر پیشکشوں و کی اینگرو ہر پر شبہ ہوئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_585, best cost 110.038 + 3744.58 = 3854.61 over 702 frames.
+20030005_585 بسر ٹھہرو حقوق یا میں بولیں کرے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_586, best cost 181.949 + 4530.07 = 4712.02 over 849 frames.
+20030005_586 سینئر بورڈ انگور گریڈ بھی منیب دھوبی مصور و کیلئے مقصد کھلے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_587, best cost 188.766 + 5564.08 = 5752.84 over 1067 frames.
+20030005_587 شیعہ خوار کیوں بیلچہ آگ چل فروغ خول راگ سویرے کہو ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_588, best cost 194.267 + 5563.26 = 5757.53 over 1041 frames.
+20030005_588 وڑائچ رضوی گیر کاؤنٹی بولے جبڑا ٹھیس افضل بھی فشر کس و اگر ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_589, best cost 158.38 + 4482.5 = 4640.88 over 843 frames.
+20030005_589 مفکر کی فوقیت کو اس دل جوہر کے نشو وھیل توسیع ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_590, best cost 212.447 + 5269.45 = 5481.9 over 1016 frames.
+20030005_590 کس گوہ پہنچ چھین ہے عاشور یونہی اور تقاضوں حاصل بکھرے صلح آسیہ کی رابعہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_591, best cost 200.554 + 7688.04 = 7888.6 over 1451 frames.
+20030005_591 جا اوصاف اپھارہ کوڈ اپنے پڑ دور چل جو روور بوقت لیا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_592, best cost 183.016 + 5569.57 = 5752.59 over 1099 frames.
+20030005_592 لومڑی اوہو منشیانہ آ تلخ سے شل بحث چیر برابر میسر ہر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_593, best cost 205.875 + 4458.48 = 4664.36 over 843 frames.
+20030005_593 چیچک کہو اور لہجہ چیر کھو شش این آقاؤں ہجری ڈور رازق گوجر کر کے کہلوا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_594, best cost 249.093 + 7172.96 = 7422.05 over 1374 frames.
+20030005_594 اول کا اوہام مرشد سوا کوفی چئر تو <oov> شل کھوکھلے انتخابات گوہ زلزلے بہاؤ بورڈر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_595, best cost 222.589 + 5511.51 = 5734.1 over 1067 frames.
+20030005_595 کر سگریٹ جو گوہ پہنچ زراعت شاخ باڑہ لوہا کو <oov> چون وہی تشیع بکھری 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_596, best cost 98.2604 + 4150.48 = 4248.74 over 740 frames.
+20030005_596 زیڈ صلح دوست کا اور آشیانہ بچھڑ گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_597, best cost 170.3 + 5145.46 = 5315.76 over 945 frames.
+20030005_597 نواب مشن کھو واقعے مصروفیات کلیئر اپنے سوویں بے بہو کہا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_598, best cost 307.399 + 9184.76 = 9492.16 over 1732 frames.
+20030005_598 والڈ کرو عمل چئر فیری گریڈ ڈور اونے نے بلی کی جلد چیر جوڑیاں آ اور لے میں چیل چیمپئن کو ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_599, best cost 176.775 + 6497.1 = 6673.88 over 1195 frames.
+20030005_599 گرلز صلح یہ سبز شعبہ گلشن کرا گھر شعر گوہ قرار آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_600, best cost 316.247 + 8546.72 = 8862.97 over 1617 frames.
+20030005_600 ہرگز زین بہو آپ پر گریڈ ڈینٹل ایئر ہمارا گشت کوڑھ لوحوں چیر آر شیرے ڈگری باب حاصل ٹرین میں گولڈ اور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_601, best cost 295.391 + 7841.74 = 8137.13 over 1496 frames.
+20030005_601 نیرو بدھ یہاں تک پہنچی جلد عابد ریشوں میں ریڈیو لنگڑی رہی ریڈ منگل انگور رئیل پڑا انگور گھر لیلی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_602, best cost 383.339 + 10783.7 = 11167 over 2091 frames.
+20030005_602 دلوں وافر لینڈ اڑا کوڑھ ٹریڈ لیبر کھلے ہول تارڑ گروہوں کی ورزش شیخی اور والو بلور جا آ ٹھہرو پرنٹ جڑ کر میں کے شیل اور جوہی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_603, best cost 288.313 + 8175.76 = 8464.08 over 1534 frames.
+20030005_603 شاہ مسخ شوگر پور چیڑھ بڑھا اور عمل بڑ کو قریب ای رہی لیبر کسوں ہو کر کراؤں بچہ ورک یا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_604, best cost 208.955 + 8398.94 = 8607.89 over 1617 frames.
+20030005_604 داؤ آ گڑبڑ پڑھی جوق رافعہ کشف تو اچھا ہے کہ کیس گہرا اٹھائے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_605, best cost 173.726 + 4130.31 = 4304.03 over 734 frames.
+20030005_605 سولجر شعبہ رہ چورنگی جدول شیم اڈوں اوڈ بلڈ کا خلل دل کا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_606, best cost 137.234 + 5793.83 = 5931.07 over 1080 frames.
+20030005_606 دواؤں میں محلوں اجنبیوں افسوس بھی بڑی فضیلت ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_607, best cost 142.68 + 3997.68 = 4140.36 over 747 frames.
+20030005_607 سرویئر کے عرف اور چیز گروہوں گمبھیر بہو بنائی جائے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_608, best cost 163.636 + 5992.03 = 6155.67 over 1112 frames.
+20030005_608 ٹریڈ بورڈ گو کہا مرجھا میں ورچوئل تو ہوئیں بے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_609, best cost 273.344 + 7720.6 = 7993.95 over 1464 frames.
+20030005_609 الیکشن میں موو اور ہمیں دوبارہ مگرمچھ شیرے کوڑھ محنت غور و ہی کوڈ سے سوئنگ جوڑا کا کسی گھیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_610, best cost 231.481 + 6481.24 = 6712.72 over 1188 frames.
+20030005_610 مؤثر اہلکار شیلڈ علم بھینٹ عمل بیڑا اب میں شریف کر اور سے ہو عرصہ اوسط ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_611, best cost 245.071 + 7395.3 = 7640.37 over 1425 frames.
+20030005_611 کھسے رہ بے دھینگا فورس جلو لیزر جرگہ بہو بڑا بڑھا ہڈ کی اہم چل سالہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_612, best cost 174.718 + 6847.81 = 7022.53 over 1246 frames.
+20030005_612 زوال شے بھورا ہیجڑا شفقت گوہ خون کئی لینگویج و آ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_613, best cost 149.086 + 4670.34 = 4819.42 over 836 frames.
+20030005_613 ریڈ کی کوڑھ جہل گول شیریں بھی میں الوداع آ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_614, best cost 189.582 + 5006.09 = 5195.67 over 932 frames.
+20030005_614 کی سحر شیشوں ہو ٹریڈ کرا لوہا جلسہ ثمر جیل درس وجود لیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_615, best cost 282.997 + 9155.71 = 9438.71 over 1726 frames.
+20030005_615 کا اور عشرہ عذاب دیں لیبر کوڈ موئسچرائزر گوہ بلڈوز کر ٹریڈ ہوئے جوہی خوار جھولی وے وورس بڑا آڑھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_616, best cost 307.58 + 8229.24 = 8536.82 over 1496 frames.
+20030005_616 جو برعکس گولڈ ٹھہرنے ایڈز سو انہیں اولڈ وژن میں گوہ سومرو ٹریڈ کیسی داغ تو سو کئے میں لوئر فاروق ڈراپ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_617, best cost 227.646 + 6289.58 = 6517.22 over 1182 frames.
+20030005_617 کھمبے ایئر گڑبڑ عشروں گچھوں ہمیں کی روؤں گوہ ہوا واقعہ کی کہا سربراہ ہنسنے لگا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_618, best cost 205.77 + 6020.31 = 6226.08 over 1099 frames.
+20030005_618 عہدے میں یا مونچھوں والے اکھنڈ صابر بیڈ کئی میں گرل باب ہرگز قرار لیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_619, best cost 163.119 + 4540.47 = 4703.58 over 868 frames.
+20030005_619 کسی بھیل تشبیہات مدعا کی بیڑا اور کر میں کھیر شوق اور رہی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_620, best cost 309.711 + 8795.71 = 9105.42 over 1764 frames.
+20030005_620 شیرے ممد فول گوہ چیل بولوں گوہ گڑگڑاہٹ لوحوں بیس چوڑا کوڈ گھرے مقوی بھرٹ کوڑھ زور شوہر لیا تھے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_621, best cost 216.699 + 7141.03 = 7357.73 over 1336 frames.
+20030005_621 مگ حاشیے میں فوڈ لیفٹننٹ کے محرر میزیں ننھی پور چابی نوازنے میئر قل کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_622, best cost 238.945 + 7707.59 = 7946.54 over 1476 frames.
+20030005_622 چون گھر میں ملا گولڈ کھبے دیر کرے درجن عمر سیل دلوں اور ویئرز شیڈ گریڈ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_623, best cost 182.811 + 5971.13 = 6153.94 over 1188 frames.
+20030005_623 ڈینٹل گینگ کا اور گروہوں منافع شون لوڈ مہنگا رعشہ اور لیڈی رہا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_624, best cost 258.237 + 7651.46 = 7909.69 over 1412 frames.
+20030005_624 مفسر ٹرین نسخوں میں کلیئر سویلین پور قوس شوخ فورس والا درود میں کرشنگ گریڈ شروع نکھرا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_625, best cost 240.919 + 6775.4 = 7016.32 over 1252 frames.
+20030005_625 ڈراپ ڈینٹل برڈ ٹریڈ لیا اور رہی لیڈی قرار گروہوں گلگشت بڑھئی گرج گو فوبیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_626, best cost 150.412 + 4196.41 = 4346.83 over 817 frames.
+20030005_626 لنڈ درجوں میں گوہر <oov> آیا دھونی جید ہاشمی مچا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_627, best cost 162.485 + 5744.13 = 5906.61 over 1073 frames.
+20030005_627 عمل کھیلوں کے اعلامیے چل دوروں فوڈ بیڈ پرکھا اور لیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_628, best cost 217.475 + 6069.62 = 6287.09 over 1182 frames.
+20030005_628 روور ٹریبیونل بہن مہر لیبر ٹریڈ گروہوں گورنر میئر سرونٹ اشیا بو خون 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_629, best cost 261.253 + 7926.63 = 8187.88 over 1476 frames.
+20030005_629 شیلڈ ٹریڈ گوشوارہ تھے اوہو اور آ میرٹ سیل امور کرنے میں ہول یوم کھاؤں اعزہ ریڑھ کرا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_630, best cost 261.79 + 7597.36 = 7859.15 over 1457 frames.
+20030005_630 آ ظلم میں منگل شیئر ٹھیلے اوہو میں آکر بلڈ چئر محرر قل انگلی صلح اوہو بکھر لیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_631, best cost 294.149 + 10182.2 = 10476.4 over 1912 frames.
+20030005_631 شیلڈ کولن کی در نے جو <oov> شہرہ ٹریڈ سلور کی دو غوث نے عشر بورڈ کر چولہے دکھائے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_632, best cost 358.477 + 8988.97 = 9347.45 over 1758 frames.
+20030005_632 حسیں سیل داغے کہا کہ راہبر کنٹرول جوہی چھوڑوں و کوڈ ریڑھیاں آ دوعالم جوہری کر کھجور اوہو اوڑھ بسوں والے چھوڑ ایئر بھرٹ بڑھ کھلیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_633, best cost 287.259 + 9656.25 = 9943.51 over 1873 frames.
+20030005_633 ریفرنڈم ٹھل برقرار میں ویڈیوز چڑ لے کیوں کن ڈیڈ پور چیر شعاع چیر کونسل سول گلے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_634, best cost 209.15 + 5189.71 = 5398.85 over 952 frames.
+20030005_634 عمل شعر جوش اشیا ان کہو ہتھیلی اور اوہو اپنے اور آ کیو نقل پرنٹ کا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_635, best cost 261.631 + 6842.2 = 7103.83 over 1336 frames.
+20030005_635 کو آسمان رہ گھریلو کوچنگ چل اوہو خوان مل در ٹھہرو اگلی منگل بہو علی سیو نسواں کرایا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_636, best cost 229.438 + 7070.03 = 7299.47 over 1361 frames.
+20030005_636 کموڈور فورس شروع مگ چیل جھولے کو شوہر مسز زوجہ تو غوغا انگور ہو آ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_637, best cost 231.309 + 7558.76 = 7790.07 over 1457 frames.
+20030005_637 اخروٹ وہ مہر عہدے میں کوچ رنگیلا بورڈ بھی چیل حد اور سے مورخ دیر ہوئی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_638, best cost 260.425 + 9450.72 = 9711.15 over 1828 frames.
+20030005_638 جھوم گوجر کی شیرے روؤں برعکس سیڈ مل شوگر پور کو اکھڑ بھی کی ڈراپ سے جو اوچھے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_639, best cost 288.63 + 7751.98 = 8040.61 over 1432 frames.
+20030005_639 کھلنے سگریٹ کرے چیل شیڈ دل رزلٹ کر کر صلح ٹرین آؤ بدھ چیز ظاہر پر سموسے ڈبو دو شجر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_640, best cost 206.876 + 7190.83 = 7397.71 over 1348 frames.
+20030005_640 یونی گڑبڑ انہیں سفیر میڈیسن بھی کونسل چڑ شعاع لنگا کا کچوری کھوج لگایا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_641, best cost 199.634 + 5709.75 = 5909.38 over 1054 frames.
+20030005_641 آپ گوہر مڑ پور گھڑی شرحوں شعاع چیر آتشبازی دکھلا کر وین سحر گہرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_642, best cost 196.408 + 5621.85 = 5818.26 over 1041 frames.
+20030005_642 شخص ڈیم میرٹ جس شیرے کی وہی لینڈ سے مفلوج کیڑے کھو آ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_643, best cost 228.5 + 7053.84 = 7282.34 over 1310 frames.
+20030005_643 تفاعل صحت خم پڑ ہے ڈبو خوف جلو سینما خویش کوڈ دوغلے راگ سے زائد دہی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_644, best cost 233.679 + 8385.71 = 8619.39 over 1611 frames.
+20030005_644 ڈھا تو شیئر ہیڈ ڈور اور اوئے بڑ ہر بھورا بچھڑی تھینکس یہ کر پوائنٹ ڈبہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_645, best cost 234.242 + 5458.52 = 5692.76 over 1022 frames.
+20030005_645 مل ٹوہ برڈ کے ریسٹورنٹ دوزخ کس ساحل بغض ظہور مسخر کھر میں چیفس و اشد کھلے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_646, best cost 182.972 + 6087.63 = 6270.6 over 1156 frames.
+20030005_646 سوویں جوش نیل کوڑھ چبھ میں اور اوہو بیڑا میں کی بڑھائے ڈال ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_647, best cost 186.01 + 5406.37 = 5592.38 over 1067 frames.
+20030005_647 واچ نگر ٹریڈ خام غوث سویرا گوہ غلط چھوڑ کر کی دوروں ہو کر آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_648, best cost 135.487 + 5131.07 = 5266.55 over 990 frames.
+20030005_648 ملے مل دھوم گھیا تنہا خچر کلیئر آ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_649, best cost 173.24 + 5402.05 = 5575.29 over 1041 frames.
+20030005_649 پھپھو گوہ کنوینس کر کر در میں بیباک کھو ہو کھڑا نیڈل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_650, best cost 240.083 + 7028.57 = 7268.65 over 1355 frames.
+20030005_650 ہجویری بقول گوہ اوڑھ شوالا محرر کنگھی نفل ایئر کا بڑا کلیئر اولڈ کر حصہ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_651, best cost 180.957 + 5679.18 = 5860.14 over 1131 frames.
+20030005_651 کھول کی بلڈ نے منیب شعاع کھوکھلے کی گل میں سوویں سے پہلے سونپی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_652, best cost 251.682 + 7634.89 = 7886.57 over 1502 frames.
+20030005_652 ینگ کی عمریں فورم نوبل کو اولڈ جلو واہلہ مہمل گل گوٹھ کلیئر سلوک کر پہنچیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_653, best cost 219.02 + 6121.11 = 6340.13 over 1176 frames.
+20030005_653 مل اوور براڈ لے نظام بگ ڈھل رزلٹ گھی ہجری گالف دغا کلوز ہوا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_654, best cost 220.659 + 7433.43 = 7654.09 over 1361 frames.
+20030005_654 پور خوض چیف اشیا چنگل پور قونصل برس صلح میں دل مسز درد لیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_655, best cost 181.862 + 5234.17 = 5416.03 over 1022 frames.
+20030005_655 بلوں بخش کی ریگن چھالے فوڈ ڈرل مرض پر بچوں میں نشر ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_656, best cost 262.664 + 8677.15 = 8939.81 over 1668 frames.
+20030005_656 بلڈ سے سجی پیروں ویلوٹ کا رزلٹ رہی ہینڈ کی چاہے پور شوہر بورڈ چہارم دل خرچ اور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_657, best cost 214.595 + 5607.14 = 5821.73 over 1099 frames.
+20030005_657 گوہ بولروں خوفوں گم رزلٹ چڑ کر صلح حلقہ باب صلح موو سول ملیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_658, best cost 167.797 + 5135.64 = 5303.44 over 1003 frames.
+20030005_658 موڑ کا میں باگ بورڈ کھیر ویئرز کی باب سے ڈول فاروق 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_659, best cost 255.622 + 6788.36 = 7043.98 over 1291 frames.
+20030005_659 مڑ ٹیلی عود گڑبڑ چھایا ہیں کوڑھ گھوڑے گوہ ووڈ و خون کر باغ بوئے ٹریڈ سوئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_660, best cost 134.693 + 4132.37 = 4267.07 over 779 frames.
+20030005_660 خول فوراً بگ <oov> آپ میں ملیں دوسرا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_661, best cost 161.737 + 6419.35 = 6581.09 over 1252 frames.
+20030005_661 وفد لینے کلیئر بخشو بہاؤ مہم کی باخبر دبایا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_662, best cost 184.594 + 5656.77 = 5841.36 over 1067 frames.
+20030005_662 چھولے گھوم چیر آبیانہ شبہے دوسروں پہنچی دلنشیں بلی ہے بکھرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_663, best cost 215.136 + 7172.86 = 7388 over 1336 frames.
+20030005_663 اور میں جہاں چاہے انگور عرصہ اور وہی دے میں دل بھی کا میں کیس وقوع ہوئی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_664, best cost 217.009 + 7162.16 = 7379.17 over 1316 frames.
+20030005_664 سہارے لیبر آواز صنف مہر آئیندہ اور گاؤ حضور ہوا کو ریڈ کھڑے گوگل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_665, best cost 152.857 + 4245.01 = 4397.87 over 779 frames.
+20030005_665 فرائض درخواست سوویں اور اوہو انہی سے سگریٹ چھینی دو ہوا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_666, best cost 168.586 + 5564.76 = 5733.34 over 1073 frames.
+20030005_666 دوعالم اثر ہوئے اول چہلم کا کلوز سبھا پلیئر سحر بولے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_667, best cost 176.287 + 6933.74 = 7110.02 over 1323 frames.
+20030005_667 ریلیف بلڈ سیل جن ڈیڈ دوسرے کی گٹھلی بس سینگ ہوئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_668, best cost 204.474 + 7946.89 = 8151.36 over 1489 frames.
+20030005_668 سوم ریڈ سلور بلی خوگر باہر جھالر اگلا لیڈز ذیل جلد نکلا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_669, best cost 198.165 + 5774.96 = 5973.13 over 1112 frames.
+20030005_669 فورم خوض ان گوہ زور بورڈ میں بلور گل چل رزلٹ لوڈ ملیں لیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_670, best cost 146.904 + 5363.29 = 5510.2 over 1035 frames.
+20030005_670 چوزے آخری عشرہ کر حصہ ڈونگا پکوڑوں اور کا پلو آ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_671, best cost 255.578 + 7273.34 = 7528.92 over 1368 frames.
+20030005_671 غشی سے پہلے سوسو اور کے گڑیا میں کہا شون گورے اسبغول اور کس اثر جوڑے میں دو پور شیرے جاؤ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_672, best cost 224.192 + 6406.6 = 6630.79 over 1163 frames.
+20030005_672 ڈینٹل ریڈ شوز چلائیں گیر تو فوراً کو آپ اثر ورک کو در جیل اواخر آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_673, best cost 150.796 + 5379.2 = 5529.99 over 1048 frames.
+20030005_673 کھڑا کے شوہر دلربا ہوئے جوزی نسل کی ویب پھڑپھڑائے ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_674, best cost 285.151 + 8026.2 = 8311.35 over 1604 frames.
+20030005_674 نشو وے گروہوں میں بھڑک کرا چوڑا گا اور قرار رکھو منہ غور آ ہینڈ گوشت میں سویرے کی کوشش بھی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_675, best cost 221.248 + 6773.48 = 6994.73 over 1297 frames.
+20030005_675 اور جعل کی بھورے کلیئر گڑھ شگون شہر تو وہ تحفوں نے کا اور بہو اڑا لہجے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_676, best cost 230.342 + 6776.87 = 7007.21 over 1278 frames.
+20030005_676 اپنی رہائش قرار سیلرز گا انگوٹھی جہاں کھولے کی ہو آغا میں انگوٹھے شغل جبڑے اور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_677, best cost 212.767 + 7501.21 = 7713.98 over 1380 frames.
+20030005_677 بسا اور میں عندیہ کے گوبھی بولے منگل بوڑھی دو اور نے تھی راہبر سربراہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_678, best cost 328.482 + 10569.7 = 10898.2 over 2052 frames.
+20030005_678 سن افگن سو ہو پور علوی فروغ اولڈ براوو سیر شیڈ میں ٹھیلے ریڈ ہائیڈروجن ڈیوڈ شے مشعر ایں شعر کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_679, best cost 179.276 + 5111.23 = 5290.51 over 958 frames.
+20030005_679 ٹھوڑی فوڈ ریڑھی پر شیرے مگر آ تو اثنا ہرگز ارب چھیل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_680, best cost 213.577 + 6656.4 = 6869.97 over 1316 frames.
+20030005_680 چولی گروں جوڑا پہنتے ہوئے در میں ڈور مارے اپھارہ برسنے میں کوڑھ آ آر جاتا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_681, best cost 271.085 + 8282.52 = 8553.61 over 1611 frames.
+20030005_681 اشعار و جہل شل گوہ ڈراپ کی کوئین تو ڈھونڈھ اوہو گڈ بلڈ شیرے کا اور آ اور شوالا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_682, best cost 254.406 + 8783.48 = 9037.89 over 1656 frames.
+20030005_682 کی بیس بورڈ شعاع رہے انگور غور رچاؤ کڑوی ہو السی کیڑے اوجھل بولوں جھیل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_683, best cost 226.502 + 7085.32 = 7311.82 over 1355 frames.
+20030005_683 رزق سے موہوم چیل جڑوں پر اٹھ علم پیہم یہی چہرے رزلٹ بپھر دہی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_684, best cost 226.052 + 6433.18 = 6659.23 over 1208 frames.
+20030005_684 ڈار و بھی ضروری اوہو تلخ زیڈ اوس میئر بولو ابرار گھائل پر کا اوہو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_685, best cost 171.441 + 4666.39 = 4837.83 over 881 frames.
+20030005_685 جو فورم بوسن کے والو شیئر شیئر جرگہ خاصے لو بدروح 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_686, best cost 242.409 + 5808.6 = 6051.01 over 1067 frames.
+20030005_686 خوض قیم گروں میں سرور کھیل در مشعر اوس سربراہ یادیں مسز گاؤں شوشہ اور دھول شعاع 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_687, best cost 312.38 + 8924.08 = 9236.46 over 1656 frames.
+20030005_687 شعاع ہوئے حصوں چل بگ سلوک سے شہر کھولے ٹوہ دوا سیل وہ اور آکر قل جوق مونگ بوبی جیولری گھروں آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_688, best cost 331.542 + 9213.24 = 9544.78 over 1796 frames.
+20030005_688 خلیل کنگھے جا گلریز باب سنچریاں بغض اور اوہو خول بیچ گی چیر بے میں بہاؤ ہوئیں چڑ دورے دور بل جوق 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_689, best cost 246.76 + 7401.9 = 7648.66 over 1496 frames.
+20030005_689 بولیں دو بڑھ جلسہ کیڑا کیا المیوں میں اول ہمارے فورس اوس و فصلیں ہجوم کھل چھڑ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_690, best cost 181.811 + 4634.57 = 4816.38 over 881 frames.
+20030005_690 <oov> اٹھیں ہمارا اڑا اللہ چئر شون ریڈ گھور واقعی جا کا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_691, best cost 232.108 + 7319.33 = 7551.44 over 1368 frames.
+20030005_691 کسی کی دلجوئی دل اپنا گریڈ گیر اوڑھا کوڈ عمیق سبھا کر مولا نواب بھرٹ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_692, best cost 212.663 + 6716.81 = 6929.47 over 1220 frames.
+20030005_692 خون صارفین آر کھلنڈرا کسے بوس آپ بھرٹ گارلینڈ سینیٹ بھی قابل دو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_693, best cost 159.751 + 5047.38 = 5207.14 over 939 frames.
+20030005_693 ننھے حق چل جوڑا حاصل رہا فارم بلا ٹرفس دو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_694, best cost 189.155 + 6878.32 = 7067.47 over 1208 frames.
+20030005_694 کھڑا اوڑھا شش پایہ کھر عرصہ جج ایئر گوہ چوہوں بڑھائیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_695, best cost 215.434 + 6032.97 = 6248.4 over 1105 frames.
+20030005_695 فورس کھیل کی جانب شجر ہجوں میں چراغ گورے اگر جو ہو کر پونے میں گولڈ جاؤ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_696, best cost 234.513 + 6309.02 = 6543.53 over 1131 frames.
+20030005_696 خوف فلڈ چہرے انگریزی ڈے گوہ مصنوعی مسوڑوں چل بردار میں کلیئر فروخت کی اور جرگہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_697, best cost 145.589 + 4294.34 = 4439.93 over 772 frames.
+20030005_697 گروتھ اوہو سے سویلین تمغے ڈیزائن گھروں اور میں کماحقہ گھیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_698, best cost 190.905 + 6168.36 = 6359.26 over 1124 frames.
+20030005_698 دور اوہو خون صاف دوربین سے ارشد آف بو وے جوہر سالگرہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_699, best cost 187.069 + 7447.35 = 7634.42 over 1342 frames.
+20030005_699 گجر فارغ شریف نے دوبارہ گہرے بیڈ گا مت سوچو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_700, best cost 158.087 + 7925.47 = 8083.56 over 1419 frames.
+20030005_700 گوشت فورم کلیرنس ڈیڈ چھڑک بوس سلور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_701, best cost 260.292 + 9337.41 = 9597.7 over 1681 frames.
+20030005_701 محسن وہ انگور عہدے بلوں وورس زلفی چیز سیڈ روات کر معزز احسن جا آڑھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_702, best cost 170.792 + 6468.99 = 6639.79 over 1150 frames.
+20030005_702 گیس فیصلوں آپ اخوّت گوہ شعاع سوم براؤزر بخشو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_703, best cost 177.433 + 5162.58 = 5340.01 over 952 frames.
+20030005_703 کرو السی لینڈ دھول بھیجی نے فروغ آؤ ہو آف اوقات ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_704, best cost 150.588 + 7762.09 = 7912.68 over 1355 frames.
+20030005_704 اس سیشن نیوز کرواؤ ہو کر اس سے ایس ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_705, best cost 213.72 + 5124.77 = 5338.49 over 958 frames.
+20030005_705 برڈ جہاں گوگل عمر کرو گلریز ہجوں واقعہ ڈراپ کر آٹھ ہندسوں ہو صلح بھرٹ 
+LOG (lattice-scale[5.5.907~1-cbed4]:main():lattice-scale.cc:107) Done 708 lattices.
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_706, best cost 178.918 + 5986.59 = 6165.51 over 1086 frames.
+20030005_706 برج از بھرٹ فیلڈ ویلز <oov> بیلٹ ہینڈ وہاب جو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_707, best cost 191.494 + 4868.69 = 5060.18 over 888 frames.
+20030005_707 محسن گوہ بڑھایا ہے ٹوہ عابد گڑھ ہیڈ یونہی گروہوں میں داؤ کرے 
+LOG (lattice-add-penalty[5.5.907~1-cbed4]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 708 lattices.
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_708, best cost 205.162 + 5565.07 = 5770.23 over 1009 frames.
+20030005_708 جمیعت چھڑنے ایگزٹ پہلے بڑھ نیرنگ گزرے گڈ آ رسیدہ اور مارشل سنٹر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:124) Overall cost per frame is 5.62189 = 0.190196 [graph] + 5.43169 [acoustic] over 722897 frames.
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:128) Done 708 lattices, failed for 0
+# Accounting: time=14 threads=1
+# Ended (code 0) at Thu Apr 22 16:10:44 PKT 2021, elapsed time 14 seconds

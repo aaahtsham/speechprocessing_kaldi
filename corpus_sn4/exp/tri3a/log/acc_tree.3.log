@@ -1,0 +1,14 @@
+# acc-tree-stats --ci-phones=1:2:3:4:5:6:7:8:9:10 exp/tri2a_ali/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split3/3/utt2spk scp:data/train/split3/3/cmvn.scp scp:data/train/split3/3/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3a/0.mat ark:- ark:- |" "ark:gunzip -c exp/tri2a_ali/ali.3.gz|" exp/tri3a/3.treeacc 
+# Started at Thu Apr 22 16:27:28 PKT 2021
+#
+acc-tree-stats --ci-phones=1:2:3:4:5:6:7:8:9:10 exp/tri2a_ali/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split3/3/utt2spk scp:data/train/split3/3/cmvn.scp scp:data/train/split3/3/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3a/0.mat ark:- ark:- |' 'ark:gunzip -c exp/tri2a_ali/ali.3.gz|' exp/tri3a/3.treeacc 
+apply-cmvn --utt2spk=ark:data/train/split3/3/utt2spk scp:data/train/split3/3/cmvn.scp scp:data/train/split3/3/feats.scp ark:- 
+transform-feats exp/tri3a/0.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+LOG (apply-cmvn[5.5.907~1-cbed4]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 708 utterances, errors on 0
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -88.3967 over 476113 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 708 utterances; 0 had errors.
+LOG (acc-tree-stats[5.5.907~1-cbed4]:main():acc-tree-stats.cc:118) Accumulated stats for 708 files, 0 failed due to no alignment, 0 failed for other reasons.
+LOG (acc-tree-stats[5.5.907~1-cbed4]:main():acc-tree-stats.cc:121) Number of separate stats (context-dependent states) is 53549
+# Accounting: time=4 threads=1
+# Ended (code 0) at Thu Apr 22 16:27:32 PKT 2021, elapsed time 4 seconds

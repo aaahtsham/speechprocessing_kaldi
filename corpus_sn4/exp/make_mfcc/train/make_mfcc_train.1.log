@@ -1,0 +1,789 @@
+# extract-segments scp,p:data/train/wav.scp exp/make_mfcc/train/segments.1 ark:- | compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.1 --verbose=2 --config=conf/mfcc.conf ark:- ark:- | copy-feats --compress=true --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.1 ark:- ark,scp:/home/ranaahtsham/Desktop/kaldi/egs/corpus_sn4/mfcc/raw_mfcc_train.1.ark,/home/ranaahtsham/Desktop/kaldi/egs/corpus_sn4/mfcc/raw_mfcc_train.1.scp 
+# Started at Thu Apr 22 15:55:44 PKT 2021
+#
+copy-feats --compress=true --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.1 ark:- ark,scp:/home/ranaahtsham/Desktop/kaldi/egs/corpus_sn4/mfcc/raw_mfcc_train.1.ark,/home/ranaahtsham/Desktop/kaldi/egs/corpus_sn4/mfcc/raw_mfcc_train.1.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.1 --verbose=2 --config=conf/mfcc.conf ark:- ark:- 
+extract-segments scp,p:data/train/wav.scp exp/make_mfcc/train/segments.1 ark:- 
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_001
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_002
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_003
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_004
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_005
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_006
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_007
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_008
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_009
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_010
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_011
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_012
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_013
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_014
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_015
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_016
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_017
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_018
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_019
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 20 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_020
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_021
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_022
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_023
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_024
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_025
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_026
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_027
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_028
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_029
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 30 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_030
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_031
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_032
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_033
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_034
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_035
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_036
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_037
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_038
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_039
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 40 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_040
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_041
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_042
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_043
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_044
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_045
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_046
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_047
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_048
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_049
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 50 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_050
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_051
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_052
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_053
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_054
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_055
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_056
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_057
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_058
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_059
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 60 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_060
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_061
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_062
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_063
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_064
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_065
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_066
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_067
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_068
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_069
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 70 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_070
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_071
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_072
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_073
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_074
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_075
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_076
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_077
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_078
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_079
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 80 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_080
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_081
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_082
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_083
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_084
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_085
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_086
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_087
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_088
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_089
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 90 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_090
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_091
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_092
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_093
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_094
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_095
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_096
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_097
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_098
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_099
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 100 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_100
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_101
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_102
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_103
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_104
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_105
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_106
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_107
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_108
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_109
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 110 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_110
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_111
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_112
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_113
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_114
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_115
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_116
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_117
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_118
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_119
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 120 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_120
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_121
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_122
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_123
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_124
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_125
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_126
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_127
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_128
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_129
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 130 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_130
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_131
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_132
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_133
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_134
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_135
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_136
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_137
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_138
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_139
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 140 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_140
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_141
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_142
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_143
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_144
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_145
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_146
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_147
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_148
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_149
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 150 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_150
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_151
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_152
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_153
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_154
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_155
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_156
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_157
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_158
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_159
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 160 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_160
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_161
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_162
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_163
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_164
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_165
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_166
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_167
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_168
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_169
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 170 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_170
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_171
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_172
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_173
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_174
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_175
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_176
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_177
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_178
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_179
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 180 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_180
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_181
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_182
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_183
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_184
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_185
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_186
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_187
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_188
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_189
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 190 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_190
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_191
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_192
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_193
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_194
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_195
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_196
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_197
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_198
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_199
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 200 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_200
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_201
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_202
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_203
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_204
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_205
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_206
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_207
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_208
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_209
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 210 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_210
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_211
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_212
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_213
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_214
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_215
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_216
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_217
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_218
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_219
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 220 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_220
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_221
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_222
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_223
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_224
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_225
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_226
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_227
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_228
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_229
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 230 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_230
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_231
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_232
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_233
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_234
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_235
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_236
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_237
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_238
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_239
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 240 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_240
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_241
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_242
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_243
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_244
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_245
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_246
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_247
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_248
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_249
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 250 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_250
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_251
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_252
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_253
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_254
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_255
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_256
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_257
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_258
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_259
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 260 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_260
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_261
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_262
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_263
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_264
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_265
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_266
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_267
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_268
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_269
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 270 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_270
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_271
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_272
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_273
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_274
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_275
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_276
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_277
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_278
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_279
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 280 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_280
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_281
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_282
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_283
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_284
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_285
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_286
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_287
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_288
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_289
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 290 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_290
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_291
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_292
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_293
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_294
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_295
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_296
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_297
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_298
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_299
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 300 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_300
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_301
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_302
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_303
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_304
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_305
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_306
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_307
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_308
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_309
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 310 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_310
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_311
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_312
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_313
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_314
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_315
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_316
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_317
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_318
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_319
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 320 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_320
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_321
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_322
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_323
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_324
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_325
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_326
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_327
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_328
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_329
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 330 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_330
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_331
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_332
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_333
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_334
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_335
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_336
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_337
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_338
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_339
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 340 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_340
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_341
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_342
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_343
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_344
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_345
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_346
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_347
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_348
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_349
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 350 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_350
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_351
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_352
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_353
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_354
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_355
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_356
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_357
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_358
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_359
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 360 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_360
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_361
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_362
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_363
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_364
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_365
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_366
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_367
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_368
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_369
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 370 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_370
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_371
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_372
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_373
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_374
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_375
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_376
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_377
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_378
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_379
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 380 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_380
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_381
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_382
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_383
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_384
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_385
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_386
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_387
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_388
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_389
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 390 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_390
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_391
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_392
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_393
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_394
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_395
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_396
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_397
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_398
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_399
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 400 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_400
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_401
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_402
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_403
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_404
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_405
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_406
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_407
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_408
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_409
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 410 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_410
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_411
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_412
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_413
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_414
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_415
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_416
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_417
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_418
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_419
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 420 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_420
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_421
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_422
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_423
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_424
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_425
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_426
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_427
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_428
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_429
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 430 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_430
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_431
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_432
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_433
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_434
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_435
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_436
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_437
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_438
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_439
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 440 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_440
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_441
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_442
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_443
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_444
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_445
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_446
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_447
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_448
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_449
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 450 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_450
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_451
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_452
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_453
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_454
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_455
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_456
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_457
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_458
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_459
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 460 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_460
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_461
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_462
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_463
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_464
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_465
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_466
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_467
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_468
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_469
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 470 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_470
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_471
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_472
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_473
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_474
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_475
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_476
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_477
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_478
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_479
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 480 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_480
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_481
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_482
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_483
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_484
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_485
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_486
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_487
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_488
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_489
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 490 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_490
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_491
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_492
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_493
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_494
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_495
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_496
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_497
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_498
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_499
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 500 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_500
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_501
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_502
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_503
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_504
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_505
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_506
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_507
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_508
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_509
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 510 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_510
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_511
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_512
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_513
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_514
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_515
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_516
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_517
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_518
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_519
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 520 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_520
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_521
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_522
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_523
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_524
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_525
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_526
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_527
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_528
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_529
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 530 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_530
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_531
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_532
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_533
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_534
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_535
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_536
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_537
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_538
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_539
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 540 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_540
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_541
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_542
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_543
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_544
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_545
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_546
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_547
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_548
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_549
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 550 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_550
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_551
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_552
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_553
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_554
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_555
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_556
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_557
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_558
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_559
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 560 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_560
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_561
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_562
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_563
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_564
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_565
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_566
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_567
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_568
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_569
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 570 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_570
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_571
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_572
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_573
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_574
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_575
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_576
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_577
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_578
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_579
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 580 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_580
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_581
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_582
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_583
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_584
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_585
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_586
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_587
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_588
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_589
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 590 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_590
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_591
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_592
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_593
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_594
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_595
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_596
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_597
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_598
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_599
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 600 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_600
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_601
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_602
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_603
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_604
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_605
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_606
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_607
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_608
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_609
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 610 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_610
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_611
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_612
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_613
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_614
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_615
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_616
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_617
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_618
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_619
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 620 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_620
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_621
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_622
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_623
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_624
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_625
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_626
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_627
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_628
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_629
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 630 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_630
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_631
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_632
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_633
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_634
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_635
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_636
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_637
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_638
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_639
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 640 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_640
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_641
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_642
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_643
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_644
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_645
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_646
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_647
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_648
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_649
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 650 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_650
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_651
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_652
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_653
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_654
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_655
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_656
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_657
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_658
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_659
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 660 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_660
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_661
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_662
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_663
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_664
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_665
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_666
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_667
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_668
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_669
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 670 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_670
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_671
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_672
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_673
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_674
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_675
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_676
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_677
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_678
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_679
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 680 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_680
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_681
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_682
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_683
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_684
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_685
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_686
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_687
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_688
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_689
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 690 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_690
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_691
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_692
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_693
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_694
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_695
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_696
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_697
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_698
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_699
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 700 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_700
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_701
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_702
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_703
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_704
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_705
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_706
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_707
+LOG (extract-segments[5.5.907~1-cbed4]:main():extract-segments.cc:194) Successfully processed 708 lines out of 708 in the segments file. 
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030005_708
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:185)  Done 708 out of 708 utterances.
+LOG (copy-feats[5.5.907~1-cbed4]:main():copy-feats.cc:143) Copied 708 feature matrices.
+# Accounting: time=62 threads=1
+# Ended (code 0) at Thu Apr 22 15:56:46 PKT 2021, elapsed time 62 seconds
