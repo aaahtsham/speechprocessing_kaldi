@@ -1,0 +1,18 @@
+# steps/train_nnet.sh --hid-dim 2048 --hid-layers 5 --learn-rate 0.008 data/train_tr90 data/train_cv10 data/lang exp/tri3_ali exp/tri3_ali exp/tri3_dnn_2048x5 
+# Started at Wed Apr 21 10:13:37 PKT 2021
+#
+steps/train_nnet.sh --hid-dim 2048 --hid-layers 5 --learn-rate 0.008 data/train_tr90 data/train_cv10 data/lang exp/tri3_ali exp/tri3_ali exp/tri3_dnn_2048x5
+
+# INFO
+steps/train_nnet.sh : Training Neural Network
+	 dir       : exp/tri3_dnn_2048x5 
+	 Train-set : data/train_tr90 600, exp/tri3_ali 
+	 CV-set    : data/train_cv10 0 exp/tri3_ali 
+
+LOG ([5.5.907~1-cbed4]:main():cuda-gpu-available.cc:61) 
+
+### IS CUDA GPU AVAILABLE? 'ranaahtsham' ###
+### CUDA WAS NOT COMPILED IN! ###
+To support CUDA, you must run 'configure' on a machine that has the CUDA compiler 'nvcc' available.
+# Accounting: time=0 threads=1
+# Ended (code 1) at Wed Apr 21 10:13:37 PKT 2021, elapsed time 0 seconds

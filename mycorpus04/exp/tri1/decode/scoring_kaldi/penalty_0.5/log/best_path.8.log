@@ -1,0 +1,228 @@
+# lattice-scale --inv-acoustic-scale=8 "ark:gunzip -c exp/tri1/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- | lattice-best-path --word-symbol-table=exp/tri1/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/tri1/graph/words.txt | cat > exp/tri1/decode/scoring_kaldi/penalty_0.5/8.txt 
+# Started at Wed Apr 21 04:16:12 PKT 2021
+#
+lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- 
+lattice-scale --inv-acoustic-scale=8 'ark:gunzip -c exp/tri1/decode/lat.*.gz|' ark:- 
+lattice-best-path --word-symbol-table=exp/tri1/graph/words.txt ark:- ark,t:- 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_601, best cost 283.392 + 8842.8 = 9126.19 over 804 frames.
+20030004_601 نو بُدھی یہاں دب کو اونچی کے کہا کے کے دیش و میں تھری لنگر ای کو لہریں ایک علم بھول کے پڑ آؤ قبول کر نیلم گی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_602, best cost 340.872 + 11056.8 = 11397.6 over 1000 frames.
+20030004_602 دل شبہ کو آئیوڈین کے نارتھ اور اٹھے لے پر رکھے ہوے عدل بھائی کے لو بن نقش ای آلود چار کے با اوور لیں اسجد کرنے کی شرکت سے آ رجوع ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_603, best cost 237.199 + 8602.9 = 8840.09 over 782 frames.
+20030004_603 شامل شوہر اور نزلے کی بڑا اس کے گدے عمل پر اٹھاؤ تو تک گی لیے بےقصور پر کر رم میں جھاگ کر کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_604, best cost 230.481 + 7066.23 = 7296.72 over 638 frames.
+20030004_604 سدھ یہ نے نا اہل ای کے داخلوں کے کر بڑھ پڑھئے تو کہا اس سوچا ہیڈ کے لوث کے نوے اٹھائے ای 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_605, best cost 155.441 + 5501.37 = 5656.81 over 506 frames.
+20030004_605 سول جل شوربہ جون کے پہ شے میں گھول دیے ایک کر داخل دیتا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_606, best cost 175.2 + 6183.53 = 6358.73 over 554 frames.
+20030004_606 ندوی کے دماغی فلو بدھ سے کی اثنا پریوں کے تشخص کی بڑی فیض ای لینتھ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_607, best cost 131.76 + 4666.66 = 4798.42 over 428 frames.
+20030004_607 تک سے کی ایک کی اور فٹ کی زور باندھ گھمبیر نہ بنائی جائے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_608, best cost 150.721 + 6397.43 = 6548.15 over 578 frames.
+20030004_608 ہفتے کے گوڈی مرغی کو خرچ کا ڈام وجود جانے کی گلشن تو ہو گی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_609, best cost 234.87 + 8224.88 = 8459.75 over 746 frames.
+20030004_609 ٹیلنٹ شل میں محلوں میں جوار مگر مارچ میں اس تو لینے کا لیے اور فیس و کے جو رخ کا تصفیے یا کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_610, best cost 203.416 + 7967.51 = 8170.93 over 740 frames.
+20030004_610 مماثل اہل لے تشہیر کا ایڈڈ کی عموماً بیڑے آنے چل کی طرف سے بدھ دیے فیس آن ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_611, best cost 209.192 + 7459.67 = 7668.86 over 699 frames.
+20030004_611 کھو سے پہنے بھیم گا فورس در نے سے کے دب آؤ کو گڑگڑا حد کی پونچھ کے ساتھ چھ لے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_612, best cost 219.63 + 8173.36 = 8392.99 over 740 frames.
+20030004_612 تبدیلی و کی لغو زچ سینیٹ ڈھال بھورا رہے چلا شب کو دو وقوعہ <oov> کی لینگویج کا پانچواں ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_613, best cost 137.226 + 5839.03 = 5976.25 over 534 frames.
+20030004_613 علم کو لا بھاگ بوگس اور جل بالکل عشرے نے البتہ کہا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_614, best cost 161.219 + 5968.95 = 6130.17 over 547 frames.
+20030004_614 گود دو فیملی نے شے شو کے کرائی اور کے ساتھ سمجھیں بغیر سمجھو داغ کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_615, best cost 267.134 + 10353.1 = 10620.3 over 941 frames.
+20030004_615 عدالت کا شہزادی نے علی چور موئسچرائزنگ اس کو بلڈ اوس کرتے ہوئے جوبلی خان دانش کے دے جو دھیمی گوبر ہیڈ بڑھ آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_616, best cost 292.613 + 9770.9 = 10063.5 over 890 frames.
+20030004_616 تاجروں بیگ وارڈ ہیڈ نے اس و خان پور ڈویژن کو فروغ گز آج کر کیسی درد قسم خوف کی مان خود کا حال کا ایک تیار کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_617, best cost 187.806 + 6121.03 = 6308.84 over 569 frames.
+20030004_617 کم بے پر پڑے سوکھ کے گڈ چھاؤں میں کھیلوں کو ہو لیتا دیکھ کر حد آفس نے لگا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_618, best cost 221.613 + 8626.33 = 8847.94 over 792 frames.
+20030004_618 فارم ٹرین کا برعکس سے روشناس مجھ شو والے اکھنڈ صاف بنیں کرنے یوں کے بعد ویجز ایک تیار کیا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_619, best cost 152.317 + 5629.25 = 5781.56 over 524 frames.
+20030004_619 تہذیب ای تشبیہ جہاد مژدہ بے آن کرنے کا جو بھری ندوی جا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_620, best cost 238.338 + 7625.8 = 7864.14 over 688 frames.
+20030004_620 چیل معا نے پَلوں کے ہولوں کو گروہوں میں سموئے یا اور کی ڈیمو کو اڑوں پر خضوع شو آؤٹ کی تیار عریاں تھیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_621, best cost 236.164 + 8575.98 = 8812.14 over 757 frames.
+20030004_621 معجل مدرسہ شبلی نے اؤٹ کر زور جن کے مآب ایل میں سے نوبل سخت اور جا پی نواز نے میں پتھل کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_622, best cost 195.026 + 6969.21 = 7164.23 over 634 frames.
+20030004_622 کو جی کڑوے میں ندا اور گدے لے کر ایک در جلد عمر رسیدہ بیڑے پالمر میں سے گزری 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_623, best cost 154.174 + 5535.44 = 5689.62 over 510 frames.
+20030004_623 بینک ڈیل گیلری کر رو بنا خاص و برس کا محور کا نشانہ لے گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_624, best cost 237.822 + 8637.81 = 8875.63 over 768 frames.
+20030004_624 ماؤف اثر کے نو صفوں میں گیس جیم اور فورس فوریکس والا پور بخود عود کے انجکشن کیلئے مہم ارشد دھول تھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_625, best cost 205.331 + 7625.48 = 7830.81 over 717 frames.
+20030004_625 نئے روئی ڈیل ساگر میڈیا کی آدمی قدرے دیکھ کر بغور دیسی ورک کے منگوا کے ایک کھوہ گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_626, best cost 128.837 + 5065.55 = 5194.38 over 463 frames.
+20030004_626 لینڈ وہ بجیں کو ملی کیا آتا دھل کی ابھار سمجھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_627, best cost 200.48 + 6717.72 = 6918.2 over 610 frames.
+20030004_627 فروغ کا خیر رول عمل کے نہ گود کے اعلان میں یہ سے بڑا کو تو فوم میں لکھ آدھا گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_628, best cost 209.117 + 7661.42 = 7870.54 over 710 frames.
+20030004_628 لو حد کی تک میلہ آنے کے لیے بیٹھ ریڈ ٹریبیونل میں فن نور کی خوشی یاں احمد کود تھیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_629, best cost 213.652 + 8430.86 = 8644.51 over 773 frames.
+20030004_629 شیلٹر کے کوش والا کے وافر میں فیڈر اب از بورڈ فن عید نے ہو رخوں کا حسن بھیج کر آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_630, best cost 199.033 + 7122.95 = 7321.98 over 661 frames.
+20030004_630 ایام خیز ایل نے میں شے کے اشجار میں آکر بیچے انار ایک اچھال سے خواہ مدت کھل گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_631, best cost 272.788 + 9661.98 = 9934.77 over 905 frames.
+20030004_631 سی کی ایس چیف کو لینڈ آگ برڈ نے و وقف آ کیلئے فعل اور خرچ بھیجے تو غوث نے اسے موڑ کر چھانٹ لے دکھائی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_632, best cost 260.73 + 9458.17 = 9718.9 over 874 frames.
+20030004_632 فرض ای سے یہ لا نے کہا کے روئی ایئر کی بجٹ چھوڑ و اور بیڑیاں بھجوا کر فجور اور رسولی تھو اے بغیر بیٹھ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_633, best cost 244.296 + 9011.13 = 9255.43 over 822 frames.
+20030004_633 کریش جنم کے بغدادی تخیّل کے لیے انیق لینڈ دم اور فی سوں کی کو اس ایک سی حصے بلند کیلئے دی جی گے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_634, best cost 197.531 + 7251.12 = 7448.65 over 680 frames.
+20030004_634 کو لے شیلٹر جس سے شل کی اس خان کے لیے رو گٹھلیاں آ تھنک قل فرینڈ کر کے لائیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_635, best cost 213.129 + 7453.67 = 7666.8 over 684 frames.
+20030004_635 خاص میں ڈیل کو جیم کی ملاؤں خواہ اور میں بیٹھی اور اپیلیں مینگل جتنی یاں سے یہ ایک سے صغری کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_636, best cost 191.019 + 7147.62 = 7338.63 over 677 frames.
+20030004_636 قم اور ڈور خشوع نتھی جوبلی آپ شاہ ہونے سے سوچا کا تو ہم لوک آف کود ہوا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_637, best cost 199.951 + 6861.41 = 7061.36 over 652 frames.
+20030004_637 کا خوان کے اس تم آدمی پہنچ کر جنگی لا موعود ای کی خیر در سے موڈم بھیڑوں ہوئی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_638, best cost 207.363 + 7936.01 = 8143.37 over 709 frames.
+20030004_638 کالجوں گوجر کی شیڈ اور ڈرائینگ میں کو آئے صورت اور کوٹھڑی کو فٹ کی کے بلا آف سے جج چیل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_639, best cost 222.66 + 8316.38 = 8539.04 over 768 frames.
+20030004_639 حیرت کے دفتر کی دکھ ایک جلسے تجویز کر سچ کے نہ خود کی ضعف وارڈ رقصاں سے دب گود سکتیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_640, best cost 207.285 + 8388.68 = 8595.96 over 768 frames.
+20030004_640 چکے نیا ان پر بیٹھی گیارہویں سفید نے پیسنے کونسل کے شاہ والا کا کا چوری کھو جگ آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_641, best cost 185.594 + 6552.5 = 6738.1 over 601 frames.
+20030004_641 کو خواہ لائن وارڈ اور بڑی شعبوں افق کی آتشیں بعد سے دیکھ لا کر بینک سے کی دیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_642, best cost 176.237 + 6308.78 = 6485.02 over 588 frames.
+20030004_642 ہر خاں کے ہفتے میچ جس سیکھ اے تو تشخیص سے نفوذ کی ہوا راؤ اٹھی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_643, best cost 203.832 + 6855.01 = 7058.84 over 626 frames.
+20030004_643 تحفہ سے نہ فلو پر میں موقف آف فجر سے نہ ہائے اور ڈوگر افراط سے ضائع دیوی ڈال لیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_644, best cost 210.624 + 8385.43 = 8596.05 over 753 frames.
+20030004_644 کچھ کھیلیں میں خرچ شیو میں ڈور کروائیں اور زیڈ برابر چھری کے سے ینگ پر سکتے نے دوا پھیریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_645, best cost 208.128 + 7499.91 = 7708.04 over 687 frames.
+20030004_645 نے ڈور ویلوٹ کس میں دو زبوں کے اس آئے برج زور مس پر کرنے کی خواہ آشنا اگلے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_646, best cost 164.3 + 7214.37 = 7378.67 over 664 frames.
+20030004_646 سعودی نہ خون جوس نے اور جگ نے کے بعد لاؤ بحران میں کرائے ڈالنے آئی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_647, best cost 138.37 + 4970.75 = 5109.12 over 439 frames.
+20030004_647 والرس نمبر کے گھن عارضی بلند میں چور کر دو رو پر آئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_648, best cost 120.489 + 5792.76 = 5913.25 over 531 frames.
+20030004_648 میلے میں دودھیا چارجز پنہاں خود چلیں کیلئے کروا تھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_649, best cost 155.502 + 6314.4 = 6469.9 over 582 frames.
+20030004_649 کو کو کو کن گینز کرکے بیٹھ نے کے بعد کب آمدنی دل لگائی یہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_650, best cost 196.921 + 7549.43 = 7746.35 over 690 frames.
+20030004_650 ہجو اے کی تعلیم کی سی غیر اور سال میں یقین کی منفی الہیات کے دائِیں اس تک اعزہ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_651, best cost 182.252 + 7326.23 = 7508.48 over 679 frames.
+20030004_651 کوئی ایل کو آف ہیوی میں چوتھی کو کلی کا آنکھ کے اور نے سے تلے سونگ بھی تھی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_652, best cost 228.886 + 8557.81 = 8786.7 over 801 frames.
+20030004_652 پیٹھ رول ینگ کی جھیل ایک تھام گئی اور لولی کوڈ کے نو لا عمیق اب بورڈ کے سدھو تک پنچھی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_653, best cost 182.157 + 7474.39 = 7656.54 over 694 frames.
+20030004_653 لو اے ابرار بیس کسی سن دھل کر زیر کی کے جدید ڈھائی تک روز ہوا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_654, best cost 202.36 + 7529.92 = 7732.28 over 694 frames.
+20030004_654 ہڈی اور دیش ہاؤس از کیے شیعہ چولہے اور ان سیفٹی اور اس کے مل میں داغنے سدھ گئیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_655, best cost 127.311 + 5266.13 = 5393.44 over 493 frames.
+20030004_655 نانگا گشت کی یہ چھائی گوڈی لخت بو جانے کشف ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_656, best cost 206.752 + 8032.16 = 8238.92 over 744 frames.
+20030004_656 بے اسے سچ جی تیروں فیڈرل وزیر ای بینک بجائے اور سوئی موجب آ رنگ بے تھینکس کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_657, best cost 143.782 + 5812.5 = 5956.28 over 545 frames.
+20030004_657 خان گول آپ پن سے اندھے کے فروغ کردار کی حد سے موخر نہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_658, best cost 140.992 + 5724.23 = 5865.22 over 505 frames.
+20030004_658 لینڈ اؤٹ کا میں واں لو ایک ایڈز کی بات سے ہزار غوں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_659, best cost 219.522 + 8592.99 = 8812.51 over 796 frames.
+20030004_659 مدح تیری گود کر میں چھائی اور تھوڑی کار تک خام کو ہو رو قوس کے بعد بوائے یا خرچ سوویں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_660, best cost 108.828 + 4543.77 = 4652.6 over 406 frames.
+20030004_660 کو ایوارڈ خان کے بقول آپ اسلامی نہیں گھس نہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_661, best cost 140.149 + 5526 = 5666.15 over 513 frames.
+20030004_661 کا صفحے میں کیلئے بے چھور پر حامل کا داغ آ راہو دبائے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_662, best cost 166.292 + 5971.83 = 6138.12 over 549 frames.
+20030004_662 کر کن جوں کو کی آن کی یاں چلیں تو صیاد لوں کی تشبیہ ہی بھی کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_663, best cost 185.992 + 7221.99 = 7407.99 over 658 frames.
+20030004_663 پہ رونے جہاں چاہے مگ آگ انگوٹھی آڑ سال کی تو بھیم دے کی تدریس بخوبی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_664, best cost 239.314 + 8126.37 = 8365.68 over 744 frames.
+20030004_664 فرماں صیاد اے کے بارے اعظم میں تعین آ تو بھورے لے کا نہ زور ہوا تو ایئر جی گروں کے کھڑے ہو گئیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_665, best cost 141.59 + 6390.09 = 6531.68 over 587 frames.
+20030004_665 فیس نے خسارے حاوی سے سے بھرٹ چینی تو خواہ چَھپ بکھیر ہوا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_666, best cost 154.236 + 5368.03 = 5522.26 over 480 frames.
+20030004_666 بوم سے ہوے اگرچہ علم پر آ کا کا طرف زدہ خیر سے بھولیں دیئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_667, best cost 144.634 + 6055.92 = 6200.55 over 558 frames.
+20030004_667 پہلی ڈھیلے کی باڑھ سے چند ڈے ہو سے کے گو تبلیغ موسم ہوئی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_668, best cost 221.441 + 8386.19 = 8607.63 over 777 frames.
+20030004_668 ساؤتھ بھی فلو اور فعل کے پر لڑیں میں کو بنے والا جھنڈے کا کچلا بیعانہ حیثیت سے جال نکل لا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_669, best cost 157.971 + 5836.75 = 5994.72 over 543 frames.
+20030004_669 آ رخ اعظم نو فلو بورڈ میں کریو سیلز کیلئے ڈیزرٹ لوٹ نہیں کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_670, best cost 153.667 + 5567.68 = 5721.35 over 512 frames.
+20030004_670 روز ایک آخری اشجار ہیئر ایک فیصد عقاب کو کو اڑوں کا طرح لوں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_671, best cost 249.314 + 9327.03 = 9576.34 over 872 frames.
+20030004_671 ہو خوشی سے پہلے اس و سالہ کی گڑیا نے کہا سوں اور کس قبول کے سکول جھولے دی میں دو غور جی یہ جاؤ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_672, best cost 196.04 + 7174.48 = 7370.52 over 652 frames.
+20030004_672 انٹر میری ایئر شو سے لائیں تو فاروق آن بااثر ورک اور صرف درجے کا پہ گہرا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_673, best cost 156.091 + 5765.25 = 5921.34 over 536 frames.
+20030004_673 کرا لیں کے جا آنگن وعدے ہوے جو سے نظر کے بے پر پڑ آئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_674, best cost 187.713 + 7363.03 = 7550.74 over 656 frames.
+20030004_674 نقشوں نے پَلوں میں پڑتا خرچ آ وارڈ کر ہم بار ہی لوں ٹھونس نے کی کوشش کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_675, best cost 163.03 + 5400.81 = 5563.84 over 501 frames.
+20030004_675 آڑ زیور بری کے روپے پر سوچے ای تو تعاون کا ھابھہ آؤ اڑا آئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_676, best cost 203.459 + 6939.76 = 7143.22 over 617 frames.
+20030004_676 اپنے رہائش کی سے ایچ کا ندوی جا کو اے زوال نے عمل گشت اے جگ ڈے پر رکھ گی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_677, best cost 216.077 + 8543.61 = 8759.69 over 794 frames.
+20030004_677 مسائل نے بھی یا کی گگلی ہوئی مگر بعدازاں بو سب عود ہیرو گرداں آنے کو غایت سے بدل گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_678, best cost 245.572 + 9513.81 = 9759.38 over 870 frames.
+20030004_678 سن آف غزوہ پر ڈیلی فیتھ راؤ صرف والوں سے چھڑ آنے کے لیے ہیڈ رو جن فلیش سے مشق کے شیر کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_679, best cost 134.222 + 5404.18 = 5538.4 over 496 frames.
+20030004_679 تھوڑی اور تھیری پر چیف لگا یا تو سرحد تیزی سے اور چھوئیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_680, best cost 222.294 + 8291.29 = 8513.58 over 764 frames.
+20030004_680 چولہے کا جو اڑا بہن دل ہوے بیلٹ ہوتا لائے وہ خواہ راہبر اس نے میں ٹوہ راؤ آ جاتا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_681, best cost 213.419 + 7492.04 = 7705.46 over 688 frames.
+20030004_681 وعدہ آج اشعار منجھے اشرف کو کے حد کے ڈھا رسولی تو ہولوں ان پر بچھے دھار پر سوئے یا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_682, best cost 211.73 + 7036.9 = 7248.63 over 656 frames.
+20030004_682 بے ایفکٹ اور چُھپ آدھے کی لو ڈوب پر بے جڑیں کا ناآشنا جا کر باعث کے جو ہر معلوم کیے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_683, best cost 167.945 + 6566.82 = 6734.76 over 605 frames.
+20030004_683 ریڈ سے ماؤنٹ کی چلو تک اینڈ ایم نے نیو ریلیف کے اے سے نکل گئی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_684, best cost 192.446 + 8041.13 = 8233.57 over 758 frames.
+20030004_684 نئے ورلڈ وی پھول کو واحد زیڈ کے قیوم میں میرون یا رحیل طلب تک کھاؤں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_685, best cost 160.982 + 5292.92 = 5453.9 over 489 frames.
+20030004_685 جو فلڈ حوض دیوی جی یہ بخشے اور سے کہا سے لاؤ مون بدھ ہو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_686, best cost 188.458 + 5935.26 = 6123.72 over 543 frames.
+20030004_686 صرف خبریں کے صرف کھیل بیعت پریشر سے بنے یادیں مے سچ کا شو شاہ پوچھ و 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_687, best cost 220.881 + 8731.16 = 8952.04 over 796 frames.
+20030004_687 صوفی کو اے اس کے بعد سلور سے آنکھیں کھولنے تو باب ابھرا سے چیک مارچ کر تو وجہ مہجور پر گئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_688, best cost 271.265 + 8902.46 = 9173.73 over 831 frames.
+20030004_688 ہر کی بلکہ چادر رزق خرچ آکر سنچری یاں ہزار قم اور بھیج کی کے بے ایف میں نے کہا مون کے قرار تھے داغ میں جا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_689, best cost 226.21 + 6944.85 = 7171.06 over 645 frames.
+20030004_689 بو جو تو بڑے جیز ذخیرہ کیا جا نور جو ہول بن آئے اور سوئس و فصل ایک اوجھل کر چھائی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_690, best cost 126.321 + 4806.02 = 4932.34 over 467 frames.
+20030004_690 یہ غنی یاں نہ بڑھائیں کے شو لے کوچوان نہیں جاتا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_691, best cost 205.724 + 8466.27 = 8672 over 808 frames.
+20030004_691 کی سے کے دلجوئی کے لیے اپنا آج اگر دھوئے یا اوور بہن سے ٹھونس آکر معین آدمی ٹھونس دیئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_692, best cost 210.511 + 6943.27 = 7153.78 over 657 frames.
+20030004_692 بدھ کھونے ساری کہا کے مے مصر ہو ساغر اے حد گاڑی کے بہ ہی کھا تیری دل ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_693, best cost 156.277 + 7061.4 = 7217.67 over 673 frames.
+20030004_693 میں نے حق کے ایک جوئیہ سے کہا کے وہ کا پر بنا کر لائے مدح دو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_694, best cost 235.681 + 6680.16 = 6915.84 over 604 frames.
+20030004_694 طرح ان کاجو اڑا شے شیخ آیا تھر صاف آپ کو گفٹ جیٹ جی اور کو سے کی جا کو جو بن بنائیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_695, best cost 181.542 + 6538.14 = 6719.68 over 606 frames.
+20030004_695 کوئی کے جان نئے کھچی جانے کو کیا رنگ اگر کیچ جاؤں تو پانی میں گھول جا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_696, best cost 175.942 + 6741.87 = 6917.81 over 617 frames.
+20030004_696 دل شیم فورس ریڈ کی آمیزش کو بس ملیں مسوڑوں کے بنانے کیلئے فراواں کیا جائے گا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_697, best cost 141.198 + 5344.54 = 5485.74 over 492 frames.
+20030004_697 بلوں اور کا عود سے سَیل لینڈ دنگ کے ڈیزائنروں کرنے کا کام ہو گا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_698, best cost 158.814 + 5017.47 = 5176.28 over 474 frames.
+20030004_698 بار واں ہم ذادہ دور بھینٹ سے شہاب آئے اوس کا جائزہ لینے لگا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_699, best cost 207.429 + 6506.17 = 6713.6 over 596 frames.
+20030004_699 نجات کے غیور ضعف کار کیچڑ ای میں وعدہ آئے کے ایل یا نے بے احمد کی کا مارچ سوچوں 
+LOG (lattice-scale[5.5.907~1-cbed4]:main():lattice-scale.cc:107) Done 108 lattices.
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_700, best cost 166.775 + 5838.43 = 6005.2 over 540 frames.
+20030004_700 کوش طور کو کی تک خلیل میں تغافل کی سوجھی جھڑک کر وہ سوکھ سخت کو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_701, best cost 214.59 + 6770.99 = 6985.58 over 617 frames.
+20030004_701 مضمون گاؤن مان دونوں کو فضل کی تو ہم اپنا جی سے کے جلو آکر موذی سکول تو کو سمجھا آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_702, best cost 159.108 + 5419.05 = 5578.16 over 513 frames.
+20030004_702 غیر فیصلہ آ قوت کی روڈ میں ہر ایک کو شاہ دو نادر حق شو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_703, best cost 144.551 + 5374.02 = 5518.57 over 504 frames.
+20030004_703 حیرت چائلڈ سے تولید ای چینی کے بچھڑوں کا کو بار ظاہر ہوتا ہے 
+LOG (lattice-add-penalty[5.5.907~1-cbed4]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 108 lattices.
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_704, best cost 191.565 + 8049.52 = 8241.09 over 762 frames.
+20030004_704 چوتھے آئی ونگ سیکشن بھوت آئین نہ عذاب یوں کے ایک انظباتی کے لاؤ کا پراسیس ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_705, best cost 180.816 + 6283.24 = 6464.05 over 586 frames.
+20030004_705 با وجہ گگن ماہ آئے گروپ میوزک چار پر لاگت آٹھ پھنس و سے بڑھ گئی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_706, best cost 124.978 + 4591.35 = 4716.33 over 434 frames.
+20030004_706 بیلٹ سفید گیس کی آنکھ اے دکھی تم آدمی چون 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_707, best cost 145.01 + 4995.23 = 5140.24 over 479 frames.
+20030004_707 ماضی کو بھورا یا ہر تو عابد بڑھ جیوری گناہوں میں نہ پڑھے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_708, best cost 177.526 + 6907.73 = 7085.25 over 653 frames.
+20030004_708 جنگ جھرنے سے پہلے پر وے نے مجھے کوچ باڑہ صیغہ طریقہ اور مشق سمجھا اے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:124) Overall cost per frame is 11.1565 = 0.296105 [graph] + 10.8604 [acoustic] over 70132 frames.
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:128) Done 108 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Wed Apr 21 04:16:12 PKT 2021, elapsed time 0 seconds

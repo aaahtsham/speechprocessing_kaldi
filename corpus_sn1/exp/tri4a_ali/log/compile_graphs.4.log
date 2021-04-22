@@ -1,0 +1,8 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri4a_ali/tree exp/tri4a_ali/final.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 2 -f 2- data/lang/words.txt data/train/split4/4/text|" "ark:|gzip -c >exp/tri4a_ali/fsts.4.gz" 
+# Started at Thu Apr 22 14:10:04 PKT 2021
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri4a_ali/tree exp/tri4a_ali/final.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 2 -f 2- data/lang/words.txt data/train/split4/4/text|' 'ark:|gzip -c >exp/tri4a_ali/fsts.4.gz' 
+Can't open data/train/split4/4/text: No such file or directory at utils/sym2int.pl line 71.
+LOG (compile-train-graphs[5.5.907~1-cbed4]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 0 graphs, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 1) at Thu Apr 22 14:10:04 PKT 2021, elapsed time 0 seconds

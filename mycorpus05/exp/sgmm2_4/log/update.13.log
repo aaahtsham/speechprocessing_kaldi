@@ -1,0 +1,917 @@
+# sgmm2-est --update-flags=vNwSctu --split-substates=8729 --power=0.25 --write-occs=exp/sgmm2_4/14.occs exp/sgmm2_4/13.mdl "sgmm2-sum-accs - exp/sgmm2_4/13.*.acc|" exp/sgmm2_4/14.mdl 
+# Started at Wed Apr 21 07:27:24 PKT 2021
+#
+sgmm2-est --update-flags=vNwSctu --split-substates=8729 --power=0.25 --write-occs=exp/sgmm2_4/14.occs exp/sgmm2_4/13.mdl 'sgmm2-sum-accs - exp/sgmm2_4/13.*.acc|' exp/sgmm2_4/14.mdl 
+sgmm2-sum-accs - exp/sgmm2_4/13.1.acc 
+LOG (sgmm2-sum-accs[5.5.907~1-cbed4]:main():sgmm2-sum-accs.cc:87) Written stats to -
+LOG (sgmm2-est[5.5.907~1-cbed4]:MleUpdate():transition-model.cc:528) TransitionModel::Update, objf change is 0 per frame over 586095 frames. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:MleUpdate():transition-model.cc:531) 131 probabilities floored, 12305 out of 19428 transition-states skipped due to insuffient data (it is normal to have some skipped.)
+LOG (sgmm2-est[5.5.907~1-cbed4]:main():sgmm2-est.cc:109) Transition model update: Overall 0 log-like improvement per frame over 586095 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:Check():estimate-am-sgmm2.cc:216) Sgmm2PdfModel: J1 = 1400, J2 = 5647, D = 40, S = 41, T = 40, I = 400
+LOG (sgmm2-est[5.5.907~1-cbed4]:Check():estimate-am-sgmm2.cc:362) Subspace GMM model properties: Y: yes, nonzero. Z: yes, nonzero. R: yes, nonzero. gamma_s: yes, zero. S: yes, nonzero. y: yes, nonzero. a: yes.  a: yes, nonzero. gamma: yes.  gamma: yes, nonzero. gamma_c: yes, nonzero. t: yes, nonzero. t: yes, nonzero. 
+WARNING (sgmm2-est[5.5.907~1-cbed4]:ComputeLogA():estimate-am-sgmm2.cc:834) 1 sub-states with zero "a" (and presumably gamma) stats.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdatePhoneVectors():estimate-am-sgmm2.cc:788) Updating phone vectors
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdatePhoneVectorsInternal():estimate-am-sgmm2.cc:934) Auxf impr for j = 0 m = 0 is 0.00838074 per frame over 860.341 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdatePhoneVectorsInternal():estimate-am-sgmm2.cc:934) Auxf impr for j = 0 m = 1 is 0.00534628 per frame over 1565.81 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdatePhoneVectorsInternal():estimate-am-sgmm2.cc:934) Auxf impr for j = 0 m = 2 is 0.00645079 per frame over 1582.76 frames.
+WARNING (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:643) Zero quadratic term in quadratic vector problem for v: leaving it unchanged.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdatePhoneVectorsInternal():estimate-am-sgmm2.cc:934) Auxf impr for j = 1 m = 0 is -nan per frame over 0 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdatePhoneVectorsInternal():estimate-am-sgmm2.cc:934) Auxf impr for j = 2 m = 0 is 0.0721392 per frame over 22.8919 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdatePhoneVectorsInternal():estimate-am-sgmm2.cc:934) Auxf impr for j = 2 m = 1 is 0.0438165 per frame over 50.2516 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdatePhoneVectorsInternal():estimate-am-sgmm2.cc:934) Auxf impr for j = 2 m = 2 is 0.0165679 per frame over 115.403 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for v: floored 1 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for v: floored 3 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for v: floored 2 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for v: floored 1 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for v: floored 1 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for v: floored 1 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for v: floored 1 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdatePhoneVectors():estimate-am-sgmm2.cc:800) **Overall auxf impr for v is 0.05018 over 586066 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1325) Updating weight projections
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 0, i = 0 is 0.00127298 per frame over 953.679 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 0, i = 1 is 0.000784551 per frame over 1204.36 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 0, i = 2 is 0.000383017 per frame over 3218.67 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 0, i = 3 is 0.000401138 per frame over 3545.21 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 0, i = 4 is 0.00235641 per frame over 1783.47 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 0, i = 5 is 0.000435404 per frame over 1176.09 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 0, i = 6 is 0.000340072 per frame over 1683.66 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 0, i = 7 is 0.00110535 per frame over 2005.46 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 0, i = 8 is 0.00110867 per frame over 1225.18 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 0, i = 9 is 0.000522653 per frame over 3032.36 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 1, i = 0 is 0.000151529 per frame over 953.679 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 1, i = 1 is 3.22033e-05 per frame over 1204.36 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 1, i = 2 is 9.99939e-05 per frame over 3218.67 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 1, i = 3 is 8.63332e-05 per frame over 3545.21 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 1, i = 4 is 0.000187356 per frame over 1783.47 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 1, i = 5 is 5.62485e-05 per frame over 1176.09 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 1, i = 6 is 2.51536e-05 per frame over 1683.66 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 1, i = 7 is 0.000255053 per frame over 2005.46 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 1, i = 8 is 4.44872e-05 per frame over 1225.18 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 1, i = 9 is 9.34566e-05 per frame over 3032.36 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 2, i = 0 is 0.000108365 per frame over 953.679 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 2, i = 1 is 2.50047e-05 per frame over 1204.36 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 2, i = 2 is 7.34563e-05 per frame over 3218.67 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 2, i = 3 is 6.72822e-05 per frame over 3545.21 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 2, i = 4 is 0.000121844 per frame over 1783.47 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 2, i = 5 is 3.98072e-05 per frame over 1176.09 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 2, i = 6 is 2.17803e-05 per frame over 1683.66 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 2, i = 7 is 0.000169909 per frame over 2005.46 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 2, i = 8 is 3.03815e-05 per frame over 1225.18 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1379) Predicted objf impr for w, iter = 2, i = 9 is 6.89861e-05 per frame over 3032.36 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateW():estimate-am-sgmm2.cc:1433) **Overall objf impr for w is 0.000953512, actual 0.00141843, over 586066 frames
+WARNING (sgmm2-est[5.5.907~1-cbed4]:UpdateVars():estimate-am-sgmm2.cc:1649) For Gaussian component 3: Floored 1 covariance eigenvalues.
+WARNING (sgmm2-est[5.5.907~1-cbed4]:UpdateVars():estimate-am-sgmm2.cc:1649) For Gaussian component 14: Floored 1 covariance eigenvalues.
+WARNING (sgmm2-est[5.5.907~1-cbed4]:UpdateVars():estimate-am-sgmm2.cc:1649) For Gaussian component 15: Floored 1 covariance eigenvalues.
+WARNING (sgmm2-est[5.5.907~1-cbed4]:UpdateVars():estimate-am-sgmm2.cc:1649) For Gaussian component 19: Floored 1 covariance eigenvalues.
+WARNING (sgmm2-est[5.5.907~1-cbed4]:UpdateVars():estimate-am-sgmm2.cc:1649) For Gaussian component 20: Floored 1 covariance eigenvalues.
+WARNING (sgmm2-est[5.5.907~1-cbed4]:UpdateVars():estimate-am-sgmm2.cc:1649) For Gaussian component 36: Floored 1 covariance eigenvalues.
+WARNING (sgmm2-est[5.5.907~1-cbed4]:UpdateVars():estimate-am-sgmm2.cc:1649) For Gaussian component 108: Floored 1 covariance eigenvalues.
+WARNING (sgmm2-est[5.5.907~1-cbed4]:UpdateVars():estimate-am-sgmm2.cc:1649) For Gaussian component 109: Floored 1 covariance eigenvalues.
+WARNING (sgmm2-est[5.5.907~1-cbed4]:UpdateVars():estimate-am-sgmm2.cc:1649) For Gaussian component 231: Floored 1 covariance eigenvalues.
+WARNING (sgmm2-est[5.5.907~1-cbed4]:UpdateVars():estimate-am-sgmm2.cc:1649) For Gaussian component 233: Floored 1 covariance eigenvalues.
+WARNING (sgmm2-est[5.5.907~1-cbed4]:UpdateVars():estimate-am-sgmm2.cc:1649) For Gaussian component 234: Floored 1 covariance eigenvalues.
+WARNING (sgmm2-est[5.5.907~1-cbed4]:UpdateVars():estimate-am-sgmm2.cc:1649) For Gaussian component 264: Floored 1 covariance eigenvalues.
+WARNING (sgmm2-est[5.5.907~1-cbed4]:UpdateVars():estimate-am-sgmm2.cc:1649) For Gaussian component 290: Floored 1 covariance eigenvalues.
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateVars():estimate-am-sgmm2.cc:1675) **Overall objf impr for variance update = 0.0121322 over 586066 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateSubstateWeights():estimate-am-sgmm2.cc:1684) Updating substate mixture weights
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateSubstateWeights():estimate-am-sgmm2.cc:1707) **Overall objf impr for c is 2.1215e-05, over 586066 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateN():estimate-am-sgmm2.cc:1512) Objf impr for spk projection N for i = 0, is 0.0015174 over 953.679 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateN():estimate-am-sgmm2.cc:1512) Objf impr for spk projection N for i = 1, is 0.00445063 over 1204.36 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateN():estimate-am-sgmm2.cc:1512) Objf impr for spk projection N for i = 2, is 0.00090889 over 3218.67 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateN():estimate-am-sgmm2.cc:1512) Objf impr for spk projection N for i = 3, is 0.000688561 over 3545.21 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateN():estimate-am-sgmm2.cc:1512) Objf impr for spk projection N for i = 4, is 0.00250068 over 1783.47 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateN():estimate-am-sgmm2.cc:1512) Objf impr for spk projection N for i = 5, is 0.00499313 over 1176.09 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateN():estimate-am-sgmm2.cc:1512) Objf impr for spk projection N for i = 6, is 0.0036361 over 1683.66 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateN():estimate-am-sgmm2.cc:1512) Objf impr for spk projection N for i = 7, is 0.00115279 over 2005.46 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateN():estimate-am-sgmm2.cc:1512) Objf impr for spk projection N for i = 8, is 0.00465519 over 1225.18 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateN():estimate-am-sgmm2.cc:1512) Objf impr for spk projection N for i = 9, is 0.000708837 over 3032.36 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticMatrixProblem():sp-matrix.cc:786) Solving matrix problem for N: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateN():estimate-am-sgmm2.cc:1520) **Overall objf impr for N is 0.000909701 over 586066 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateU():estimate-am-sgmm2.cc:1473) Objf impr for spk weight-projection u for i = 0, is 0.000266997 over 953.679 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateU():estimate-am-sgmm2.cc:1473) Objf impr for spk weight-projection u for i = 1, is 0.000270714 over 1204.36 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateU():estimate-am-sgmm2.cc:1473) Objf impr for spk weight-projection u for i = 2, is 1.94212e-05 over 3218.67 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateU():estimate-am-sgmm2.cc:1473) Objf impr for spk weight-projection u for i = 3, is 1.22259e-05 over 3545.21 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateU():estimate-am-sgmm2.cc:1473) Objf impr for spk weight-projection u for i = 4, is 0.000434989 over 1783.47 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateU():estimate-am-sgmm2.cc:1473) Objf impr for spk weight-projection u for i = 5, is 3.73062e-06 over 1176.09 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateU():estimate-am-sgmm2.cc:1473) Objf impr for spk weight-projection u for i = 6, is 0.000398872 over 1683.66 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateU():estimate-am-sgmm2.cc:1473) Objf impr for spk weight-projection u for i = 7, is 2.66729e-05 over 2005.46 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateU():estimate-am-sgmm2.cc:1473) Objf impr for spk weight-projection u for i = 8, is 0.00118017 over 1225.18 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateU():estimate-am-sgmm2.cc:1473) Objf impr for spk weight-projection u for i = 9, is 0.000327777 over 3032.36 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:SolveQuadraticProblem<double>():sp-matrix.cc:686) Solving quadratic problem for u: floored 39 eigenvalues. 
+LOG (sgmm2-est[5.5.907~1-cbed4]:UpdateU():estimate-am-sgmm2.cc:1481) **Overall objf impr for u is 5.11722e-05, over 586066 frames
+LOG (sgmm2-est[5.5.907~1-cbed4]:RenormalizeV():estimate-am-sgmm2.cc:969) Scatter of vectors v is : 
+LOG (sgmm2-est[5.5.907~1-cbed4]:PrintEigs():matrix/sp-matrix.h:207) PrintEigs: Sigma:  [ 1.03843 0.983496 1.02969 0.98848 0.988867 1.02739 0.991089 0.991667 0.99303 0.993776 0.993333 0.994759 0.99598 0.996799 0.996544 0.997658 0.9993 1.00013 1.00041 1.00127 1.00224 1.00365 1.00444 1.005 1.00626 1.00814 1.01174 1.01002 1.01031 1.01272 1.01345 1.01391 1.02525 1.01622 1.0171 1.02319 1.02275 1.02238 1.02055 1.01917 1.01961 ]
+
+LOG (sgmm2-est[5.5.907~1-cbed4]:RenormalizeV():estimate-am-sgmm2.cc:991) Note on the next diagnostic: the first number is generally not that meaningful as it relates to the static offset
+LOG (sgmm2-est[5.5.907~1-cbed4]:PrintEigs():matrix/sp-matrix.h:207) PrintEigs: H_sm_proj (Significance of dims in vector space.. note):  [ 120.223 14.488 13.0729 11.7841 10.7072 9.62968 9.04728 8.07694 7.96079 7.55604 7.2 6.98506 6.50879 6.22312 5.97765 5.70357 5.56286 5.31871 1.31705 4.95026 4.69105 4.61337 1.57837 1.81097 1.85347 2.05001 4.27383 4.09263 4.02813 3.86506 3.65371 3.55203 3.49451 2.25966 2.48502 2.72255 2.76991 3.19308 3.05863 3.02283 2.90644 ]
+
+LOG (sgmm2-est[5.5.907~1-cbed4]:RenormalizeV():estimate-am-sgmm2.cc:1037) Renormalized subspace.
+LOG (sgmm2-est[5.5.907~1-cbed4]:Update():estimate-am-sgmm2.cc:673) *Overall auxf improvement, combining all parameters, is 0.0647127
+LOG (sgmm2-est[5.5.907~1-cbed4]:Update():estimate-am-sgmm2.cc:676) ***Overall data likelihood is -42.1214 over 586066 frames.
+LOG (sgmm2-est[5.5.907~1-cbed4]:ComputeHsmFromModel():am-sgmm2.cc:1294) total count is 586061
+LOG (sgmm2-est[5.5.907~1-cbed4]:SplitSubstates():am-sgmm2.cc:692) Getting rid of normalizers as they will no longer be valid
+LOG (sgmm2-est[5.5.907~1-cbed4]:SplitSubstates():am-sgmm2.cc:694) Split 9157 substates to 9267
+LOG (sgmm2-est[5.5.907~1-cbed4]:ComputeNormalizers():am-sgmm2.cc:858) Computing normalizers
+LOG (sgmm2-est[5.5.907~1-cbed4]:ComputeNormalizers():am-sgmm2.cc:865) Entropy of weights in substates is 2.18525 over 9267 substates, equivalent to perplexity of 8.89291
+LOG (sgmm2-est[5.5.907~1-cbed4]:ComputeNormalizers():am-sgmm2.cc:869) Done computing normalizers
+LOG (sgmm2-est[5.5.907~1-cbed4]:main():sgmm2-est.cc:158) Written model to exp/sgmm2_4/14.mdl
+# Accounting: time=13 threads=1
+# Ended (code 0) at Wed Apr 21 07:27:37 PKT 2021, elapsed time 13 seconds

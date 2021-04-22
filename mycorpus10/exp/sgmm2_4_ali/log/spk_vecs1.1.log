@@ -1,0 +1,89 @@
+# ali-to-post "ark:gunzip -c exp/sgmm2_4_ali/pre_ali.1.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/sgmm2_4/final.alimdl ark:- ark:- | sgmm2-post-to-gpost "--gselect=ark,s,cs:gunzip -c exp/sgmm2_4/gselect.1.gz|" exp/sgmm2_4/final.alimdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- |" ark:- ark:- | sgmm2-est-spkvecs-gpost --spk2utt=ark:data/train/split1/1/spk2utt exp/sgmm2_4/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- |" ark,s,cs:- ark:exp/sgmm2_4_ali/pre_vecs.1 
+# Started at Wed Apr 21 08:20:50 PKT 2021
+#
+sgmm2-est-spkvecs-gpost --spk2utt=ark:data/train/split1/1/spk2utt exp/sgmm2_4/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- |' ark,s,cs:- ark:exp/sgmm2_4_ali/pre_vecs.1 
+ali-to-post 'ark:gunzip -c exp/sgmm2_4_ali/pre_ali.1.gz|' ark:- 
+sgmm2-post-to-gpost '--gselect=ark,s,cs:gunzip -c exp/sgmm2_4/gselect.1.gz|' exp/sgmm2_4/final.alimdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- |' ark:- ark:- 
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/sgmm2_4/final.alimdl ark:- ark:- 
+transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- 
+transform-feats exp/sgmm2_4/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
+splice-feats ark:- ark:- 
+transform-feats exp/sgmm2_4/final.mat ark:- ark:- 
+transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
+splice-feats ark:- ark:- 
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.9937
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -33.0853
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.7784
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.8585
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -33.1159
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -33.332
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -33.4014
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -33.5137
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -33.7756
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -33.4191
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -33.1857
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -33.0675
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.9134
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.9541
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.9079
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.8722
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.819
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.7431
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.6696
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.5378
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.4296
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.3719
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.2987
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.2139
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.0864
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -31.9739
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -31.8202
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -31.7448
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -31.7469
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -31.7262
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -31.7059
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -31.6846
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -31.7158
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -31.8221
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -31.8835
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -31.9199
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.0151
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.1987
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.3003
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.2903
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.2837
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.3105
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.2999
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.2854
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.3963
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.4527
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.4882
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.5131
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.5137
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.4835
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.4863
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.4872
+LOG (ali-to-post[5.5.907~1-cbed4]:main():ali-to-post.cc:73) Converted 538 alignments.
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -32.54
+LOG (weight-silence-post[5.5.907~1-cbed4]:main():weight-silence-post.cc:95) Done 538 posteriors.
+LOG (apply-cmvn[5.5.907~1-cbed4]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 538 utterances, errors on 0
+LOG (apply-cmvn[5.5.907~1-cbed4]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 538 utterances, errors on 0
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -83.1254 over 403812 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 538 utterances; 0 had errors.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -83.1254 over 403812 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 538 utterances; 0 had errors.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average logdet is 0.371579 over 403812 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 538 utterances; 0 had errors.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average logdet is 0.371579 over 403812 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 538 utterances; 0 had errors.
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:173) Overall like per frame (Gaussian only) = -32.6015 over 403812 frames.
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:176) Done 538 files, 0 with errors.
+LOG (sgmm2-est-spkvecs-gpost[5.5.907~1-cbed4]:UpdateWithU():estimate-am-sgmm2.cc:1937) *Objf impr for speaker vector is 0.0685467 per frame, over 332980 frames.
+LOG (sgmm2-est-spkvecs-gpost[5.5.907~1-cbed4]:main():sgmm2-est-spkvecs-gpost.cc:158) For speaker 20030010, auxf-impr from speaker vector is 0.0685467, over 332980 frames.
+
+LOG (sgmm2-est-spkvecs-gpost[5.5.907~1-cbed4]:main():sgmm2-est-spkvecs-gpost.cc:208) Done 538 files, 0 with errors.
+LOG (sgmm2-est-spkvecs-gpost[5.5.907~1-cbed4]:main():sgmm2-est-spkvecs-gpost.cc:210) Overall auxf impr per frame is 0.0685467 over 332980 frames.
+# Accounting: time=38 threads=1
+# Ended (code 0) at Wed Apr 21 08:21:28 PKT 2021, elapsed time 38 seconds

@@ -1,0 +1,1265 @@
+# extract-segments scp,p:data/train/wav.scp exp/make_mfcc/train/segments.3 ark:- | compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.3 --verbose=2 --config=conf/mfcc.conf ark:- ark:- | copy-feats --compress=true --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.3 ark:- ark,scp:/home/ranaahtsham/Desktop/kaldi/egs/corpus_ms/mfcc/raw_mfcc_train.3.ark,/home/ranaahtsham/Desktop/kaldi/egs/corpus_ms/mfcc/raw_mfcc_train.3.scp 
+# Started at Thu Apr 22 06:45:18 PKT 2021
+#
+copy-feats --compress=true --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.3 ark:- ark,scp:/home/ranaahtsham/Desktop/kaldi/egs/corpus_ms/mfcc/raw_mfcc_train.3.ark,/home/ranaahtsham/Desktop/kaldi/egs/corpus_ms/mfcc/raw_mfcc_train.3.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.3 --verbose=2 --config=conf/mfcc.conf ark:- ark:- 
+extract-segments scp,p:data/train/wav.scp exp/make_mfcc/train/segments.3 ark:- 
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_001
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_002
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 96000 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_003
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_004
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_005
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_006
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_007
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_008
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_009
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_010
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_011
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_012
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_013
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_014
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_015
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_016
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_017
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_018
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_019
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 20 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_020
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_021
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_022
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_023
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_024
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_025
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_026
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_027
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_028
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_029
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 30 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_030
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_031
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_032
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_033
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_034
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_035
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_036
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_037
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_038
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 12000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x5590a645052c]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_039
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 12000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x5590a645052c]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_040
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 12000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x5590a645052c]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_041
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 12000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x5590a645052c]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_042
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 12000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x5590a645052c]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_043
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 12000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x5590a645052c]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_044
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 12000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x5590a645052c]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_045
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 12000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x5590a645052c]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_046
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 12000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x5590a645052c]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_047
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_048
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_049
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 50 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_050
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_051
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_052
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_053
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_054
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_055
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_056
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_057
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_058
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_059
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 60 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_060
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_061
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_062
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_063
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_064
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_065
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_066
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_067
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_068
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_069
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 70 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_070
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_071
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_072
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_073
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_074
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_075
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_076
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_077
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_078
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_079
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 80 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_080
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_081
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_082
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_083
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_084
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_085
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_086
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_087
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_088
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_089
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 90 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_090
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_091
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_092
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_093
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_094
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_095
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_096
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_097
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_098
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_099
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 100 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_100
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_101
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_102
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_103
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_104
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_105
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_106
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_107
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_108
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_109
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 110 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_110
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_111
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_112
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_113
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_114
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_115
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_116
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_117
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_118
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_119
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 120 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_120
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_121
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_122
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_123
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_124
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_125
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_126
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_127
+WARNING (extract-segments[5.5.907~1-cbed4]:HasKeyInternal():util/kaldi-table-inl.h:1769) Error opening stream path/20030010_129.wav
+WARNING (extract-segments[5.5.907~1-cbed4]:main():extract-segments.cc:125) Could not find recording 20030010_129, skipping segment 20030010_129
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_128
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_130
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 130 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_131
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_132
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_133
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_134
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_135
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_136
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_137
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_138
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_139
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_140
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 140 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_141
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_142
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_143
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_144
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_145
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_146
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_147
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_148
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_149
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_150
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 150 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_151
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_152
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_153
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_154
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_155
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_156
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_157
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_158
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_159
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_160
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 160 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_161
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_162
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_163
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_164
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_165
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_166
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_167
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_168
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_169
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_170
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 170 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_171
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_172
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_173
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_174
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_175
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_176
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_177
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_178
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_179
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_180
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 180 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_181
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_182
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_183
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_184
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_185
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_186
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_187
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_188
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_189
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_190
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 190 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_191
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_192
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_193
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_194
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_195
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_196
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_197
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_198
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_199
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_200
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 200 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_201
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_202
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_203
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_204
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_205
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_206
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_207
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_208
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_209
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_210
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 210 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_211
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_212
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_213
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_214
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_215
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_216
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_217
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_218
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_219
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_220
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 220 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_221
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_222
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_223
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_224
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_225
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_226
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_227
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_228
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_229
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_230
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 230 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_231
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_232
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_233
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_234
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_235
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_236
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_237
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_238
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_239
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_240
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 240 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_241
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_242
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_243
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_244
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_245
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_246
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_247
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_248
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_249
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_250
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 250 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_251
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_252
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_253
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_254
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_255
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_256
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_257
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_258
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_259
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_260
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 260 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_261
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_262
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_263
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_264
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_265
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_266
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_267
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_268
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_269
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_270
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 270 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_271
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_272
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_273
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_274
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_275
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_276
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_277
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_278
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_279
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_280
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 280 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_281
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_282
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_283
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_284
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_285
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_286
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_287
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_288
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_289
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_290
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 290 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_291
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_292
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_293
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_294
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_295
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_296
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_297
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_298
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_299
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_300
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 300 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_301
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_302
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_303
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_304
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_305
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_306
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_307
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_308
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_309
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_310
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 310 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_311
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_312
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_313
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_314
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_315
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_316
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_317
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_318
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_319
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_320
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 320 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_321
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_322
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_323
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_324
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_325
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_326
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_327
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_328
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_329
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_330
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 330 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_331
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_332
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_333
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_334
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_335
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_336
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_337
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_338
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_339
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_340
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 340 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_341
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_342
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_343
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_344
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_345
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_346
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_347
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_348
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_349
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_350
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 350 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_351
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_352
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_353
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_354
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_355
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_356
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_357
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_358
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_359
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_360
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 360 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_361
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_362
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_363
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_364
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_365
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_366
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_367
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_368
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_369
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_370
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 370 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_371
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_372
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_373
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_374
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_375
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_376
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_377
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_378
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_379
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_380
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 380 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_381
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_382
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_383
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_384
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_385
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_386
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_387
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_388
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_389
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_390
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 390 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_391
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_392
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_393
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_394
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_395
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_396
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_397
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_398
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_399
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_400
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 400 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_401
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_402
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_403
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_404
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_405
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_406
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_407
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_408
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_409
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_410
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 410 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_411
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_412
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_413
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_414
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_415
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_416
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_417
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_418
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_419
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_420
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 420 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_421
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_422
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_423
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_424
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_425
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_426
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_427
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_428
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_429
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_430
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 430 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_431
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_432
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_433
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_434
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_435
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_436
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_437
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_438
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_439
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_440
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 440 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_441
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_442
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_443
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_444
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_445
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_446
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_447
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_448
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_449
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_450
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_451
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_452
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_453
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_454
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_455
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_456
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_457
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_458
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_459
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_460
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_461
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_462
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_463
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_464
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_465
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_466
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_467
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_468
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_469
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_470
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_471
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_472
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_473
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_474
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_475
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_476
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_477
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_478
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_479
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_480
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_481
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_482
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_483
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_484
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_485
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_486
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_487
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_488
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_489
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_490
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_491
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_492
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_493
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_494
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_495
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_496
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_497
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_498
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_499
+ERROR (compute-mfcc-feats[5.5.907~1-cbed4]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
+
+[ Stack-Trace: ]
+compute-mfcc-feats(kaldi::MessageLogger::LogMessage() const+0x77b) [0x5590a64e57b7]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x5590a6443655]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x5590a6450475]
+compute-mfcc-feats(main+0xbd0) [0x5590a64416f9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb325de40b3]
+compute-mfcc-feats(_start+0x2e) [0x5590a6440a6e]
+
+WARNING (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance 20030010_500
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 500 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_501
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_502
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_503
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_504
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_505
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_506
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_507
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_508
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_509
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_510
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 510 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_511
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_512
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_513
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_514
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_515
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_516
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_517
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_518
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_519
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_520
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 520 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_521
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_522
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_523
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_524
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_525
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_526
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_527
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_528
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_529
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_530
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 530 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_531
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_532
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_533
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_534
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_535
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_536
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_537
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_538
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_539
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_540
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 540 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_541
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_542
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_543
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_544
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_545
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_546
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_547
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_548
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_549
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_550
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 550 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_551
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_552
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_553
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_554
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_555
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_556
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_557
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_558
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_559
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_560
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 560 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_561
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_562
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_563
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_564
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_565
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_566
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_567
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_568
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_569
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_570
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 570 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_571
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_572
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_573
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_574
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_575
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_576
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_577
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_578
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_579
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_580
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 580 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_581
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_582
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_583
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_584
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_585
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_586
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_587
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_588
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_589
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_590
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:181) Processed 590 utterances
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_591
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_592
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_593
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_594
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_595
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_596
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_597
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_598
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_599
+LOG (extract-segments[5.5.907~1-cbed4]:main():extract-segments.cc:194) Successfully processed 599 lines out of 600 in the segments file. 
+VLOG[2] (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:182) Processed features for key 20030010_600
+LOG (compute-mfcc-feats[5.5.907~1-cbed4]:main():compute-mfcc-feats.cc:185)  Done 539 out of 599 utterances.
+LOG (copy-feats[5.5.907~1-cbed4]:main():copy-feats.cc:143) Copied 539 feature matrices.
+# Accounting: time=47 threads=1
+# Ended (code 0) at Thu Apr 22 06:46:05 PKT 2021, elapsed time 47 seconds

@@ -1,0 +1,161 @@
+# gunzip -c exp/sgmm2_4/decode/pre_lat.1.gz | lattice-prune --acoustic-scale=0.1 --beam=4.0 ark:- ark:- | lattice-determinize-pruned --acoustic-scale=0.1 --beam=4.0 ark:- ark:- | lattice-to-post --acoustic-scale=0.1 ark:- ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/sgmm2_4/final.alimdl ark:- ark:- | sgmm2-post-to-gpost "--gselect=ark,s,cs:gunzip -c exp/sgmm2_4/decode/gselect.1.gz|" exp/sgmm2_4/final.alimdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark,s,cs:exp/tri3/decode/trans.1 ark:- ark:- |" ark:- ark:- | sgmm2-est-spkvecs-gpost --spk2utt=ark:data/test/split1/1/spk2utt exp/sgmm2_4/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark,s,cs:exp/tri3/decode/trans.1 ark:- ark:- |" ark,s,cs:- ark:exp/sgmm2_4/decode/pre_vecs.1 
+# Started at Wed Apr 21 05:15:20 PKT 2021
+#
+sgmm2-post-to-gpost '--gselect=ark,s,cs:gunzip -c exp/sgmm2_4/decode/gselect.1.gz|' exp/sgmm2_4/final.alimdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark,s,cs:exp/tri3/decode/trans.1 ark:- ark:- |' ark:- ark:- 
+lattice-determinize-pruned --acoustic-scale=0.1 --beam=4.0 ark:- ark:- 
+lattice-to-post --acoustic-scale=0.1 ark:- ark:- 
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/sgmm2_4/final.alimdl ark:- ark:- 
+sgmm2-est-spkvecs-gpost --spk2utt=ark:data/test/split1/1/spk2utt exp/sgmm2_4/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark,s,cs:exp/tri3/decode/trans.1 ark:- ark:- |' ark,s,cs:- ark:exp/sgmm2_4/decode/pre_vecs.1 
+lattice-prune --acoustic-scale=0.1 --beam=4.0 ark:- ark:- 
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_601, pruned #states from 4902 to 3956 and #arcs from 8674 to 6136
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_602, pruned #states from 4687 to 3924 and #arcs from 8344 to 6168
+apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark,s,cs:exp/tri3/decode/trans.1 ark:- ark:- 
+splice-feats ark:- ark:- 
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_603, pruned #states from 3421 to 2707 and #arcs from 6113 to 4270
+transform-feats exp/sgmm2_4/final.mat ark:- ark:- 
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_604, pruned #states from 3652 to 3056 and #arcs from 6549 to 4806
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_605, pruned #states from 3546 to 2875 and #arcs from 6381 to 4551
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_606, pruned #states from 2567 to 2151 and #arcs from 4602 to 3392
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_607, pruned #states from 1535 to 1319 and #arcs from 2712 to 2055
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_608, pruned #states from 1909 to 1558 and #arcs from 3338 to 2441
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_609, pruned #states from 3001 to 2650 and #arcs from 5332 to 4223
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_610, pruned #states from 3823 to 2972 and #arcs from 6753 to 4655
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_611, pruned #states from 2987 to 2409 and #arcs from 5264 to 3766
+splice-feats ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark,s,cs:exp/tri3/decode/trans.1 ark:- ark:- 
+transform-feats exp/sgmm2_4/final.mat ark:- ark:- 
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_612, pruned #states from 3236 to 2752 and #arcs from 5829 to 4363
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_613, pruned #states from 1757 to 1483 and #arcs from 3108 to 2364
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_614, pruned #states from 1999 to 1744 and #arcs from 3492 to 2736
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_615, pruned #states from 5033 to 4195 and #arcs from 9026 to 6632
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_616, pruned #states from 4575 to 3729 and #arcs from 8191 to 5933
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_617, pruned #states from 2436 to 2137 and #arcs from 4367 to 3402
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_618, pruned #states from 4992 to 4012 and #arcs from 8980 to 6326
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_619, pruned #states from 1730 to 1533 and #arcs from 3070 to 2443
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_620, pruned #states from 3680 to 3022 and #arcs from 6584 to 4762
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_621, pruned #states from 4024 to 3117 and #arcs from 7164 to 4895
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_622, pruned #states from 4228 to 3511 and #arcs from 7597 to 5648
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_623, pruned #states from 2814 to 2260 and #arcs from 4949 to 3485
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_624, pruned #states from 3600 to 2987 and #arcs from 6372 to 4663
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_625, pruned #states from 4664 to 3699 and #arcs from 8319 to 5773
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_626, pruned #states from 2666 to 2148 and #arcs from 4692 to 3302
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_627, pruned #states from 2530 to 2058 and #arcs from 4512 to 3250
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_628, pruned #states from 3512 to 2798 and #arcs from 6305 to 4438
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -45.4353
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_629, pruned #states from 3466 to 2867 and #arcs from 6232 to 4554
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_630, pruned #states from 2933 to 2365 and #arcs from 5169 to 3711
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_631, pruned #states from 5528 to 4171 and #arcs from 9771 to 6482
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_632, pruned #states from 4830 to 3940 and #arcs from 8555 to 6212
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_633, pruned #states from 6385 to 4745 and #arcs from 11538 to 7426
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_634, pruned #states from 3600 to 2794 and #arcs from 6432 to 4382
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_635, pruned #states from 3614 to 2877 and #arcs from 6418 to 4533
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_636, pruned #states from 3384 to 2604 and #arcs from 5892 to 3957
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -45.7018
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_637, pruned #states from 3401 to 2807 and #arcs from 6028 to 4416
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_638, pruned #states from 2923 to 2406 and #arcs from 5145 to 3791
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_639, pruned #states from 4039 to 3274 and #arcs from 7168 to 5107
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_640, pruned #states from 2549 to 2244 and #arcs from 4470 to 3517
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_641, pruned #states from 3037 to 2478 and #arcs from 5286 to 3764
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_642, pruned #states from 3323 to 2810 and #arcs from 5903 to 4387
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_643, pruned #states from 3145 to 2642 and #arcs from 5651 to 4228
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_644, pruned #states from 4428 to 3354 and #arcs from 7871 to 5237
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_645, pruned #states from 3909 to 3125 and #arcs from 7032 to 4936
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_646, pruned #states from 2905 to 2323 and #arcs from 5156 to 3564
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_647, pruned #states from 2141 to 1774 and #arcs from 3775 to 2725
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -45.6563
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_648, pruned #states from 1810 to 1576 and #arcs from 3189 to 2481
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_649, pruned #states from 3021 to 2413 and #arcs from 5355 to 3739
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_650, pruned #states from 2871 to 2378 and #arcs from 5094 to 3822
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_651, pruned #states from 4984 to 3946 and #arcs from 8964 to 6114
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_652, pruned #states from 5475 to 4246 and #arcs from 9730 to 6577
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_653, pruned #states from 2662 to 2269 and #arcs from 4680 to 3557
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_654, pruned #states from 3884 to 3220 and #arcs from 6890 to 5117
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_655, pruned #states from 2363 to 1869 and #arcs from 4184 to 2895
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_656, pruned #states from 5180 to 3913 and #arcs from 9176 to 6093
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_657, pruned #states from 2361 to 1987 and #arcs from 4160 to 3109
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -45.4206
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_658, pruned #states from 3359 to 2723 and #arcs from 6041 to 4311
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_659, pruned #states from 4681 to 3827 and #arcs from 8233 to 5940
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_660, pruned #states from 1720 to 1401 and #arcs from 2996 to 2180
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_661, pruned #states from 2696 to 1967 and #arcs from 4801 to 3116
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_662, pruned #states from 3055 to 2478 and #arcs from 5384 to 3797
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_663, pruned #states from 3212 to 2641 and #arcs from 5678 to 4088
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_664, pruned #states from 3783 to 3095 and #arcs from 6724 to 4869
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_665, pruned #states from 2484 to 2123 and #arcs from 4398 to 3298
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_666, pruned #states from 2630 to 2097 and #arcs from 4679 to 3315
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_667, pruned #states from 3624 to 2710 and #arcs from 6376 to 4206
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -45.2372
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_668, pruned #states from 4067 to 3235 and #arcs from 7257 to 5153
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_669, pruned #states from 2517 to 2080 and #arcs from 4485 to 3299
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_670, pruned #states from 1855 to 1602 and #arcs from 3254 to 2530
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_671, pruned #states from 4274 to 3508 and #arcs from 7490 to 5362
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_672, pruned #states from 3529 to 2841 and #arcs from 6348 to 4532
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_673, pruned #states from 2905 to 2410 and #arcs from 5108 to 3734
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_674, pruned #states from 2859 to 2374 and #arcs from 4997 to 3677
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_675, pruned #states from 2303 to 1910 and #arcs from 4068 to 2994
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_676, pruned #states from 2901 to 2415 and #arcs from 5044 to 3761
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_677, pruned #states from 3805 to 3113 and #arcs from 6781 to 4937
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_678, pruned #states from 3993 to 3188 and #arcs from 7008 to 4973
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_679, pruned #states from 2884 to 2458 and #arcs from 5156 to 3834
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -44.7718
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_680, pruned #states from 3672 to 2891 and #arcs from 6456 to 4444
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_681, pruned #states from 3243 to 2672 and #arcs from 5757 to 4193
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_682, pruned #states from 2852 to 2083 and #arcs from 4951 to 3197
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_683, pruned #states from 3408 to 2796 and #arcs from 6112 to 4430
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_684, pruned #states from 4945 to 3806 and #arcs from 8872 to 5985
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_685, pruned #states from 3055 to 2444 and #arcs from 5346 to 3796
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_686, pruned #states from 3199 to 2335 and #arcs from 5685 to 3665
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_687, pruned #states from 4016 to 2896 and #arcs from 7103 to 4482
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_688, pruned #states from 5521 to 4544 and #arcs from 9866 to 7076
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_689, pruned #states from 2770 to 2274 and #arcs from 4816 to 3547
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -44.5365
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_690, pruned #states from 1334 to 1216 and #arcs from 2287 to 1860
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_691, pruned #states from 3633 to 2902 and #arcs from 6360 to 4497
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_692, pruned #states from 3079 to 2564 and #arcs from 5426 to 4035
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_693, pruned #states from 2717 to 2256 and #arcs from 4756 to 3457
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_694, pruned #states from 3031 to 2502 and #arcs from 5407 to 3934
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_695, pruned #states from 3349 to 2774 and #arcs from 5969 to 4293
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_696, pruned #states from 2699 to 2214 and #arcs from 4820 to 3515
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_697, pruned #states from 2040 to 1752 and #arcs from 3602 to 2746
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_698, pruned #states from 1964 to 1705 and #arcs from 3472 to 2694
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_699, pruned #states from 3635 to 2876 and #arcs from 6498 to 4492
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -44.4438
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_700, pruned #states from 2664 to 1969 and #arcs from 4760 to 3034
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_701, pruned #states from 3279 to 2576 and #arcs from 5836 to 4079
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_702, pruned #states from 2718 to 2206 and #arcs from 4821 to 3457
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_703, pruned #states from 2587 to 2087 and #arcs from 4633 to 3333
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_704, pruned #states from 4238 to 3205 and #arcs from 7505 to 4949
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_705, pruned #states from 2329 to 1863 and #arcs from 4082 to 2948
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_706, pruned #states from 2573 to 1986 and #arcs from 4558 to 3102
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_707, pruned #states from 2643 to 2280 and #arcs from 4684 to 3585
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:95) For utterance 20030004_708, pruned #states from 4370 to 3345 and #arcs from 7878 to 5265
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:104) Overall, pruned from on average 3318.11 to 2679.57 states, and from 5890.34 to 4197.29 arcs, over 108 utterances.
+LOG (lattice-prune[5.5.907~1-cbed4]:main():lattice-prune.cc:108) Done 108 lattices.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:main():lattice-determinize-pruned.cc:159) Average input-lattice depth (measured at at state level) is 4.48965, output depth is 2.42064, over 70132 frames  (average num-frames = 649.37).
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:main():lattice-determinize-pruned.cc:164) Done 108 lattices, determinization finished earlier than specified by the beam (or output was empty) on 0 of these.
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -44.3249
+LOG (lattice-to-post[5.5.907~1-cbed4]:main():lattice-to-post.cc:106) Overall average log-like/frame is -5.25688 over 70132 frames.  Average acoustic like/frame is -4.9808
+LOG (lattice-to-post[5.5.907~1-cbed4]:main():lattice-to-post.cc:110) Done 108 lattices.
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:168) Avg like per frame so far is -44.1775
+LOG (apply-cmvn[5.5.907~1-cbed4]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 108 utterances, errors on 0
+LOG (apply-cmvn[5.5.907~1-cbed4]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 108 utterances, errors on 0
+LOG (weight-silence-post[5.5.907~1-cbed4]:main():weight-silence-post.cc:95) Done 108 posteriors.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -80.9396 over 70132 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 108 utterances; 0 had errors.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -80.9396 over 70132 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 108 utterances; 0 had errors.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average logdet is -2.23796 over 70132 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 108 utterances; 0 had errors.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average logdet is -2.23796 over 70132 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 108 utterances; 0 had errors.
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:173) Overall like per frame (Gaussian only) = -43.9855 over 70132 frames.
+LOG (sgmm2-post-to-gpost[5.5.907~1-cbed4]:main():sgmm2-post-to-gpost.cc:176) Done 108 files, 0 with errors.
+LOG (sgmm2-est-spkvecs-gpost[5.5.907~1-cbed4]:UpdateWithU():estimate-am-sgmm2.cc:1937) *Objf impr for speaker vector is 0.0690482 per frame, over 59451.7 frames.
+LOG (sgmm2-est-spkvecs-gpost[5.5.907~1-cbed4]:main():sgmm2-est-spkvecs-gpost.cc:158) For speaker 20030004, auxf-impr from speaker vector is 0.0690482, over 59451.7 frames.
+
+LOG (sgmm2-est-spkvecs-gpost[5.5.907~1-cbed4]:main():sgmm2-est-spkvecs-gpost.cc:208) Done 108 files, 0 with errors.
+LOG (sgmm2-est-spkvecs-gpost[5.5.907~1-cbed4]:main():sgmm2-est-spkvecs-gpost.cc:210) Overall auxf impr per frame is 0.0690482 over 59451.7 frames.
+# Accounting: time=7 threads=1
+# Ended (code 0) at Wed Apr 21 05:15:27 PKT 2021, elapsed time 7 seconds

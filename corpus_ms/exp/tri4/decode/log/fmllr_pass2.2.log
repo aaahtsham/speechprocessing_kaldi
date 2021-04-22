@@ -1,0 +1,66 @@
+# lattice-determinize-pruned --acoustic-scale=0.083333 --beam=4.0 "ark:gunzip -c exp/tri4/decode/lat.tmp.2.gz|" ark:- | lattice-to-post --acoustic-scale=0.083333 ark:- ark:- | weight-silence-post 0.01 1:2:3:4:5:6:7:8:9:10 exp/tri4/final.mdl ark:- ark:- | gmm-est-fmllr --fmllr-update-type=full --spk2utt=ark:data/test/split4/2/spk2utt exp/tri4/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split4/2/utt2spk scp:data/test/split4/2/cmvn.scp scp:data/test/split4/2/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split4/2/utt2spk ark:exp/tri4/decode/pre_trans.2 ark:- ark:- |" ark,s,cs:- ark:exp/tri4/decode/trans_tmp.2 && compose-transforms --b-is-affine=true ark:exp/tri4/decode/trans_tmp.2 ark:exp/tri4/decode/pre_trans.2 ark:exp/tri4/decode/trans.2 
+# Started at Thu Apr 22 12:58:26 PKT 2021
+#
+weight-silence-post 0.01 1:2:3:4:5:6:7:8:9:10 exp/tri4/final.mdl ark:- ark:- 
+lattice-to-post --acoustic-scale=0.083333 ark:- ark:- 
+gmm-est-fmllr --fmllr-update-type=full --spk2utt=ark:data/test/split4/2/spk2utt exp/tri4/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split4/2/utt2spk scp:data/test/split4/2/cmvn.scp scp:data/test/split4/2/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split4/2/utt2spk ark:exp/tri4/decode/pre_trans.2 ark:- ark:- |' ark,s,cs:- ark:exp/tri4/decode/trans_tmp.2 
+lattice-determinize-pruned --acoustic-scale=0.083333 --beam=4.0 'ark:gunzip -c exp/tri4/decode/lat.tmp.2.gz|' ark:- 
+transform-feats --utt2spk=ark:data/test/split4/2/utt2spk ark:exp/tri4/decode/pre_trans.2 ark:- ark:- 
+transform-feats exp/tri4/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split4/2/utt2spk scp:data/test/split4/2/cmvn.scp scp:data/test/split4/2/feats.scp ark:- 
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (apply-cmvn[5.5.907~1-cbed4]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 108 utterances, errors on 0
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -79.8253 over 136802 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 108 utterances; 0 had errors.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average logdet is 2.00256 over 136802 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 108 utterances; 0 had errors.
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:main():lattice-determinize-pruned.cc:159) Average input-lattice depth (measured at at state level) is 78.1962, output depth is 48.5362, over 136802 frames  (average num-frames = 1266.69).
+LOG (lattice-determinize-pruned[5.5.907~1-cbed4]:main():lattice-determinize-pruned.cc:164) Done 108 lattices, determinization finished earlier than specified by the beam (or output was empty) on 0 of these.
+LOG (lattice-to-post[5.5.907~1-cbed4]:main():lattice-to-post.cc:106) Overall average log-like/frame is -4.35268 over 136802 frames.  Average acoustic like/frame is -4.26131
+LOG (lattice-to-post[5.5.907~1-cbed4]:main():lattice-to-post.cc:110) Done 108 lattices.
+LOG (weight-silence-post[5.5.907~1-cbed4]:main():weight-silence-post.cc:95) Done 108 posteriors.
+LOG (gmm-est-fmllr[5.5.907~1-cbed4]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.0687184 per frame over 112681 frames.
+LOG (gmm-est-fmllr[5.5.907~1-cbed4]:main():gmm-est-fmllr.cc:143) For speaker 20030005, auxf-impr from fMLLR is 0.0687184, over 112681 frames.
+LOG (gmm-est-fmllr[5.5.907~1-cbed4]:main():gmm-est-fmllr.cc:188) Done 108 files, 0 with no posts, 0 with other errors.
+LOG (gmm-est-fmllr[5.5.907~1-cbed4]:main():gmm-est-fmllr.cc:190) Overall fMLLR auxf impr per frame is 0.0687184 over 112681 frames.
+compose-transforms --b-is-affine=true ark:exp/tri4/decode/trans_tmp.2 ark:exp/tri4/decode/pre_trans.2 ark:exp/tri4/decode/trans.2 
+# Accounting: time=913 threads=1
+# Ended (code 0) at Thu Apr 22 13:13:39 PKT 2021, elapsed time 913 seconds

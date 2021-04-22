@@ -1,0 +1,876 @@
+# lattice-scale --inv-acoustic-scale=9 "ark:gunzip -c exp/tri3/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/tri3/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/tri3/graph/words.txt | cat > exp/tri3/decode/scoring_kaldi/penalty_1.0/9.txt 
+# Started at Thu Apr 22 11:52:06 PKT 2021
+#
+lattice-scale --inv-acoustic-scale=9 'ark:gunzip -c exp/tri3/decode/lat.*.gz|' ark:- 
+lattice-best-path --word-symbol-table=exp/tri3/graph/words.txt ark:- ark,t:- 
+lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_601, best cost 132.235 + 4804.04 = 4936.28 over 804 frames.
+20030004_601 دیوبندی لاگت رنجیدہ کی شنید ریلیف بلی داؤدی پڑا غنودگی نہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_602, best cost 162.799 + 6117.25 = 6280.05 over 1000 frames.
+20030004_602 گروہ کوآرڈینیٹر اور تھیٹر تھیوری گلوبل شیرخوار چار کے بروکلی جھلی شہر سے آرزوئیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_603, best cost 116.704 + 4670.11 = 4786.82 over 782 frames.
+20030004_603 شمشاد بغور تذلیل آسٹریلوی پر کارکردگی روزوں پراچہ ترجیح 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_604, best cost 80.3057 + 3833.68 = 3913.99 over 638 frames.
+20030004_604 جیلانی دراوڑی غصب چاہے سے اپنے ہو گئی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_605, best cost 73.4162 + 3031.87 = 3105.28 over 506 frames.
+20030004_605 چونچلے شعاع جنگی پیشنگوئی کی کرتا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_606, best cost 93.7612 + 3344.94 = 3438.7 over 554 frames.
+20030004_606 گرویدہ موروثی تذلیل کے کاغذ کی بڑی گزیر تھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_607, best cost 84.5769 + 2533.8 = 2618.37 over 428 frames.
+20030004_607 تحصیل کی اور کی زوال بھومی لاابالی جیب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_608, best cost 84.937 + 3521.4 = 3606.33 over 578 frames.
+20030004_608 کرکے کی معیوب کو خوشگوار جڑی مجذوب کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_609, best cost 117.54 + 4518.65 = 4636.19 over 746 frames.
+20030004_609 کے شمولیت باورچی رسولی کا ریورس کی جھگی سوغات صیاد کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_610, best cost 122.434 + 4293.65 = 4416.08 over 740 frames.
+20030004_610 بااثر ایلویٹ شیرخوار ٹیلیویژن بیڑیاں نیچے کی ترچھی بلدیاتی صاحب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_611, best cost 97.5429 + 4099.72 = 4197.26 over 699 frames.
+20030004_611 حسینی رفو صیہونی سے کے دوران کی دوجے سچ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_612, best cost 126.15 + 4394.08 = 4520.23 over 740 frames.
+20030004_612 تنظیم کی ورزش کردار معالجہ شخص خودرو کو کی لینگویج چراغاں ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_613, best cost 76.5434 + 3143.25 = 3219.79 over 534 frames.
+20030004_613 پرنم فولاد کو ذوالجلال قریشی کردار 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_614, best cost 91.57 + 3371.16 = 3462.73 over 547 frames.
+20030004_614 بندوق ٹیکنیشنز کے قائم کے ساتھ سوجنے بزرگوار کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_615, best cost 154.337 + 5569.18 = 5723.52 over 941 frames.
+20030004_615 گلدستہ شہزادی ٹیچر موئسچرائزنگ سومرو سکتے بھولیں جوبلی حالانکہ دلجوئی تو علیحدہ ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_616, best cost 150.358 + 5229.49 = 5379.85 over 890 frames.
+20030004_616 تاجور اور میڈیسن اور نیلوفر روضہ سے تحصیلدار تصدق کی ماخذ قہقہے کیا کی ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_617, best cost 92.1669 + 3303.37 = 3395.54 over 569 frames.
+20030004_617 کو میں کارپوریشن کے بدچلنی روے کارخیر شناسی ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_618, best cost 126.846 + 4672.55 = 4799.4 over 792 frames.
+20030004_618 خانگی کبڈی سے روشناس ورچوئل اقتصادی کرنے کے بعد تجزیے کیا کیا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_619, best cost 79.3193 + 3048.3 = 3127.62 over 524 frames.
+20030004_619 تیزی کے شیرخوار مدعیان کلومیٹر جوڈیشل ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_620, best cost 128.455 + 4118.02 = 4246.48 over 688 frames.
+20030004_620 جیلانی پریوں کے اور مصروفیات اور دیوبند پرجوش کھاؤں کی کیا لالچی ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_621, best cost 142.531 + 4621.44 = 4763.97 over 757 frames.
+20030004_621 معجل جلسہ شیو قرضوں جیٹ گہماگہمی زیور سوچا کی آواز کی پہلے کیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_622, best cost 94.7959 + 3760.34 = 3855.14 over 634 frames.
+20030004_622 اور چیتھڑے میں کا اور کے ٹریلر ازسرنو ریزروز تھیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_623, best cost 69.9129 + 2965.6 = 3035.51 over 510 frames.
+20030004_623 بینک پروگرام فرسودہ سامان دانش آیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_624, best cost 123.746 + 4630.6 = 4754.35 over 768 frames.
+20030004_624 حفاظ کلثوم ایجنسی غوروخوض اور اثرورسوخ کی کرشنگ کیوں بشمول تھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_625, best cost 96.3101 + 4015.85 = 4112.16 over 717 frames.
+20030004_625 نظریے کے بعد کی کوارڈینیٹر گردیزی کرکے واقع ہو گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_626, best cost 78.3998 + 2689.98 = 2768.38 over 463 frames.
+20030004_626 کلیرنگ بجھی کولسری کیا تحصیلدار سمجھائیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_627, best cost 82.2586 + 3586.52 = 3668.78 over 610 frames.
+20030004_627 خوراک غیرت کیموتھراپی سے وقوف اومیگا کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_628, best cost 103.151 + 4074.43 = 4177.59 over 710 frames.
+20030004_628 کرتی کرنے والے لٹریچر ریلیف خلجی ہوشیاری وفود تھیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_629, best cost 121.071 + 4376.01 = 4497.08 over 773 frames.
+20030004_629 شیڈ کے کے نوشاد کے واقعی کے تنازع گلیوں بدمزگی چراغ ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_630, best cost 100.074 + 3792.16 = 3892.24 over 661 frames.
+20030004_630 کیونکہ زمین شے شاندار بیچارے پرچم سیراب کر دیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_631, best cost 139.777 + 5000.37 = 5140.15 over 905 frames.
+20030004_631 سیل سیکھ اور لینڈ اور بیٹھی وفاقی فیڈریشن بھیجے گزیر سے مچانے کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_632, best cost 111.026 + 4902.02 = 5013.05 over 874 frames.
+20030004_632 وزیرداخلہ کے ایکویٹی بچّو کوڑیاں بھجوا پر کولسری سویٹر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_633, best cost 106.831 + 4775.55 = 4882.38 over 822 frames.
+20030004_633 ویلڈنگ باغبانی گھنیری جہتیں اور فیصد کی توسیع سندھی سے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_634, best cost 91.8397 + 3831.38 = 3923.22 over 680 frames.
+20030004_634 پریشان ٹیکسیشن کی اقتصادی بھولنا کے دلفریب کرتے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_635, best cost 89.9927 + 3942.25 = 4032.25 over 684 frames.
+20030004_635 حاصل نوچندی گراموفون ریسٹورنٹ عدلیہ سیاست کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_636, best cost 95.4884 + 3797.25 = 3892.74 over 677 frames.
+20030004_636 پروفیشنل کی جونیئر شاہ مریضوں جاتا تو بخوبی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_637, best cost 79.8546 + 3660.1 = 3739.95 over 652 frames.
+20030004_637 خوان بیساکھی بدچلنی طاغوتی طرزعمل ہوئیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_638, best cost 117.933 + 4281.09 = 4399.02 over 709 frames.
+20030004_638 پانچوں کے کی شیفرڈ تعمیر پرسوز اور سیکورٹی کیوڑہ سے چیچن 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_639, best cost 130.778 + 4440.66 = 4571.43 over 768 frames.
+20030004_639 کیفے برطرفی کرکے سے تشخیص تصفیے طاغوتی زوردار صاف سے کو سکتیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_640, best cost 127.854 + 4530.86 = 4658.72 over 768 frames.
+20030004_640 چھاؤں کیوں پر بیٹھی یادیں سیسے اور سے شواہد پنچولی حوصلہ ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_641, best cost 83.3927 + 3404.85 = 3488.24 over 601 frames.
+20030004_641 اور اور باریش فوقیت شناسی بےاختیار ویسے کیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_642, best cost 98.0329 + 3376.48 = 3474.52 over 588 frames.
+20030004_642 پرائیویٹ کی اویسی کے گردش سے خصوصی کو آرتھو کیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_643, best cost 92.4595 + 3641.29 = 3733.75 over 626 frames.
+20030004_643 تحفہ سرگرمیوں اور تجزیہ اور بودلہ سزائیں کے کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_644, best cost 116.06 + 4387.71 = 4503.77 over 753 frames.
+20030004_644 پچیں نقشے میں دوڑائیں وزراء مویشی کیسی بار سے بات کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_645, best cost 93.743 + 4015.77 = 4109.52 over 687 frames.
+20030004_645 بریگیڈیر گردیزی گذر تذبذب سرکاری کاشف کی ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_646, best cost 99.2368 + 3881.04 = 3980.28 over 664 frames.
+20030004_646 سایہ خودسوزی توجیہ کے بعد گھیراؤ نگرانی بڑھائے قادیانی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_647, best cost 59.8039 + 2563.87 = 2623.68 over 439 frames.
+20030004_647 حوصلے ٹرانزیکشن جو گردوغبار ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_648, best cost 80.2362 + 3020.69 = 3100.93 over 531 frames.
+20030004_648 نے دودھیا پچاس تلمیحات چیریٹی پراٹھا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_649, best cost 85.7509 + 3363 = 3448.75 over 582 frames.
+20030004_649 پونے سکتے بیٹھی ہوا تو آمدنی دلفریب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_650, best cost 111.278 + 4008.27 = 4119.55 over 690 frames.
+20030004_650 پر جیلانی سینئر اور زمین کی عندیہ کے باعث تک بیزار ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_651, best cost 117.113 + 3789.62 = 3906.73 over 679 frames.
+20030004_651 اور رپورٹ بھنڈی میں چوتھی کو گیگا بیرونی سے گیسو کی کیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_652, best cost 123.15 + 4466.82 = 4589.97 over 801 frames.
+20030004_652 پرویا میں کیجیے دھاندلی اور کی اور بنولہ میں طاغوتی سقوط اونچی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_653, best cost 87.8733 + 3940.42 = 4028.3 over 694 frames.
+20030004_653 پیغمبر دیسی سینٹر سے ڈیجیٹل کر کوسوں ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_654, best cost 127.309 + 4002.05 = 4129.36 over 694 frames.
+20030004_654 طرحی اور دیش توسیع ایشیائی چھولے اور بےعزتی اور سینیٹ اپنی صبحیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_655, best cost 87.4012 + 2760.43 = 2847.83 over 493 frames.
+20030004_655 کیا بخشی ایشیائی کو معیت بجھائی باریش ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_656, best cost 98.6747 + 4154.68 = 4253.36 over 744 frames.
+20030004_656 بیساکھی تیروں ترمذی بیگج حوصلہ نوجوان بھیس ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_657, best cost 76.372 + 3075.19 = 3151.56 over 545 frames.
+20030004_657 خاوند تنظیم تھیٹر لادینیت سمفنی نہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_658, best cost 84.4316 + 3033.75 = 3118.19 over 505 frames.
+20030004_658 ہیڈکوارٹر میراں ہونے چبھنے صیغہ سے گزارنے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_659, best cost 117.627 + 4569.64 = 4687.26 over 796 frames.
+20030004_659 پٹھے اور پہنچائیں اور پوشیدہ تغافل غوروخوض کے بعد موزونیت بسائیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_660, best cost 61.4344 + 2385.34 = 2446.77 over 406 frames.
+20030004_660 سویرا کے بڑھاپے سامعین عذاب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_661, best cost 61.7467 + 2929.79 = 2991.54 over 513 frames.
+20030004_661 تصفیے کے چقندر کا باخبر ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_662, best cost 91.3745 + 3257.45 = 3348.82 over 549 frames.
+20030004_662 پیہم چوہیا عندیہ چالیس ایشیائیوں کی تشبیہ کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_663, best cost 100.764 + 3816.56 = 3917.33 over 658 frames.
+20030004_663 کے آویزاں جانے موعود کیا ساتھیوں ڈیجیٹل مریضوں ہوئیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_664, best cost 117.51 + 4323.04 = 4440.55 over 744 frames.
+20030004_664 پراسیس فیاضی تیار کوارڈینیٹر بازوؤں کلیجی گروں پھیپھڑے ہو گئیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_665, best cost 82.5401 + 3407.37 = 3489.91 over 587 frames.
+20030004_665 فیصلے افسانے سے قریشی تو خرچ شوکیسوں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_666, best cost 86.6757 + 2860.98 = 2947.65 over 480 frames.
+20030004_666 بھون زیور بچے لگاتا تاثرات قیصر ہوئیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_667, best cost 66.9955 + 3175.91 = 3242.9 over 558 frames.
+20030004_667 کے لیے آکسیجن ڈیمو سے ویڈیوز میں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_668, best cost 114.393 + 4402.71 = 4517.1 over 777 frames.
+20030004_668 ساری ہونے کے کلیجی دھونے تجربہ پرچھائیاں معیت سے جانے کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_669, best cost 83.4014 + 3041.52 = 3124.92 over 543 frames.
+20030004_669 اور غزلوں پر ویڈیوز کے لیے زیڈ فوبیا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_670, best cost 75.1201 + 2900.98 = 2976.1 over 512 frames.
+20030004_670 گذشتہ پریشان ہے کہ سڑک اور بتاؤں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_671, best cost 134.207 + 4902.75 = 5036.96 over 872 frames.
+20030004_671 قریشی سے پہلے سوسائٹی گھنگریالے بازوؤں اور سعودی صفوں چوری بلوچی جاؤ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_672, best cost 104.408 + 3802.92 = 3907.33 over 652 frames.
+20030004_672 کے لیے شو سزائیں خوان بسر روزبروز کیا پروا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_673, best cost 79.2069 + 3016.01 = 3095.21 over 536 frames.
+20030004_673 پڑھائی جانا پنگھوڑے چوزے نظریے بڑھائیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_674, best cost 99.8651 + 3965.75 = 4065.61 over 656 frames.
+20030004_674 نیشن اداروں میں بظاہر چادر ماہرین قدسی خوشی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_675, best cost 55.9411 + 2880.45 = 2936.39 over 501 frames.
+20030004_675 فائربریگیڈ بلاسوچے تعاقب اور ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_676, best cost 100.057 + 3766.06 = 3866.12 over 617 frames.
+20030004_676 تبدیلی بارش کی سے سکتی تنولی سہارے بزرگوار دی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_677, best cost 113.714 + 4545.27 = 4658.98 over 794 frames.
+20030004_677 انسانیت کی بیوی بغیر بعدازاں موضوع دیوبندی ہونے سے بدل گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_678, best cost 134.806 + 5062.24 = 5197.04 over 870 frames.
+20030004_678 صفحے ساغر کی ٹیڑھا اوزار والوں سے چلائی پروجیکٹ ایکسیئن شیشے کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_679, best cost 73.8099 + 2929.18 = 3002.99 over 496 frames.
+20030004_679 چوڑی اور کے ترجیحات سے گردیزی سوچیے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_680, best cost 112.735 + 4366.92 = 4479.65 over 764 frames.
+20030004_680 چوری تنخواہ ہیروئن ہو کر لائے اور فارسی میں کے علاوہ جاتا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_681, best cost 119.981 + 3943.69 = 4063.67 over 688 frames.
+20030004_681 بنا تشنج دیش کو ٹھیکیدار سیکھو رکن پیچیدہ پر سوئے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_682, best cost 106.771 + 3737.49 = 3844.27 over 656 frames.
+20030004_682 بھی قوس والے کی جھونپڑی جلسہ جلوسوں جو بناؤں دیئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_683, best cost 82.869 + 3432.75 = 3515.61 over 605 frames.
+20030004_683 کی سینما کی درآمدات ٹیلیویژن کی کے سکنجبین 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_684, best cost 122.968 + 4089.6 = 4212.57 over 758 frames.
+20030004_684 میری خوگر اور پینسٹھ کی تھیوری نیلگوں کیا لیے طلب کارخانے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_685, best cost 82.2029 + 2818.23 = 2900.43 over 489 frames.
+20030004_685 جو فلو سے نیچے بخشیں سپاسنامہ بدروح 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_686, best cost 99.5455 + 3211.47 = 3311.02 over 543 frames.
+20030004_686 سفیدے کے سدباب پیشن سویاں ریلیکس اشفاق کوچوں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_687, best cost 137.725 + 4574.49 = 4712.21 over 796 frames.
+20030004_687 چولہے صبغت سیروسیاحت کے کونین دوم پڑا سیکھا پر پہنچاؤں دوبھر کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_688, best cost 146.404 + 4802.93 = 4949.34 over 831 frames.
+20030004_688 تقریباً کی خارجہ پالیسی بچیاں گزارنے اور نیچی کے کی گاؤں کے پر کے باغیچہ ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_689, best cost 129.826 + 3801.82 = 3931.65 over 645 frames.
+20030004_689 بوجھ متوجہ ذخیرہ کیا جنگجو بنائیں اور سوزوکی سے حجت کلچر ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_690, best cost 74.0396 + 2644.76 = 2718.8 over 467 frames.
+20030004_690 کی پھلیاں پڑھائی شوکیسوں چوالیس کتابیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_691, best cost 119.914 + 4445.81 = 4565.72 over 808 frames.
+20030004_691 کسی دلجوئی یرغمال جوڑیاں اور بحیثیت بسا تلمیحات مدفون نصیب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_692, best cost 92.1398 + 3755.68 = 3847.81 over 657 frames.
+20030004_692 بدروح میزائل کا کے ریسکیو سانولے ادائیگی کرتے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_693, best cost 94.5193 + 3749.3 = 3843.82 over 673 frames.
+20030004_693 میڈیکل کے چوڑیاں سے کا کے باہر باخبر محبوب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_694, best cost 92.5358 + 3642.7 = 3735.23 over 604 frames.
+20030004_694 دلبرداشتہ تساہل درجے اور توسیع چاقو چقندر ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_695, best cost 109.684 + 3506.86 = 3616.55 over 606 frames.
+20030004_695 کوئی جانے کیجیے جانے کو کیا باورچی سنگباری میں الجھا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_696, best cost 96.5592 + 3639.44 = 3736 over 617 frames.
+20030004_696 کے شیمپو سے کیا مجوزہ منصوبے ڈائیگرام کیا رہے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_697, best cost 74.4143 + 2869.21 = 2943.62 over 492 frames.
+20030004_697 بغور سے صیہونی ایڈز چنگیزی گراموفون 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_698, best cost 73.746 + 2702.63 = 2776.37 over 474 frames.
+20030004_698 نامزد کالونی گذشتہ براؤزر زلزلے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_699, best cost 119.338 + 3439.56 = 3558.89 over 596 frames.
+20030004_699 نجات کے کی چغتائی جڑی دبائے کی ہذیانی غیرملکی کا سوچوں ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_700, best cost 110.193 + 3172.21 = 3282.4 over 540 frames.
+20030004_700 دوچند کو کی کی میں تغافل کی سوجھی چھہتر خصوصا تو ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_701, best cost 111.419 + 3638.72 = 3750.14 over 617 frames.
+20030004_701 روزنامہ منافعوں بزرگ اعتماد پاکیزگی بالاخر مزدوروں بازیچہ ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_702, best cost 102.564 + 2883.7 = 2986.26 over 513 frames.
+20030004_702 ڈیڈ فیصلہ قوت کی دھونی کرنے پیشاب اولاد بخشیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_703, best cost 71.0956 + 2817.96 = 2889.06 over 504 frames.
+20030004_703 ڈیتھ جیسے پرائیویٹ رندھاوا ضرورت ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_704, best cost 104.864 + 4268.13 = 4372.99 over 762 frames.
+20030004_704 چغتائی سیکشن بھائی نازاں کیونکہ انظباتی گناہوں سے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_705, best cost 93.1487 + 3391.16 = 3484.31 over 586 frames.
+20030004_705 بھونچال بنائیں کھمبیوں سے جبڑا بتایا تنظیم نہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_706, best cost 82.1942 + 2484.57 = 2566.76 over 434 frames.
+20030004_706 بے سفید ایسی آنکھیں کی جماعت نیچے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_707, best cost 69.7846 + 2633.87 = 2703.65 over 479 frames.
+20030004_707 ماضی کو بااللہ قوانین بنا میں نہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030004_708, best cost 115.163 + 3659.17 = 3774.33 over 653 frames.
+20030004_708 میں چمچے سے پہلے سرنجیں بچہ سیکورٹی گاؤ مشق سمجھا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_601, best cost 171.406 + 8472.94 = 8644.34 over 1496 frames.
+20030005_601 خدانخواستہ باورچی کردار ڈکٹیشن میں بلین منیب کلیرنگ برڈ کیونکہ بڑھاوں پاؤڈر کیلئے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_602, best cost 233.901 + 11635.6 = 11869.5 over 2091 frames.
+20030005_602 گوگل واقع لاریب کے داخلوں اور ٹریلر فروخت بن تفتیشی بازو پہنچا ہیلو پنجرے بے کرنے کے شیلٹر سے باوجود ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_603, best cost 179.67 + 8836.08 = 9015.75 over 1534 frames.
+20030005_603 شخص خوشخبری اور غزلیں کے باعث کیلئے کاروبار پیروکاروں تبدیلی بکھیرنے کیسوں برتن بچار کیا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_604, best cost 169.458 + 8944.93 = 9114.38 over 1617 frames.
+20030005_604 سندھی میں رہائشی کے گاؤں کی دراوڑی عقاب کس کو کر چاہے کے کے زیورات گرہیں تھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_605, best cost 116.907 + 4431.12 = 4548.03 over 734 frames.
+20030005_605 چور شوربہ انشورنس کیلئے شائیں ٹوئنٹی قرارداد طلب دیتا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_606, best cost 162.522 + 6077.56 = 6240.09 over 1080 frames.
+20030005_606 پر جھینگے تمام رنگوں معلومات سے کی برج منڈیوں کے تغافل زندگی بڑی میں فضل ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_607, best cost 97.1634 + 4309.13 = 4406.29 over 747 frames.
+20030005_607 تحصیلدار کی کفار کی زدہ باؤنڈری باب لینگویج ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_608, best cost 148.129 + 6268.15 = 6416.28 over 1112 frames.
+20030005_608 کب کینیڈین تامل بو خورشید کا باادب چوم جائیں کی اور جناب ہو گئیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_609, best cost 196.401 + 8206.37 = 8402.77 over 1464 frames.
+20030005_609 گلیشئیر میں معلم ادغام دلنشیں میں کس تو میں بیٹھا غریب اور فیصلوں کے چھوڑ بات انستھیزیا بقیہ ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_610, best cost 148.424 + 7207.15 = 7355.57 over 1188 frames.
+20030005_610 مواصلات اینڈ تشہیر کا پر ممبر بگاڑنے شل کی طرح سے رپورتاژ خاص ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_611, best cost 164.141 + 7931.87 = 8096.01 over 1425 frames.
+20030005_611 خودسر تہیں میں باب فورس کرنے سیدھے ڈبوئیں برابر اللہ کی گونگے کے ساتھ چلیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_612, best cost 157.133 + 7271.12 = 7428.26 over 1246 frames.
+20030005_612 تبدیلیاں ڈیلروں افزائش سیراب ماہرین چراغ شیفرڈ ہوتا خاوند کی رنجیدہ ہودہ ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_613, best cost 115.049 + 4944.52 = 5059.57 over 836 frames.
+20030005_613 پر کی جارحیت بزدل اور چہل بورڈ شیلڈیں گلدستہ کیا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_614, best cost 114.733 + 5386.62 = 5501.35 over 932 frames.
+20030005_614 بروز ٹیکنیشنز کے پہاڑوں کے ساتھ سست سیلرز جنگجوؤں دریافت 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_615, best cost 188.409 + 9900.74 = 10089.2 over 1726 frames.
+20030005_615 داغدار شہزادی میں لیچی اور موئسچرائزنگ ریمبو بلڈوزر پر ایلویٹ جونیئر خاقان کی دلجوئی میں اور بڑھا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_616, best cost 218.872 + 8933.27 = 9152.15 over 1496 frames.
+20030005_616 تجربہ فوراً میں صبح اور فشنگ بو فوجی گزشتہ پر کیسی جاسوسی کی ینگ بوائے فریب کا کھلنڈرا کر کیا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_617, best cost 142.859 + 6770.32 = 6913.18 over 1182 frames.
+20030005_617 کنیئرڈ کارپوریشن کے بیچوں میں کیوں بو اوقات دیکھا کر فقدان سے لگا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_618, best cost 166.673 + 6506.26 = 6672.94 over 1099 frames.
+20030005_618 خانگی بروکلی سے ہوشیاری منشیوں والے پنکھڑی ظاہر میں کیونکہ بات کالجز کیا فتحیاب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_619, best cost 110.5 + 4896.51 = 5007.01 over 868 frames.
+20030005_619 تزئین بشیر اپنی نقاب بیان بنیں کی چونگی دیگر ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_620, best cost 180.337 + 9450.12 = 9630.46 over 1764 frames.
+20030005_620 چینی ہندوؤں کے بولوں بوڑھوں بے پیشگوئیاں اور کے موقعوں پر پور زور شاخوں کی کامیاب کیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_621, best cost 159.28 + 7708 = 7867.28 over 1336 frames.
+20030005_621 مجلس حاشیے میں اور چین گہماگہمی میگزین بینظیر اور جاری بعض میں میں پر کی ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_622, best cost 164.488 + 8256.04 = 8420.52 over 1476 frames.
+20030005_622 چونچلے کر میں میں کا بورڈر ڈیبیٹ پھیرتے دہشت مرضی بھیڑوں اور کرنے سے گردیزی ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_623, best cost 141.435 + 6586.7 = 6728.13 over 1188 frames.
+20030005_623 کے ٹریڈنگ گینگسٹر چوہوں معاف آشوب کو زیب کا پیہم ھابھہ بشاش کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_624, best cost 216.118 + 8196.56 = 8412.68 over 1412 frames.
+20030005_624 گھسے ڈیمو صفوں میں کولسری منیب اور فوج شوخ اور سنوارا صورت حدود کے گینگسٹر شنید یہودی بدشگونی کا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_625, best cost 148.523 + 7247.4 = 7395.92 over 1252 frames.
+20030005_625 گرویدہ نذر کیا بیماری گگلی لے کر بلبل سیورج بے کو کے فوبیا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_626, best cost 102.322 + 4536.95 = 4639.28 over 817 frames.
+20030005_626 کلیرنگ بدظن بوئنگ تلمیحات منیب کی لاشوں نجات 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_627, best cost 140.921 + 6146.88 = 6287.8 over 1073 frames.
+20030005_627 سیرگاہ غیر طلب کے ڈھنڈورا میں بیسن بوڑھوں کے کوسوں میمن خاتمے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_628, best cost 147.851 + 6592.15 = 6740 over 1182 frames.
+20030005_628 بنوری درمیان باندھیں کے گہرے ٹریبیونل بے سنگباری ایک مشیت وفود کی ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_629, best cost 192.538 + 8463.55 = 8656.08 over 1476 frames.
+20030005_629 شیڈ کیلئے کے بش والوں کے کو خالد کی میں لیفٹیننٹ تعوذ اور تنظیم میں ملاؤں کاغذات کیجیے کا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_630, best cost 171.016 + 8260.71 = 8431.73 over 1457 frames.
+20030005_630 کی ماخذ اور میں بخشیں کے لشکر تھانیدار بلاسوچے بارے بلوچوں ابصار بھنوؤں بیدار کیا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_631, best cost 209.612 + 10846.1 = 11055.8 over 1912 frames.
+20030005_631 سیلرز چیز توہین باب بیگ میں دور فائربریگیڈ اسلوب ٹھوس بیچیں توسیع پیئں حسیں غربت چائلڈ ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_632, best cost 214.359 + 9743.26 = 9957.62 over 1758 frames.
+20030005_632 قضیے تحصیلدار میں کاروبار کلچر چوروں کوڑیاں اب باب جواب پر کھجوریں اور پر سیونگ چبھنے بغیر بہن ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_633, best cost 208.558 + 10093.9 = 10302.5 over 1873 frames.
+20030005_633 پر جنم کے نقاب میں تجویز کے لیے کی لیب کھینچیں اور تفتیش چھاؤں کی توضیحات سندھی چورنگی کیلئے کیجیے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_634, best cost 112.327 + 5561.54 = 5673.86 over 952 frames.
+20030005_634 کی گلیشئیر جشن پیچیدہ اندھیروں اپنی یاب کی مرتبہ ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_635, best cost 171.122 + 7528 = 7699.12 over 1336 frames.
+20030005_635 خاص فرینڈلی پوچھیں کیوں خوان بے بیٹھ ہیں اور لنگر فرمائیں سیب بھیج سوغات ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_636, best cost 142.713 + 7476.28 = 7618.99 over 1361 frames.
+20030005_636 کوڑھ اور خشوع مدح کی جوبلی کہکشاؤں میں زور جاتا کو گفتگو وہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_637, best cost 166.731 + 8107.28 = 8274.01 over 1457 frames.
+20030005_637 خوان اپنے تصورات میں کی کو خوشگوار نیچی لاگت مجیب کی حادثے میں مربعے حبیب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_638, best cost 159.951 + 9991.8 = 10151.8 over 1828 frames.
+20030005_638 کاجو اجرت کی شعروادب میں سے اپنے شعوری عورت تھوڑی کوٹھڑی کے کا سے بچاؤ پوچھیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_639, best cost 176.898 + 8457.2 = 8634.1 over 1432 frames.
+20030005_639 خلیفہ کے دفتر کی بلکہ تبدیلی سے ترجیح زوردار سکیپ داؤدی زبردست سموسے بش سے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_640, best cost 172.946 + 7606.28 = 7779.22 over 1348 frames.
+20030005_640 چوزوں کیوں برابر کیا نیز کی لیڈی سمیت اسلوب کے شماریات کا پنچولی بخود چاہتے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_641, best cost 129.296 + 6281.43 = 6410.73 over 1054 frames.
+20030005_641 اور اور اریگیشن روزوں کی پاک شناسی بدل آپ لاریب سے بے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_642, best cost 125.209 + 6135.59 = 6260.8 over 1041 frames.
+20030005_642 ٹیلیفون کشف کی میچ سکیپ اوباش ہنسیں ملفوظات کے پوائنٹ کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_643, best cost 158.328 + 7706.92 = 7865.24 over 1310 frames.
+20030005_643 تحفہ خالد سے محفل بحثیں بلاخوف تجربہ سے بہائیں اور بویا سزائیں دیباچے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_644, best cost 168.277 + 8973.03 = 9141.31 over 1611 frames.
+20030005_644 پنچھی حکومت شیر میں پور دوڑائیں اور بڑھاپے بشیر کیسی بار فن بردار کے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_645, best cost 142.195 + 6051.57 = 6193.77 over 1022 frames.
+20030005_645 قدآدم پرچیز ونڈوز صاحب کے صاحب بوجوہ مسخرے کرنے میں کی فشار کرتے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_646, best cost 140.383 + 6588.63 = 6729.02 over 1156 frames.
+20030005_646 سوری ناخواندگی جوس میں اور چند میں جمخانہ اور بڑھاپے میں بڑھائیں باندھیں ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_647, best cost 112.257 + 5763.1 = 5875.36 over 1067 frames.
+20030005_647 بااثر میں خان مواصلات بھول چور کر بوڑھوں بھرتا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_648, best cost 119.831 + 5424.98 = 5544.81 over 990 frames.
+20030005_648 قومیائے میں دودھیا آپ چاشنی کامیاب خرچ کر کیلئے پراٹھا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_649, best cost 127.348 + 5790.78 = 5918.12 over 1041 frames.
+20030005_649 تو کو ہو کر میں مسترد کے بحیرہ پونے ڈھانپ فیڈر تلے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_650, best cost 154.058 + 7544.23 = 7698.29 over 1355 frames.
+20030005_650 فوجیں باولنگ کی سیر توسیع مالدار کمینگی منافعے الہیات کے رہائشی کر قضا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_651, best cost 141.541 + 6102.26 = 6243.8 over 1131 frames.
+20030005_651 پونے کی بیرونی پوچھوں کی بہو کی بے بن کے ہونے سے پہلے چونگی کیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_652, best cost 183.194 + 8240.64 = 8423.84 over 1502 frames.
+20030005_652 پڑ سٹرلنگ کیجیے میں کا میں بوریت کیلئے پوائنٹ کیموتھراپی میرون پور کے سلور درخت پانچویں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_653, best cost 135.912 + 6535.88 = 6671.79 over 1176 frames.
+20030005_653 تلور باڑھ لیڈز قاسم زبردست ضلعی بجلی بردار کو غزوہ ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_654, best cost 167.535 + 7897.77 = 8065.3 over 1361 frames.
+20030005_654 کرکے اور دیش کو سیلز کے مشیت چون گھیراؤ پھنسے کی بحیثیت کینیڈین میں سے بازیاب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_655, best cost 111.97 + 5700.01 = 5811.98 over 1022 frames.
+20030005_655 پگھل اوباش کی بچائیں اور تبدیلی لیزر بچائیں تابش ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_656, best cost 152.387 + 9155.18 = 9307.57 over 1668 frames.
+20030005_656 دلسوزی پروجیکٹ انداز عجیب ہینگر بچائیں اور شون اور چار بالکل سازگار ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_657, best cost 132.995 + 6115.49 = 6248.49 over 1099 frames.
+20030005_657 کا بولنگ بافتوں دبیز لیب کے کر زراعت کی بااثر منفرد میں ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_658, best cost 105.875 + 5468.96 = 5574.84 over 1003 frames.
+20030005_658 بلند ڈوب کا میران بگٹی زیردست کے بعد سے گزارنے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_659, best cost 154.526 + 7306.08 = 7460.6 over 1291 frames.
+20030005_659 پھرتی خوگر بچائیں اور بوڑھی کا تمغوں بوڑھوں موزوں کے بعد بولیں بارش اور ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_660, best cost 80.9297 + 4389.91 = 4470.84 over 779 frames.
+20030005_660 اور خان کے بغیر کیا حضرات میں بسا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_661, best cost 121.655 + 6756.12 = 6877.77 over 1252 frames.
+20030005_661 تیزرفتار میں کیلئے بش اوپر کامیاب کا پیدا غلط دوا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_662, best cost 124.236 + 5989.81 = 6114.05 over 1067 frames.
+20030005_662 تخریب شعبوں کی بازیاب چلیں درسگاہوں کی دلنشیں ڈھونڈیں بڑے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_663, best cost 170.115 + 7550.56 = 7720.67 over 1336 frames.
+20030005_663 کی ڈوریں چراغاں چاہے باخبر مچھلیاں برساتا کی محبوب جھینگے کی دنگ دبیز دھوپ کیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_664, best cost 174.531 + 7641.7 = 7816.23 over 1316 frames.
+20030005_664 فعال آسیہ اعتبار آرزوئیں کے میں تناسب لیتا موضوعات دھوپ پر سے کے روئیں کے رپورٹ ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_665, best cost 92.651 + 4551.42 = 4644.07 over 779 frames.
+20030005_665 فیضان ہزار پوٹھوہاری تھیسس کرشنگ بوگس خیرخواہ ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_666, best cost 124.753 + 5994.71 = 6119.46 over 1073 frames.
+20030005_666 بوئنگ سیراب میتوں کلچر پراٹھا کر تساہل پھیرتے سے بولے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_667, best cost 137.831 + 7142.05 = 7279.88 over 1323 frames.
+20030005_667 کی بل کے تعارف سے چمچے بھون سے کی مجیب گز سنگباری بے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_668, best cost 167.234 + 8500.24 = 8667.47 over 1489 frames.
+20030005_668 سعودی زور طیب کے بدلے میں خوگر طالب چار کا تحصیلدار پگڑیاں ہی سلسلے گا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_669, best cost 112.093 + 6281.28 = 6393.38 over 1112 frames.
+20030005_669 غوروخوض اپنے منفعت بورڈ میں بلڈوزر کیلئے غیرضروری کیا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_670, best cost 95.4974 + 5814.63 = 5910.13 over 1035 frames.
+20030005_670 قضیے خواہش راہگیر صاحب دوبارہ بوڑھوں تعاقب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_671, best cost 185.021 + 7826 = 8011.02 over 1368 frames.
+20030005_671 بشیر زلزلے ساری گاڑیاں میں کا چوہوں عورت ضرورت کے ضعف پنچولی میں بو اور شیشے جاؤں ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_672, best cost 143.193 + 6882.36 = 7025.55 over 1163 frames.
+20030005_672 پنجرے ایشوز چرانے کو فوراً ناخواندگی تصورات پرسکون درجے گاڑھا پراٹھا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_673, best cost 111.421 + 5724.87 = 5836.29 over 1048 frames.
+20030005_673 کلراٹھی کی بیچوں بالاخر میں دوجے نزلے غیرت پڑھائی ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_674, best cost 168.491 + 8676.98 = 8845.47 over 1604 frames.
+20030005_674 تماشائیوں نے پُلوں میں بار کار پراچہ پائیدار درآمدات ٹیبلو ٹھوس ہنسیں کی بش کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_675, best cost 112.323 + 7164.63 = 7276.96 over 1297 frames.
+20030005_675 تاجر بوڑھی کے لیے پر سوچے کو خوفوں قانونگو پڑا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_676, best cost 158.356 + 7368.61 = 7526.97 over 1278 frames.
+20030005_676 پرنیا اژدھا سیریز کا عقلمندی جاوید جو آپ میں تنگ معیشت گرفتار دیے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_677, best cost 172.093 + 7931.31 = 8103.4 over 1380 frames.
+20030005_677 گزارنے معیاری مجیب بھونڈی مگر بعدازاں اور سعودی پر گوگل کرائیں کی طرف سے پھلیاں ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_678, best cost 235.225 + 11077.6 = 11312.8 over 2052 frames.
+20030005_678 صرف بحثوں آپ کو ٹیلیفون فیض پڑا وزن بس واضح بخشے میں کیلئے میں پرہجوم بریفنگ منیب سے مشعر کے بخشے کیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_679, best cost 104.755 + 5405.13 = 5509.88 over 958 frames.
+20030005_679 خواری اور بیدار چیلہ تو سہارے تیزی سے رشید 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_680, best cost 172.484 + 7212.71 = 7385.2 over 1316 frames.
+20030005_680 چوری کا چوڑیاں بہن کے ہوے بیٹھ قانونگو لاریب پنکھا برسوں میں تھوڑا تعالی کا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_681, best cost 158.175 + 8901.5 = 9059.67 over 1611 frames.
+20030005_681 گستاخی شیمپو بیچیں شیمپو گیراج کر تناسب قومی بولوں پر پیچیدہ پرچھائیاں ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_682, best cost 183.116 + 9380.83 = 9563.95 over 1656 frames.
+20030005_682 دبیز اور بچھونا میں کی کی امور کا نتیجے کاروبار چچا گرل نوازوں کے گوجر گروپ جیب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_683, best cost 139.152 + 7644.28 = 7783.43 over 1355 frames.
+20030005_683 گیسیں معجزات کی جبڑوں درخت پیغمبر نہیں بلدیاتی میں کے سنگھار قریب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_684, best cost 121.039 + 6827.21 = 6948.25 over 1208 frames.
+20030005_684 کاندھلوی جونیئر خوان ڈیزرٹ کے کی ڈوب میں پوٹھوہاری زبردست کو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_685, best cost 98.9151 + 5059.78 = 5158.69 over 881 frames.
+20030005_685 کوچوں فروزاں کی ایڈونچر بخشے سے رقاصاؤں بخوبی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_686, best cost 146.918 + 6364.3 = 6511.22 over 1067 frames.
+20030005_686 سوچنے بنیں بسر شعروادب بغیر فشار سے گھنگریالے مسز دانشو شروع آشوب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_687, best cost 187.215 + 9418.55 = 9605.76 over 1656 frames.
+20030005_687 چوبیس کے بدسلوکی سے ڈھانچے گھلیں بو بھولیں قضا سے سے کی ہیڈکوارٹر کوچوں موعود فضول ابواب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_688, best cost 201.664 + 9960.81 = 10162.5 over 1796 frames.
+20030005_688 کھلکھلا نیچا گردیزی دیباچہ پرسش یاب مزارعوں اور دیش کی بجھی نیچی میں بانگ کر فریب کالجوں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_689, best cost 188.083 + 8039.33 = 8227.41 over 1496 frames.
+20030005_689 بھول جنگوں باادب بعدازاں اطلاعات کیا مجموعوں میں موبائل ہے اور سوچوں فصلیں پرچم ندرت چار ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_690, best cost 104.117 + 5260.32 = 5364.43 over 881 frames.
+20030005_690 فوجیں معاشیات کرائیں کے شعلوں ونڈوز چوائس کی جاتا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_691, best cost 154.096 + 8184.87 = 8338.96 over 1368 frames.
+20030005_691 کسی دلجوئی کے افواج ایگلز پرویا فوراً سیٹھ اوصاف ستانویں منافعے توصیف 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_692, best cost 147.576 + 7395.6 = 7543.17 over 1220 frames.
+20030005_692 تبسم سانحے کا کیفے سیلز گزارنے تحائف داڑھی سے زیست خاطر کہف 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_693, best cost 109.089 + 5568.66 = 5677.74 over 939 frames.
+20030005_693 حیرت کے جوئیہ سے کا کے ساتھ کیا تفنن والدین بتاؤں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_694, best cost 134.782 + 7452.7 = 7587.48 over 1208 frames.
+20030005_694 درآمدات شعاع فحش اشفاق خزانہ فورس کچہری حسینی جوجوبا کہف 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_695, best cost 132.881 + 6660.84 = 6793.72 over 1105 frames.
+20030005_695 فوری کی جانے کیجیے چالیس تو کاکلیں تفتیشی جوجوبا میں وجہ سے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_696, best cost 141.27 + 6921.34 = 7062.61 over 1131 frames.
+20030005_696 تشخص اور سیلز کے سامنے سے ہوسٹس چوبیس مسوڑوں کیلئے بنانے کیلئے فاجر سیاح 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_697, best cost 83.1495 + 4818.58 = 4901.73 over 772 frames.
+20030005_697 فردوس انسانیت دستاویزات اڑائیں کا خاتون کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_698, best cost 126.723 + 6727.9 = 6854.62 over 1124 frames.
+20030005_698 سپاہیوں فوم اضافے دھونی سے اشخاص تنولی استاد زلزلے آف 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_699, best cost 168.486 + 8099.08 = 8267.57 over 1342 frames.
+20030005_699 فجر کیجیے اور ضعف تفاوت کی شریف میں فنانس کے فلالین میں سے رسیدہ سوچوں ایف 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_700, best cost 167.611 + 8585.65 = 8753.26 over 1419 frames.
+20030005_700 فروش اور محفوظ چیف تبدیلی فیس تو ماخذ کی سوجھی فیچر طرف خصوصا خوف 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_701, best cost 174.244 + 10155.7 = 10329.9 over 1681 frames.
+20030005_701 فضول باغ محافظوں فورس زچگی تفاوت کی سے فوائد ڈیف حوض فضول کوسموس تعارف 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_702, best cost 145.432 + 7107.62 = 7253.05 over 1150 frames.
+20030005_702 پراسیس ماخوذ طرف کی نعوذ سے سہارے خوف شاہ زوردار ضعیف تشریف 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_703, best cost 96.6984 + 5754.31 = 5851.01 over 952 frames.
+20030005_703 فلسفے کلیدی چیز کے بلاخوف کاروبار افزائش کرتا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_704, best cost 141.877 + 8302.74 = 8444.61 over 1355 frames.
+20030005_704 چوکھٹ سے سے شریف مرغیاں رساؤ کے فرسودہ کے خلاف کا فاریسٹ کہف 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_705, best cost 112.815 + 5757.09 = 5869.91 over 958 frames.
+20030005_705 سے بچاؤ ضیغم محفوظ ڈسچارج دیانتدار حصوں سینٹر ایس 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_706, best cost 103.336 + 6655.62 = 6758.96 over 1086 frames.
+20030005_706 سے بزرگ فیز مزید سیف پاکیزگی شیڈول آفس 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_707, best cost 118.016 + 5405.11 = 5523.13 over 888 frames.
+20030005_707 فرائض سے خوفزدہ ڈیف تو پانے ٹریجڈی بناؤں کیا کہف 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030005_708, best cost 149.73 + 6105.12 = 6254.85 over 1009 frames.
+20030005_708 جنریشن ایسے ڈیف سندھو اینگلو جیگوار شستہ زندگی کا اور مشعر سے نحیف 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_601, best cost 151.437 + 6129 = 6280.44 over 985 frames.
+20030010_601 گاجر تعاقب جیلانی شاندار جیلانی پولیو خودسر قبول کے کراؤں کو دوغلی نہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_602, best cost 208.278 + 7460.71 = 7668.99 over 1203 frames.
+20030010_602 گردوغبار جھینگے نے زوجیت پرچیاں بھوت بھورے پہاڑی چلو بن فشنگ اچک لاہوری شنید کی شرکت سازباز ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_603, best cost 127.957 + 5250.45 = 5378.41 over 833 frames.
+20030010_603 ششدر اور نزلے جمگھٹا سے طرزعمل کو کارکردگی بےقصور پر پنجابی کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_604, best cost 145.532 + 5446.12 = 5591.65 over 856 frames.
+20030010_604 چلچلاتی داؤد دیگر برطرفی کو بائیس فولاد چاہئے کی کیسی نزلے اٹھا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_605, best cost 89.6304 + 3178.49 = 3268.12 over 513 frames.
+20030010_605 سوجن شون جنریشن ایڈووکیٹ کر داخل دیتا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_606, best cost 88.7009 + 3795.2 = 3883.9 over 608 frames.
+20030010_606 وزیرداخلہ وقعت سے تجارت آفس کی تجزیہ تھے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_607, best cost 64.8736 + 2565.58 = 2630.45 over 420 frames.
+20030010_607 پر سیاسی پرچیز قوانین منیجر ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_608, best cost 107.347 + 3597.05 = 3704.4 over 582 frames.
+20030010_608 کو گھناؤنے دولخت کو خوشخبری چمچہ نیچی سوجن کو کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_609, best cost 141.649 + 4500.83 = 4642.48 over 736 frames.
+20030010_609 فیشن منیب آپ بغیر ماشے جوڑیں گاڑیاں کی جھونکے جو قفس کیا کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_610, best cost 122.703 + 4758.55 = 4881.26 over 803 frames.
+20030010_610 کا سیکشن یزدانی دودھیا منیجر نیچے کی طرف سے بجٹ ایسا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_611, best cost 114.251 + 5335.7 = 5449.95 over 868 frames.
+20030010_611 حسینی بینگن حسینی سے کی بغور ہچکچاہٹ کی دوشیزہ شیریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_612, best cost 146.609 + 5446.99 = 5593.6 over 921 frames.
+20030010_612 تبدیلیاں کی ورزش سلطان بھورا کی جرگہ چھہتر تو خوگر کی لینگویج افواج ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_613, best cost 71.9348 + 2883.82 = 2955.76 over 452 frames.
+20030010_613 تنخواہ لاکھا کو زوجیت مشیت رہا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_614, best cost 106.276 + 3584.14 = 3690.42 over 578 frames.
+20030010_614 بھٹو فیڈریشن کے ٹینک کے ساتھ سمجھیں بغیر سمجھو بقیہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_615, best cost 143.965 + 5970.72 = 6114.68 over 960 frames.
+20030010_615 کر آتشزدگی نیسچن موئسچرائزنگ گذر توجہ ایقان دھاندلی کی کھجوریں اور ہینگر ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_616, best cost 172.827 + 6001.88 = 6174.71 over 989 frames.
+20030010_616 تاجر کے گھوڑے کھبے سترھویں شگفتہ حوصلہ شکار کیسی بدظن تفہیم اور فرخندہ تیار کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_617, best cost 90.2014 + 4141.47 = 4231.67 over 669 frames.
+20030010_617 تمسخر سے بچنے کی اور ایتھرنیٹ کر تعداد زیادہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_618, best cost 120.862 + 5075.29 = 5196.15 over 824 frames.
+20030010_618 تھانیدار سمجھا سمجھ شماریات ہزارویں ایونیو کے بعد اس کیا کیا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_619, best cost 84.2095 + 3080.38 = 3164.59 over 519 frames.
+20030010_619 تضحیک اشجار مدعیان بنیں پنجابی نتیجے ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_620, best cost 143.329 + 5198.25 = 5341.58 over 820 frames.
+20030010_620 چیل ملنے حالانکہ منظم بویا کیوں گوبر خضوع آشوب کی کیا لیچی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_621, best cost 140.128 + 6417.89 = 6558.02 over 1024 frames.
+20030010_621 بھون مجوزہ تشبیہ منتظر چین گہماگہمی ویزے دوردراز اور جہانگیر ملازمت کے کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_622, best cost 101.33 + 5043.56 = 5144.89 over 764 frames.
+20030010_622 کو چیئرمین ڈالتے کے تجربہ رسیدہ کے پالیسی جاگزیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_623, best cost 99.8855 + 4061.53 = 4161.41 over 664 frames.
+20030010_623 قدآدم دیانتدار داغ منافعوں سوئس تھانیدار نشاندہی کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_624, best cost 119.356 + 4786.75 = 4906.11 over 790 frames.
+20030010_624 حفاظ تسلسل سے درخواست وزارت حدود کے پیشن کے میں مشروبات 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_625, best cost 96.7194 + 4093.35 = 4190.06 over 665 frames.
+20030010_625 گیدڑ ضروری چلچلاتی گدے گردیزی مجموعہ کے ہو گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_626, best cost 74.5295 + 2817.29 = 2891.82 over 465 frames.
+20030010_626 کلیرنگ بچنے گٹھلیاں دودھ شیرخوار سمجھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_627, best cost 117.292 + 4258.87 = 4376.16 over 712 frames.
+20030010_627 سے ٹریولرز کے ملبوسات کے ہرادھنیا سے بلونگڑے کو فوم انعقاد کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_628, best cost 89.2473 + 4181.34 = 4270.59 over 709 frames.
+20030010_628 گچھے گرویدہ نے بیچے چلنے خودکشیوں اور کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_629, best cost 155.917 + 5266.15 = 5422.06 over 876 frames.
+20030010_629 چھیل کے کے کو شعاع کیا پٹاخے میں فی تنازع خلیفہ نے موجودہ فیضان ٹیچر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_630, best cost 117.685 + 4099.9 = 4217.59 over 668 frames.
+20030010_630 تعین قزلباش ارتعاش جامعہ پر بیچارے کلچر زنخوں بپھر کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_631, best cost 155.442 + 5982.77 = 6138.22 over 964 frames.
+20030010_631 سیریز چیف اور گالف کے دیکھنے تحفتا کے خیرخواہ سے کیلئے سے سے معطل چائلڈ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_632, best cost 167.248 + 7654.62 = 7821.87 over 1219 frames.
+20030010_632 تیزی زیادہ لیتا کے بوریت کی حجت شمولیت بھجوا کر خشوع موصول چھوڑیں بغیر دیکھیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_633, best cost 148.284 + 6134.15 = 6282.44 over 1056 frames.
+20030010_633 کچیلے میں بگاڑنے تلخیاں کی کی کے اور کی سوچیے قوس کسی سوئنگ کے نیچے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_634, best cost 105.23 + 4260.67 = 4365.9 over 708 frames.
+20030010_634 کمیشن جشن گلستان کے ڈوڈیاں کی بدل تھیٹر کیا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_635, best cost 98.2989 + 4369.27 = 4467.57 over 722 frames.
+20030010_635 پاس تنفس جیلانی اور میں بیچے پارلیمنٹرین سے سکتیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_636, best cost 101.546 + 4039.64 = 4141.19 over 677 frames.
+20030010_636 پروفیشنل چندھیا چمڑے فیس حجت خاتون کا عفو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_637, best cost 96.6942 + 4228.3 = 4324.99 over 703 frames.
+20030010_637 کتابچے صاحب اور جلدی نمو کیجیے گیسیں کرتے ہوئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_638, best cost 128.005 + 7064.47 = 7192.47 over 1134 frames.
+20030010_638 پر پہنچتے شیروانی پورے سوئچ اور اور کی اور کھچی کیا سے بچیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_639, best cost 138.653 + 6038.4 = 6177.05 over 1011 frames.
+20030010_639 ڈیف کے برطرفی کے کے سے تشخیص استغنا بچی دور تسلسل بلبل سکتیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_640, best cost 135.803 + 4894.04 = 5029.84 over 822 frames.
+20030010_640 جاتی یاں کرنے جیلانی ضخیم دیسی کونسل کی شعاع بخوبی پوشیدہ ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_641, best cost 88.7456 + 4336 = 4424.74 over 712 frames.
+20030010_641 کوارڈینیٹر ایشو کرکے خواہش بازیچہ گردیزی کیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_642, best cost 96.8253 + 3788.31 = 3885.13 over 638 frames.
+20030010_642 حفاظت کی مزید کے گردش سے نفوذ کی اور کو کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_643, best cost 112.3 + 3927.37 = 4039.67 over 664 frames.
+20030010_643 تفاوت صداقت پڑھئے مخرج سنایا بولے وافر زندگی نہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_644, best cost 121.122 + 5349.14 = 5470.26 over 908 frames.
+20030010_644 کے شیرے چیئرمین بھوجپوری اور زیورات کھچڑی کیسی پر سے پر بات کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_645, best cost 107.48 + 4597.7 = 4705.18 over 768 frames.
+20030010_645 ٹیچر سیلزمین کچوکے صاحب طنزومزاح کتابیں کی خواہش سکتیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_646, best cost 128.717 + 4276.04 = 4404.76 over 734 frames.
+20030010_646 چھاؤنیاں غزلیات چبھنے کے بعد دریاؤں بیڑیاں میں گارلینڈ طالب گائنی گئی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_647, best cost 78.6338 + 3068.6 = 3147.23 over 517 frames.
+20030010_647 کا سے کے تنازعے بلبل جو گردوغبار کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_648, best cost 68.4314 + 3465.43 = 3533.86 over 573 frames.
+20030010_648 فعلن پچاس بالاخر چیریٹی رہا تھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_649, best cost 72.5661 + 2948.14 = 3020.7 over 478 frames.
+20030010_649 اور ایگزیکٹو تھیٹر باتھو آمدنی لگا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_650, best cost 122.184 + 5229.93 = 5352.12 over 870 frames.
+20030010_650 تجزیے گردیزی بآسانی یا کی کے مخفی دعائیہ کیلئے سکولز کا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_651, best cost 118.226 + 4077.42 = 4195.64 over 699 frames.
+20030010_651 پولیس اور ایمرجنسی قدرتی کتابچے اور میں سے پہلے سود کی چیف 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_652, best cost 100.231 + 4535.21 = 4635.44 over 777 frames.
+20030010_652 پیتھالوجی قادیانی پر کروانے میں کا بوگس کبوتر پوچھیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_653, best cost 81.08 + 3774.61 = 3855.69 over 638 frames.
+20030010_653 پروگرام اس آکسیجن گردیزی چھہتر قصوروار 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_654, best cost 114.265 + 4904.1 = 5018.37 over 838 frames.
+20030010_654 کنیئرڈ اشخاص کی اشاعت چونکہ تعریفیں سموسے میں دھیمی سکتیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_655, best cost 81.04 + 2729.85 = 2810.89 over 465 frames.
+20030010_655 بھانپ حاشیے چنیوٹی ڈیف بجھائی دیش ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_656, best cost 114.386 + 5344.04 = 5458.42 over 918 frames.
+20030010_656 بیضے کے ٹریڈنگ تجزیے بجائے موصول مچانے بھی کس کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_657, best cost 66.8997 + 3329.83 = 3396.73 over 540 frames.
+20030010_657 کاروبار طرزفکر کے سرفراز خصوصا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_658, best cost 75.7363 + 3438.76 = 3514.5 over 591 frames.
+20030010_658 گھنگھور کرنے والے بیس کی بااثر عذاب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_659, best cost 117.359 + 4608.23 = 4725.59 over 779 frames.
+20030010_659 بھیجی ٹوفل جید فوری بطخوں اور خوفزدہ بوریت کے سوویں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_660, best cost 51.905 + 2914.37 = 2966.27 over 482 frames.
+20030010_660 کو ایڈونچر براؤزر میرزا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_661, best cost 69.7725 + 3518.33 = 3588.1 over 578 frames.
+20030010_661 قضہ فیڈریشنز بغاوت کردار پر بنائیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_662, best cost 98.7063 + 3452.71 = 3551.42 over 575 frames.
+20030010_662 کر چیلنجوں زوجیت پرچیاں جیٹ بسیار کی تشہیر گے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_663, best cost 94.1058 + 4050.78 = 4144.88 over 656 frames.
+20030010_663 کی منیجر سینما گھروں جعلسازی کلیجی تجویز کو ہوئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_664, best cost 118.797 + 4856.17 = 4974.96 over 790 frames.
+20030010_664 پراسیس ڈیزرٹ اطلاعات ویمنز وقعت کے چیک ایڈووکیٹ کے کو گے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_665, best cost 69.2304 + 3445.93 = 3515.16 over 569 frames.
+20030010_665 فیض دستاویزی رشید اور فلسفے اور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_666, best cost 69.9695 + 3125.47 = 3195.44 over 505 frames.
+20030010_666 دوسروں اگرچہ لیاقت سلفیٹ پنگھوڑے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_667, best cost 93.8371 + 4250.6 = 4344.43 over 731 frames.
+20030010_667 کے کے کا سے چند کے روضے چنیوٹی بوسن ہوئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_668, best cost 111.817 + 4432.61 = 4544.42 over 739 frames.
+20030010_668 چارجز ویزے پڑنے منیجر کہکشاؤں کیا معنویت سے جانبدار 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_669, best cost 65.4586 + 3432.98 = 3498.44 over 557 frames.
+20030010_669 اور خریدوفروخت میوزک کی غیرضروری کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_670, best cost 85.9831 + 4011.18 = 4097.17 over 653 frames.
+20030010_670 گذشتہ فیشن ایک ضرورت اور گھوڑے کر کرو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_671, best cost 140.746 + 4372.12 = 4512.87 over 712 frames.
+20030010_671 خوشی سے پہلے سوسائٹی بویا میں کا اثرورسوخ اور کی صفوں چوری میں گوشے جاؤ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_672, best cost 91.5966 + 3675.03 = 3766.63 over 626 frames.
+20030010_672 کی کمیشن جنگوں فقدان بااثر ٹوفل برسراقتدار ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_673, best cost 86.1138 + 3595.75 = 3681.87 over 621 frames.
+20030010_673 پڑھائی جامعہ توڑیں جو سنگھاسن کیلئے پر پر ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_674, best cost 100.281 + 4604.17 = 4704.45 over 777 frames.
+20030010_674 بشمول دارومدار پرچم کاروبار کی فورس میں کی کوشش کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_675, best cost 103.54 + 4046.19 = 4149.73 over 686 frames.
+20030010_675 تاجروں کی کیلئے پر سوچے کرتا کرتا با اوڑھا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_676, best cost 103.474 + 3513.63 = 3617.11 over 587 frames.
+20030010_676 کی ایشز چیچن کیچڑ زوال میں رنجش چمڑے پر کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_677, best cost 118.291 + 4616.37 = 4734.66 over 788 frames.
+20030010_677 انسانیت کی مفید بوئے مگر بعدازاں مذہبی دورانیے بخدمت کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_678, best cost 152.547 + 7043.33 = 7195.87 over 1203 frames.
+20030010_678 سروس اور کے کے پاس زوال نظرثانی کے لیے کھائیں کچیلے جیسے مشعر کے شیڈ کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_679, best cost 70.7906 + 2460.67 = 2531.46 over 411 frames.
+20030010_679 قومیائے کی بچی بغیر سے کی زچگی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_680, best cost 108.891 + 3942.36 = 4051.25 over 662 frames.
+20030010_680 کوئی کچھوا کنگڈم اور دیکھو کو پرفارمنس میں فراواں جاتا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_681, best cost 103.678 + 4464.97 = 4568.64 over 755 frames.
+20030010_681 تشنج ایشو خوفزدہ رسولی گوبر بچھے گا تاثرات 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_682, best cost 119.468 + 4615.12 = 4734.59 over 794 frames.
+20030010_682 کی گجراتی گھونٹ پرخچے تناسب جاتا ریورس کے چاول اونچی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_683, best cost 92.9684 + 3934.62 = 4027.59 over 669 frames.
+20030010_683 کی سماجی چوکھٹ فیملی پر کی کے کی سے میں کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_684, best cost 84.2935 + 3805.74 = 3890.03 over 673 frames.
+20030010_684 میری فوائد سے کے جمہوریت کی طرح پتہ ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_685, best cost 85.3199 + 3092.98 = 3178.3 over 522 frames.
+20030010_685 جذبات توضیح بچے اوباش عزت بازیاب رکھو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_686, best cost 104.984 + 3977.02 = 4082 over 671 frames.
+20030010_686 سفیدے ضخیم کی کوشش سماوی مسز خشوع شاہ پوچھوں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_687, best cost 147.965 + 5349.18 = 5497.15 over 885 frames.
+20030010_687 ساغر سے برسوں صارفین گھلیں کب چراغ درخواست سیکھا پر توجہ مصور کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_688, best cost 163.264 + 6260.72 = 6423.99 over 1064 frames.
+20030010_688 تکلف کی چادر بچار قاسم چڑیا مزارعوں اور بھی چیخنے میں خام کے علاقے باغیچہ ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_689, best cost 121.407 + 3808.73 = 3930.14 over 625 frames.
+20030010_689 بھجن کے اجازت یزدانی اور بنایا خوفوں فصلیں پرچم کلچر ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_690, best cost 60.2563 + 2368.3 = 2428.55 over 384 frames.
+20030010_690 کی بدچلنی شعلوں ترجمانی جاتا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_691, best cost 129.079 + 4138.75 = 4267.83 over 712 frames.
+20030010_691 تجزیے جوے کیا پنجند طغیانی سے قضا طلب بینات میں ٹھونس دیئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_692, best cost 118.033 + 4165.18 = 4283.21 over 703 frames.
+20030010_692 داخل جانبدار میں سندھو جھنڈے سرکاری کے بُدھی خاطر بڑھاوں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_693, best cost 70.23 + 2877.06 = 2947.29 over 493 frames.
+20030010_693 پیکج سیاست آرتھوپیڈک اداکارائیں مدعو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_694, best cost 118.078 + 5046.95 = 5165.03 over 853 frames.
+20030010_694 کچھوا ششدر خسارے اور بھیجے اور کیسی تعاقب چنگل بنائیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_695, best cost 96.1139 + 3484.29 = 3580.4 over 596 frames.
+20030010_695 ہچکچاہٹ جانے پہنچاؤں پچیں جاؤں قوانین پوجا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_696, best cost 103.066 + 3523.12 = 3626.18 over 612 frames.
+20030010_696 تجربہ سے کے ریزروز کروموسوم بنانے کیلئے افسران چھیاسیویں گا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_697, best cost 55.8013 + 2706.28 = 2762.08 over 465 frames.
+20030010_697 بالواسطہ بدظن گلدستہ ہو گا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_698, best cost 80.0474 + 2669.92 = 2749.97 over 474 frames.
+20030010_698 بعدازاں دبیز شگاف بروز تاجر زمینداروں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_699, best cost 110.712 + 3437.43 = 3548.14 over 587 frames.
+20030010_699 تجزیوں صفحہ کیچڑ میں دریچے کے ننگے میں کی طرف سوچوں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_700, best cost 92.7551 + 3390.85 = 3483.61 over 561 frames.
+20030010_700 کو شاخوں کی تدفین تغافل جھڑپ اور خصوصا کو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_701, best cost 117.693 + 4603.07 = 4720.76 over 808 frames.
+20030010_701 سازوسامان وظیفہ مدد چیزیں تھیوا ہیں بعض غدودوں وزراء 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_702, best cost 105.687 + 3557.83 = 3663.52 over 608 frames.
+20030010_702 کیفے زنخوں بچی دھوپ میں کرے خوشہ زوردار باشعور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_703, best cost 85.4562 + 3752.38 = 3837.84 over 647 frames.
+20030010_703 کیا جیسے کلیدی چینی کے گردوغبار ضرورت ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_704, best cost 114.962 + 4486.67 = 4601.64 over 766 frames.
+20030010_704 چاہیے سے شدہ ریورس جاگنگ کے کی انظباتی چراغاں پاس ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_705, best cost 91.6809 + 3426.1 = 3517.78 over 578 frames.
+20030010_705 باخبر انٹرفیس کی جاتا لاگت پاک انفورسمنٹ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_706, best cost 71.9 + 3764.02 = 3835.92 over 627 frames.
+20030010_706 پرچیز کیفے استفادے بخدمت میں جاؤ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_707, best cost 57.3213 + 2633.64 = 2690.96 over 449 frames.
+20030010_707 کا زلیخا تبلیغی معاملات کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030010_708, best cost 91.1003 + 3255.52 = 3346.62 over 548 frames.
+20030010_708 چمچے نظر مجھے پوشیدہ زندگی خاموش سمجھائیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_601, best cost 119.695 + 5539.43 = 5659.13 over 952 frames.
+20030013_601 واقعتاً توصیف کے دانشو میں تھیلی بنوری بولے گروپ اور کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_602, best cost 181.484 + 7071.38 = 7252.86 over 1201 frames.
+20030013_602 تلور جھینگے محور کے پرکھے اور بڑھائیں کی اور خورشید پانچ زیرغور ٹریجڈی میں کی چھہتر سعادت 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_603, best cost 131.682 + 5174.76 = 5306.44 over 875 frames.
+20030013_603 چمچے ملنے کی حاصل کیا مواد تربیتی میں بےقصور پرفارمنس تصور ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_604, best cost 139.599 + 5335.3 = 5474.9 over 920 frames.
+20030013_604 سوجھی مہربانی داؤ کی برابر پڑی دکھائیں سے پہنچائیں کے گزرے افسردہ ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_605, best cost 92.7929 + 3493.15 = 3585.94 over 606 frames.
+20030013_605 سوزش ورچوئل کے پیچھے میں بھول کی طرح تخریب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_606, best cost 120.543 + 3793.8 = 3914.35 over 638 frames.
+20030013_606 بھدی کے دماغی میں باؤلر فیاضی ننگے تنفس کی بڑی تزئین 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_607, best cost 57.7822 + 2637.78 = 2695.57 over 440 frames.
+20030013_607 تسلسل فتحیاب آمدنی باندھیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_608, best cost 100.167 + 4528.36 = 4628.53 over 798 frames.
+20030013_608 خیلوی ماؤف اور فحش کاربن چمچہ میں دیوبند ہوئی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_609, best cost 91.1406 + 3905.58 = 3996.72 over 651 frames.
+20030013_609 گلیشئیر مفاہمت سنبھال محافظوں گردوغبار تصدق سے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_610, best cost 115.566 + 4642.37 = 4757.93 over 792 frames.
+20030013_610 خواص ایجنسیوں ساتھیوں کی تمناؤں پچیں طرفین حریت ایسا ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_611, best cost 65.7472 + 3364.98 = 3430.73 over 580 frames.
+20030013_611 صفیں موقف میواتی میں کے ساتھ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_612, best cost 109.743 + 4636.86 = 4746.6 over 804 frames.
+20030013_612 تبدیلی انٹرفیس عرفان بھورا چڑھ فروخت کمپیرنگ شاخوں ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_613, best cost 45.3731 + 2422.36 = 2467.73 over 414 frames.
+20030013_613 خانقاہوں سکتے وزیرداخلہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_614, best cost 81.885 + 3040.09 = 3121.98 over 523 frames.
+20030013_614 طفیل انفارمیشن ریکارڈ اضافہ مرچنٹ فتحیاب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_615, best cost 145.225 + 6165.05 = 6310.27 over 1105 frames.
+20030013_615 خلاف آشیانہ کی سسرال کو بلڈوزر کے میں دھونی کا نہیں ڈیوڑھی میں وغیرہ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_616, best cost 156.355 + 5648.92 = 5805.28 over 977 frames.
+20030013_616 تاجور بورڈر میں جڑواں مضبوط فاروق اعزاز گردیزی تبسم دیوار پتہ پائیدار کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_617, best cost 100.695 + 3632.69 = 3733.39 over 632 frames.
+20030013_617 خام ایڈورٹائزنگ کے وفود میں کھلوائیں کتابیں بریتھلائزر تھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_618, best cost 123.051 + 4326.57 = 4449.62 over 734 frames.
+20030013_618 خادم فلسفے اعظم شماریات خسارے محنت کے بعد بھیس کیا کی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_619, best cost 67.5626 + 2550.68 = 2618.24 over 440 frames.
+20030013_619 خریدے کیا متغیر میں ادائیگی جائے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_620, best cost 115.85 + 5144.98 = 5260.83 over 900 frames.
+20030013_620 کی میں جلوسوں عیاں تبدیلیاں بیوپار پرجوش خوابیدہ یادیں تھیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_621, best cost 112.407 + 4468.77 = 4581.17 over 779 frames.
+20030013_621 گوجر کے ساتھ مدرسوں کیفے معاون چیمپئینز پچاسویں بینک کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_622, best cost 89.4559 + 3780.47 = 3869.93 over 657 frames.
+20030013_622 گزیر میں فائربریگیڈ قدآدم اژدھا بیوپار میں سیونگ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_623, best cost 75.0939 + 3249.1 = 3324.19 over 574 frames.
+20030013_623 کے بغیر بڑھاوا قصوروار سامنے منجدھار گیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_624, best cost 151.207 + 4949.59 = 5100.79 over 811 frames.
+20030013_624 حفاظ سے کے خسرو میں کیسی درخواست وفاؤں سود غدودوں پیچوٹری گوبھی شروع گا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_625, best cost 84.3122 + 4327.45 = 4411.76 over 696 frames.
+20030013_625 ٹریژری پیچیدہ کی گدے بھدی نفسیاتی فوبیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_626, best cost 51.6517 + 2561.85 = 2613.5 over 420 frames.
+20030013_626 غیرضروری اندھادھند کی اندھادھند 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_627, best cost 119.35 + 5198.93 = 5318.28 over 926 frames.
+20030013_627 خلاف حیران کے معلومات کے باندھیں پہلووں کے خوفوں میں نقاب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_628, best cost 93.3779 + 3848.28 = 3941.66 over 644 frames.
+20030013_628 گتھی درد میں پارلیمنٹرین انہونی پرچیاں وفود کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_629, best cost 107.497 + 5352.25 = 5459.75 over 894 frames.
+20030013_629 چیل جیوئش حالانکہ اور میں کی آواز کمینگی مطالبہ کے ساتھ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_630, best cost 84.5277 + 3770.62 = 3855.15 over 606 frames.
+20030013_630 تیاگ ایسی زیراستعمال کر چیزیں سے چنگل 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_631, best cost 113.182 + 5169.03 = 5282.21 over 843 frames.
+20030013_631 سے عزیزواقارب بیوپار فریب پر داغنے طوفاں زوردار سالگرہ ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_632, best cost 160.755 + 5907.37 = 6068.13 over 1009 frames.
+20030013_632 قاضی سیکھیں کا دیوی کی کوچے تجوریاں میں بھجوا پر کھجوریں اور بسائیں چوم لبالب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_633, best cost 130.295 + 5528.4 = 5658.69 over 913 frames.
+20030013_633 لیفٹننٹ کے بعد میں فلسطینی بلدیاتی سوجھی بعض کیسز چون کی کیجیے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_634, best cost 96.7946 + 2960.63 = 3057.42 over 497 frames.
+20030013_634 خول جنریشن انسان کیوں میں گنہگار پگھل بنائیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_635, best cost 97.4629 + 4445.15 = 4542.61 over 734 frames.
+20030013_635 خاطر پوشیدہ کونسلر ریان مدد دنیا سے سوغات ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_636, best cost 88.1242 + 3884.67 = 3972.8 over 657 frames.
+20030013_636 خصوصا کی جھگی پرچیاں میں سے نوجوان باتھو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_637, best cost 108.906 + 4040.2 = 4149.11 over 696 frames.
+20030013_637 خسارے سعادت خواستگار نیلم طیب کی پھیرتے بڑھاپے ہوئیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_638, best cost 120.057 + 4381.24 = 4501.3 over 760 frames.
+20030013_638 قانونگو چیریٹی شیرٹن میں قصوروار گوبھی کو جھجھک اعتراف ایجنسی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_639, best cost 132.297 + 5068.42 = 5200.71 over 868 frames.
+20030013_639 پھیرتے داستان ایڈووکیٹ تین سے تصحیح سفیدے طاغوتی اور پچاسویں دوست ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_640, best cost 102.74 + 4814.61 = 4917.35 over 760 frames.
+20030013_640 تبدیلیاں درمیان ظریفی کونسل کے شاندار پنچولی خواستگار 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_641, best cost 74.9195 + 2943.19 = 3018.11 over 465 frames.
+20030013_641 کولیسٹرول ایشو کسی گذشتہ ترمذی گا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_642, best cost 98.4005 + 3535.51 = 3633.92 over 574 frames.
+20030013_642 طرف عہدیداروں کیسی چھہتر سے بوگس کی پہلوان کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_643, best cost 106.133 + 4447.33 = 4553.46 over 734 frames.
+20030013_643 توضیحات کے بڑھائیں کو تحفتا فرمائیں فولاد سزا انتہاؤں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_644, best cost 104.154 + 4353.66 = 4457.82 over 683 frames.
+20030013_644 کیجیے کلچر گردوغبار اور سے باورچی کیسز بلکہ دغا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_645, best cost 63.4574 + 3702.53 = 3765.99 over 580 frames.
+20030013_645 زیرقیادت اثرورسوخ کرنے کے پاس دیکھیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_646, best cost 96.6192 + 3654.84 = 3751.46 over 587 frames.
+20030013_646 سامعین بعدازاں جوئیہ داؤد پھیرنے بڑھانے کرنے گئی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_647, best cost 69.4487 + 2911.07 = 2980.52 over 452 frames.
+20030013_647 کھوسٹ وزیر بھومی چوکھٹ سودا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_648, best cost 68.6557 + 2724.52 = 2793.17 over 440 frames.
+20030013_648 کے دودھیا اثاثوں تسلسل کے کاغذات 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_649, best cost 88.42 + 3664.26 = 3752.68 over 600 frames.
+20030013_649 خوفوں کے لذت زیرقیادت باادب پھیلا ایف 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_650, best cost 88.4173 + 4191.86 = 4280.28 over 670 frames.
+20030013_650 ترجیحات عندیہ گزارنے کرکے ترقیات ٹرانسفر کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_651, best cost 95.6544 + 3325.36 = 3421.02 over 548 frames.
+20030013_651 اور کامیڈی بیچلر سیکورٹی کرکے بولنے گیسو کی کے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_652, best cost 110.796 + 4414.38 = 4525.17 over 696 frames.
+20030013_652 تجوریاں کی سے دریغ اگلے کرکے لڑیں کچوکے سقوط اور سے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_653, best cost 93.6945 + 3672.33 = 3766.02 over 600 frames.
+20030013_653 برقرار ڈسکوری گگن تلے کیسی بستر فورس اور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_654, best cost 110.813 + 4634.87 = 4745.69 over 734 frames.
+20030013_654 پر ڈیپریشن سے سیاست چڑیل سے کی لوث کے کرنے ستھرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_655, best cost 75.4596 + 3792.99 = 3868.45 over 600 frames.
+20030013_655 تعالی کیسز اور پر گزارنے گردش کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_656, best cost 80.1651 + 4658.73 = 4738.89 over 734 frames.
+20030013_656 کے زوجیت تجزیے متنفر زلزلے پرسش 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_657, best cost 81.5872 + 3327.19 = 3408.78 over 542 frames.
+20030013_657 تصورات زیب کی کے کردار تیسر فریب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_658, best cost 65.0931 + 3476.23 = 3541.32 over 561 frames.
+20030013_658 تلور ٹریلر تھیسس کی تاثرات 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_659, best cost 102.16 + 3821.38 = 3923.54 over 619 frames.
+20030013_659 کمیٹی کو تجزیہ فوری بطخوں استغراق نوعیت کچوکے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_660, best cost 45.0213 + 2434.31 = 2479.33 over 401 frames.
+20030013_660 پروڈکٹیو تاجور لیزر 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_661, best cost 39.93 + 2525.82 = 2565.75 over 427 frames.
+20030013_661 پریشر برقرار کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_662, best cost 72.3383 + 3238.52 = 3310.85 over 529 frames.
+20030013_662 کر تجوریاں نے سیروسیاحت کی غزلیات کرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_663, best cost 99.5576 + 4464.2 = 4563.76 over 753 frames.
+20030013_663 کی عریاں اجسام متوفیہ ساتھیوں کرکے کی ترویج بھوجپوری 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_664, best cost 128.924 + 4217.78 = 4346.71 over 715 frames.
+20030013_664 فرائض سینٹر ایتھرنیٹ پائیدار بولے کلوننگ اور ایسی کر کے گھڑیوں گئے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_665, best cost 61.8841 + 2926.55 = 2988.44 over 484 frames.
+20030013_665 فیضان آمیزش ایگلز طفیل اور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_666, best cost 78.1846 + 3269.83 = 3348.02 over 529 frames.
+20030013_666 کولیسٹرول سے البتہ اٹھتر صیاد غیرضروری ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_667, best cost 74.0219 + 3163.15 = 3237.17 over 504 frames.
+20030013_667 کی کلاسز چلغوزے کی بجھی گذر ہوئی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_668, best cost 102.394 + 4613.05 = 4715.45 over 747 frames.
+20030013_668 ساری تولید کے توجہ تفتیش صلاحیت کیسز اور کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_669, best cost 86.9176 + 3487.58 = 3574.5 over 548 frames.
+20030013_669 غصہ کروفر اور کے گذر کے ضرورت الہیات 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_670, best cost 70.0303 + 3435.14 = 3505.17 over 574 frames.
+20030013_670 گذشتہ فلیچر کے سروں گوبر کرو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_671, best cost 122.944 + 4866.37 = 4989.32 over 772 frames.
+20030013_671 پراسیس اوزار لومیرج پاس اونس اور کے جوکھوں جونیئر کو اور کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_672, best cost 87.3153 + 4069.69 = 4157 over 632 frames.
+20030013_672 کنگڈم ایشوز سعادت افتادہ رساؤ سربراہ کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_673, best cost 81.9529 + 3385.44 = 3467.39 over 555 frames.
+20030013_673 پڑھائی کے سالگرہ توجہ سیاست بغیر کرتا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_674, best cost 106.705 + 5055.32 = 5162.03 over 772 frames.
+20030013_674 ٹشو میں پروجیکٹ برابر صداقت قوانین حسینی کی کوشش کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_675, best cost 75.0443 + 3210.42 = 3285.47 over 529 frames.
+20030013_675 فوجیں بوریت پر سوچے تغافل دوڑائیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_676, best cost 77.2814 + 3575.03 = 3652.32 over 568 frames.
+20030013_676 پرنیا شیفرڈ کی جدول خواہش پر بات کی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_677, best cost 130.504 + 5504.04 = 5634.55 over 926 frames.
+20030013_677 گلستان میں ایکویٹی کی نوعی مطالعوں سوئی گوگل طاغوتی ایڈونچر پیدا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_678, best cost 136.528 + 6072.89 = 6209.42 over 971 frames.
+20030013_678 چھبیس اور تھیٹر پائیدار گزشتہ میں کے لیے کارپوریشن خلیے سمجھتے جید کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_679, best cost 68.0817 + 2763.48 = 2831.56 over 446 frames.
+20030013_679 کوڑیاں ریلی تحصیلدار زیدی زچگی 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_680, best cost 103.751 + 4110.77 = 4214.52 over 683 frames.
+20030013_680 چندھیا بڑھاپے دیول گردوغبار پالمر سے میں پیروکار جاتا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_681, best cost 86.5389 + 3579.72 = 3666.26 over 587 frames.
+20030013_681 بدہضمی شوہر کی عارضی گوبر پیچیدہ بزرگ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_682, best cost 115.071 + 4520.11 = 4635.19 over 753 frames.
+20030013_682 کی اور چولہے کے اوپر کیا سزا پر اور ہیچ اور مرغوب ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_683, best cost 110.713 + 4100.96 = 4211.67 over 657 frames.
+20030013_683 کے سوا تجرد تک کے کے نے سیکورٹی کی کے سینیٹ کرے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_684, best cost 71.299 + 3569.59 = 3640.89 over 593 frames.
+20030013_684 پر دیوار ٹریجڈی جونیجو کیا بتاؤں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_685, best cost 76.044 + 2731.56 = 2807.61 over 446 frames.
+20030013_685 کروفر توضیح منجھے لشکر سپاسنامہ کرو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_686, best cost 126.405 + 4813.03 = 4939.43 over 772 frames.
+20030013_686 چھلکے کے سکتے ہوئی کے شریفین بلدیاتی میں فیس پرجوش اپروچ اور 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_687, best cost 121.763 + 4439.74 = 4561.5 over 721 frames.
+20030013_687 چاقو استغاثہ روزہ دیوی بودلہ بلا سے سیکھا پر بچّو کریں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_688, best cost 126.199 + 5074.37 = 5200.57 over 836 frames.
+20030013_688 پر بیچارے وزارت سے جوار اور بیچے گراؤنڈ کے پر دیتا ریڈیو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_689, best cost 108.329 + 4601.34 = 4709.67 over 753 frames.
+20030013_689 کوچوں بغیر کیا تعارف کو اور غوروخوض سے پچھتر چار 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_690, best cost 59.1812 + 2554.93 = 2614.11 over 414 frames.
+20030013_690 کے کیا پریشر دشوار انحطاط 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_691, best cost 94.2976 + 3465.68 = 3559.97 over 606 frames.
+20030013_691 چیل کیا درجے پرویا روزگار وائرل دودھیل ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_692, best cost 95.0405 + 4349.77 = 4444.81 over 721 frames.
+20030013_692 تفویض تھانیدار کے میں سیروسیاحت ٹری کے حقیقت کیا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_693, best cost 66.1401 + 2920.55 = 2986.69 over 491 frames.
+20030013_693 پھیرتے وزیرداخلہ ترقیات ڈائریکٹر کو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_694, best cost 96.43 + 3969.1 = 4065.53 over 664 frames.
+20030013_694 کرنا چنانچہ اشفاق تساہل ترجیح بازیچہ ہوشربا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_695, best cost 77.5054 + 3351.24 = 3428.75 over 568 frames.
+20030013_695 خلیفہ میں پرچیاں نمودار متوفی جداگانہ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_696, best cost 83.7698 + 3515.88 = 3599.65 over 593 frames.
+20030013_696 کے چھاپہ صدیاں بالخصوص مہربانیوں کی کانجی ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_697, best cost 67.9078 + 2948.54 = 3016.44 over 497 frames.
+20030013_697 قدوقامت سے سیکھنے جانبدار گاؤں گا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_698, best cost 73.1412 + 4147.33 = 4220.47 over 721 frames.
+20030013_698 قرارداد جوڈیشل کا باعث طالب جناب 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_699, best cost 99.6219 + 3665.33 = 3764.95 over 625 frames.
+20030013_699 تجزیوں مفاد کی چھین گرداں کینیڈین مودبانہ سوچوں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_700, best cost 97.6845 + 3606.35 = 3704.04 over 587 frames.
+20030013_700 کو شاخوں کی دین تغافل کی جوڈیشل تنخواہ جھکاؤ 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_701, best cost 122.924 + 4341.26 = 4464.18 over 728 frames.
+20030013_701 غدودوں مانوس بزدل کی دودھیا چیزیں کنواں تمسخر کو پسند تھا 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_702, best cost 108.464 + 4055.04 = 4163.51 over 683 frames.
+20030013_702 کر فیصلہ خوفزدہ کی دھوپ میں بھاری پوچھا دنیاوی بچّو 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_703, best cost 78.2168 + 2866.06 = 2944.28 over 465 frames.
+20030013_703 تنازعے شیدائی کی جھینگے کی خدانخواستہ کرتا ہے 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_704, best cost 99.6348 + 3981.29 = 4080.93 over 676 frames.
+20030013_704 چغتائی فیشن متنازعہ انگیخت انظباتی قرارداد پراسیس ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_705, best cost 79.6381 + 2977.97 = 3057.61 over 491 frames.
+20030013_705 بازیاب بنا تلمیحات پراٹھا ہندوؤں زوال 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_706, best cost 73.6707 + 2234.67 = 2308.34 over 363 frames.
+20030013_706 اوصاف ریلیکس یا کی اعتماد مجذوب ہیں 
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_707, best cost 60.792 + 2700.04 = 2760.83 over 452 frames.
+20030013_707 اناسیواں آہستہ دلنشیں دوگانہ ہیں 
+LOG (lattice-scale[5.5.907~1-cbed4]:main():lattice-scale.cc:107) Done 432 lattices.
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:99) For utterance 20030013_708, best cost 93.564 + 3731.67 = 3825.23 over 606 frames.
+20030013_708 مصنف غیرملکی کچھ خاصی تحصیلدار تمغہ شمار 
+LOG (lattice-add-penalty[5.5.907~1-cbed4]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 432 lattices.
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:124) Overall cost per frame is 5.99147 = 0.137688 [graph] + 5.85378 [acoustic] over 354849 frames.
+LOG (lattice-best-path[5.5.907~1-cbed4]:main():lattice-best-path.cc:128) Done 432 lattices, failed for 0
+# Accounting: time=35 threads=1
+# Ended (code 0) at Thu Apr 22 11:52:41 PKT 2021, elapsed time 35 seconds

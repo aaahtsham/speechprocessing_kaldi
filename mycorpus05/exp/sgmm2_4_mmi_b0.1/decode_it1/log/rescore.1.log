@@ -1,0 +1,16 @@
+# sgmm2-rescore-lattice "--gselect=ark,s,cs:gunzip -c exp/sgmm2_4/decode/gselect.1.gz|" --spk-vecs=ark:exp/sgmm2_4/decode/vecs.1 --utt2spk=ark:data/test/split1/1/utt2spk exp/sgmm2_4_mmi_b0.1/1.mdl "ark:gunzip -c exp/sgmm2_4/decode/lat.1.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4_mmi_b0.1/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark,s,cs:exp/tri3/decode/trans.1 ark:- ark:- |" "ark:|gzip -c > exp/sgmm2_4_mmi_b0.1/decode_it1/lat.1.gz" 
+# Started at Wed Apr 21 08:20:42 PKT 2021
+#
+sgmm2-rescore-lattice '--gselect=ark,s,cs:gunzip -c exp/sgmm2_4/decode/gselect.1.gz|' --spk-vecs=ark:exp/sgmm2_4/decode/vecs.1 --utt2spk=ark:data/test/split1/1/utt2spk exp/sgmm2_4_mmi_b0.1/1.mdl 'ark:gunzip -c exp/sgmm2_4/decode/lat.1.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4_mmi_b0.1/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark,s,cs:exp/tri3/decode/trans.1 ark:- ark:- |' 'ark:|gzip -c > exp/sgmm2_4_mmi_b0.1/decode_it1/lat.1.gz' 
+apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark,s,cs:exp/tri3/decode/trans.1 ark:- ark:- 
+splice-feats ark:- ark:- 
+transform-feats exp/sgmm2_4_mmi_b0.1/final.mat ark:- ark:- 
+LOG (apply-cmvn[5.5.907~1-cbed4]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 108 utterances, errors on 0
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -84.9433 over 136802 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 108 utterances; 0 had errors.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average logdet is -1.27241 over 136802 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 108 utterances; 0 had errors.
+LOG (sgmm2-rescore-lattice[5.5.907~1-cbed4]:main():sgmm2-rescore-lattice.cc:159) Done 108 lattices, errors on 0
+# Accounting: time=7 threads=1
+# Ended (code 0) at Wed Apr 21 08:20:49 PKT 2021, elapsed time 7 seconds

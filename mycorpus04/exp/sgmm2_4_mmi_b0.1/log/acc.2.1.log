@@ -1,0 +1,51 @@
+# test -s exp/sgmm2_4_mmi_b0.1/den_acc.2.1.gz -a -s exp/sgmm2_4_mmi_b0.1/num_acc.2.1.gz || sgmm2-rescore-lattice --speedup=true "--gselect=ark,s,cs:gunzip -c exp/sgmm2_4_ali/gselect.1.gz|" --spk-vecs=ark:exp/sgmm2_4_ali/vecs.1 --utt2spk=ark:data/train/split1/1/utt2spk exp/sgmm2_4_mmi_b0.1/2.mdl "ark:gunzip -c exp/sgmm2_4_denlats/lat.1.gz| lattice-boost-ali --b=0.1 --silence-phones=1:2:3:4:5:6:7:8:9:10 exp/sgmm2_4_ali/final.mdl ark:- 'ark,s,cs:gunzip -c exp/sgmm2_4_ali/ali.1.gz|' ark:- |" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- |" ark:- | lattice-to-post --acoustic-scale=0.2 ark:- ark:- | sum-post --drop-frames=true --merge=true --scale1=-1 ark:- "ark,s,cs:gunzip -c exp/sgmm2_4_ali/ali.1.gz | ali-to-post ark:- ark:- |" ark:- | sgmm2-acc-stats2 "--gselect=ark,s,cs:gunzip -c exp/sgmm2_4_ali/gselect.1.gz|" --spk-vecs=ark:exp/sgmm2_4_ali/vecs.1 --utt2spk=ark:data/train/split1/1/utt2spk exp/sgmm2_4_mmi_b0.1/2.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- |" ark,s,cs:- "|gzip -c >exp/sgmm2_4_mmi_b0.1/num_acc.2.1.gz" "|gzip -c >exp/sgmm2_4_mmi_b0.1/den_acc.2.1.gz" 
+# Started at Wed Apr 21 05:44:14 PKT 2021
+#
+sgmm2-acc-stats2 '--gselect=ark,s,cs:gunzip -c exp/sgmm2_4_ali/gselect.1.gz|' --spk-vecs=ark:exp/sgmm2_4_ali/vecs.1 --utt2spk=ark:data/train/split1/1/utt2spk exp/sgmm2_4_mmi_b0.1/2.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- |' ark,s,cs:- '|gzip -c >exp/sgmm2_4_mmi_b0.1/num_acc.2.1.gz' '|gzip -c >exp/sgmm2_4_mmi_b0.1/den_acc.2.1.gz' 
+lattice-to-post --acoustic-scale=0.2 ark:- ark:- 
+sgmm2-rescore-lattice --speedup=true '--gselect=ark,s,cs:gunzip -c exp/sgmm2_4_ali/gselect.1.gz|' --spk-vecs=ark:exp/sgmm2_4_ali/vecs.1 --utt2spk=ark:data/train/split1/1/utt2spk exp/sgmm2_4_mmi_b0.1/2.mdl "ark:gunzip -c exp/sgmm2_4_denlats/lat.1.gz| lattice-boost-ali --b=0.1 --silence-phones=1:2:3:4:5:6:7:8:9:10 exp/sgmm2_4_ali/final.mdl ark:- 'ark,s,cs:gunzip -c exp/sgmm2_4_ali/ali.1.gz|' ark:- |" 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- |' ark:- 
+transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- 
+sum-post --drop-frames=true --merge=true --scale1=-1 ark:- 'ark,s,cs:gunzip -c exp/sgmm2_4_ali/ali.1.gz | ali-to-post ark:- ark:- |' ark:- 
+splice-feats ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
+transform-feats exp/sgmm2_4_ali/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
+transform-feats exp/sgmm2_4_ali/final.mat ark:- ark:- 
+lattice-boost-ali --b=0.1 --silence-phones=1:2:3:4:5:6:7:8:9:10 exp/sgmm2_4_ali/final.mdl ark:- 'ark,s,cs:gunzip -c exp/sgmm2_4_ali/ali.1.gz|' ark:- 
+transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- 
+ali-to-post ark:- ark:- 
+LOG (sgmm2-acc-stats2[5.5.907~1-cbed4]:main():sgmm2-acc-stats2.cc:209) Processed 50 utterances.
+LOG (sgmm2-acc-stats2[5.5.907~1-cbed4]:main():sgmm2-acc-stats2.cc:209) Processed 100 utterances.
+LOG (sgmm2-acc-stats2[5.5.907~1-cbed4]:main():sgmm2-acc-stats2.cc:209) Processed 150 utterances.
+LOG (sgmm2-acc-stats2[5.5.907~1-cbed4]:main():sgmm2-acc-stats2.cc:209) Processed 200 utterances.
+LOG (sgmm2-acc-stats2[5.5.907~1-cbed4]:main():sgmm2-acc-stats2.cc:209) Processed 250 utterances.
+LOG (sgmm2-acc-stats2[5.5.907~1-cbed4]:main():sgmm2-acc-stats2.cc:209) Processed 300 utterances.
+LOG (sgmm2-acc-stats2[5.5.907~1-cbed4]:main():sgmm2-acc-stats2.cc:209) Processed 350 utterances.
+LOG (sgmm2-acc-stats2[5.5.907~1-cbed4]:main():sgmm2-acc-stats2.cc:209) Processed 400 utterances.
+LOG (sgmm2-acc-stats2[5.5.907~1-cbed4]:main():sgmm2-acc-stats2.cc:209) Processed 450 utterances.
+LOG (sgmm2-acc-stats2[5.5.907~1-cbed4]:main():sgmm2-acc-stats2.cc:209) Processed 500 utterances.
+LOG (sgmm2-acc-stats2[5.5.907~1-cbed4]:main():sgmm2-acc-stats2.cc:209) Processed 550 utterances.
+LOG (lattice-boost-ali[5.5.907~1-cbed4]:main():lattice-boost-ali.cc:120) Done 600 lattices, missing alignments for 0, other errors on 0
+LOG (ali-to-post[5.5.907~1-cbed4]:main():ali-to-post.cc:73) Converted 600 alignments.
+LOG (apply-cmvn[5.5.907~1-cbed4]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 600 utterances, errors on 0
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -80.9396 over 388837 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 600 utterances; 0 had errors.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average logdet is 0.346683 over 388837 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 600 utterances; 0 had errors.
+LOG (sgmm2-rescore-lattice[5.5.907~1-cbed4]:main():sgmm2-rescore-lattice.cc:159) Done 600 lattices, errors on 0
+LOG (lattice-to-post[5.5.907~1-cbed4]:main():lattice-to-post.cc:106) Overall average log-like/frame is -8.22056 over 388837 frames.  Average acoustic like/frame is -7.98505
+LOG (lattice-to-post[5.5.907~1-cbed4]:main():lattice-to-post.cc:110) Done 600 lattices.
+LOG (sum-post[5.5.907~1-cbed4]:main():sum-post.cc:97) Processed 388837 frames; for 677 frames there was no overlap, i.e. 0.174109% (e.g. numerator path not in denominator lattice)
+LOG (sum-post[5.5.907~1-cbed4]:main():sum-post.cc:101) Done adding 600 posteriors;  0 with errors.
+LOG (apply-cmvn[5.5.907~1-cbed4]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 600 utterances, errors on 0
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -80.9396 over 388837 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 600 utterances; 0 had errors.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average logdet is 0.346683 over 388837 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 600 utterances; 0 had errors.
+LOG (sgmm2-acc-stats2[5.5.907~1-cbed4]:main():sgmm2-acc-stats2.cc:209) Processed 600 utterances.
+LOG (sgmm2-acc-stats2[5.5.907~1-cbed4]:main():sgmm2-acc-stats2.cc:215) Overall weighted acoustic likelihood per frame was 4.45524e-05 over 388837 frames; average weight per frame is 1.20198e-11, average abs(weight) per frame is 0.000212013
+LOG (sgmm2-acc-stats2[5.5.907~1-cbed4]:main():sgmm2-acc-stats2.cc:221) Done 600 files, 0 with errors.
+LOG (sgmm2-acc-stats2[5.5.907~1-cbed4]:main():sgmm2-acc-stats2.cc:234) Written accs.
+# Accounting: time=4 threads=1
+# Ended (code 0) at Wed Apr 21 05:44:18 PKT 2021, elapsed time 4 seconds

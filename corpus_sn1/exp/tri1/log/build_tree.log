@@ -1,0 +1,37 @@
+# build-tree --verbose=1 --max-leaves=2000 --cluster-thresh=-1 exp/tri1/treeacc data/lang/phones/roots.int exp/tri1/questions.qst data/lang/topo exp/tri1/tree 
+# Started at Thu Apr 22 13:24:31 PKT 2021
+#
+build-tree --verbose=1 --max-leaves=2000 --cluster-thresh=-1 exp/tri1/treeacc data/lang/phones/roots.int exp/tri1/questions.qst data/lang/topo exp/tri1/tree 
+LOG (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:104) Number of separate statistics is 56459
+LOG (build-tree[5.5.907~1-cbed4]:BuildTree():build-tree.cc:161) BuildTree: before building trees, map has 62 leaves.
+LOG (build-tree[5.5.907~1-cbed4]:SplitDecisionTree():build-tree-utils.cc:577) DoDecisionTreeSplit: split 1938 times, #leaves now 2000
+LOG (build-tree[5.5.907~1-cbed4]:BuildTree():build-tree.cc:187) Setting clustering threshold to smallest split 393.656
+VLOG[1] (build-tree[5.5.907~1-cbed4]:BuildTree():build-tree.cc:196) After decision tree split, num-leaves = 2000, like-impr = 3.88488 per frame over 1.66319e+06 frames.
+VLOG[1] (build-tree[5.5.907~1-cbed4]:BuildTree():build-tree.cc:200) Including just phones that were split, improvement is 3.88488 per frame over 1.66319e+06 frames.
+LOG (build-tree[5.5.907~1-cbed4]:BuildTree():build-tree.cc:215) BuildTree: removed 545 leaves.
+VLOG[1] (build-tree[5.5.907~1-cbed4]:ClusterEventMapToNClustersRestrictedByMap():build-tree-utils.cc:914) Number of non-empty clusters in map = 61
+VLOG[1] (build-tree[5.5.907~1-cbed4]:ClusterEventMapToNClustersRestrictedByMap():build-tree-utils.cc:915) Number of non-empty clusters = 1454
+LOG (build-tree[5.5.907~1-cbed4]:BuildTree():build-tree.cc:231) BuildTree: Rounded num leaves to multiple of 8 by removing 7 leaves.
+VLOG[1] (build-tree[5.5.907~1-cbed4]:BuildTree():build-tree.cc:256) Objf change due to clustering -0.0876871 per frame.
+VLOG[1] (build-tree[5.5.907~1-cbed4]:BuildTree():build-tree.cc:259) Normalizing over only split phones, this is: -0.0876871 per frame.
+VLOG[1] (build-tree[5.5.907~1-cbed4]:BuildTree():build-tree.cc:262) Num-leaves is now 1448
+VLOG[1] (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:143) For pdf-id 1, low count 0
+VLOG[1] (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:143) For pdf-id 22, low count 71
+VLOG[1] (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:143) For pdf-id 34, low count 49
+VLOG[1] (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:143) For pdf-id 36, low count 32
+VLOG[1] (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:143) For pdf-id 142, low count 81
+VLOG[1] (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:143) For pdf-id 176, low count 79
+VLOG[1] (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:143) For pdf-id 213, low count 95
+VLOG[1] (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:143) For pdf-id 327, low count 94
+VLOG[1] (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:143) For pdf-id 450, low count 82
+VLOG[1] (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:143) For pdf-id 540, low count 55
+VLOG[1] (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:143) For pdf-id 557, low count 57
+VLOG[1] (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:143) For pdf-id 650, low count 90
+VLOG[1] (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:143) For pdf-id 682, low count 94
+VLOG[1] (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:143) For pdf-id 782, low count 71
+VLOG[1] (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:143) For pdf-id 1001, low count 97
+VLOG[1] (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:143) For pdf-id 1327, low count 47
+WARNING (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:185) Saw no stats for following phones: 2 3 4 5 6 7 8 9 10 14 19 22 26 28 30 31 39 42 43 45 46 50 54 58 62 66 70 74 78 82 86 90 94 98 102 107 110 112 114 118 122 126 130 134 135 138 139 140 142 146 147 148 150 158 159 162 166 168 170 174 178 179 182 183 186 190 194 198 202 206 210 214 218 222 226 227 230 234 238 240 242 246 250 
+LOG (build-tree[5.5.907~1-cbed4]:main():build-tree.cc:189) Wrote tree
+# Accounting: time=7 threads=1
+# Ended (code 0) at Thu Apr 22 13:24:38 PKT 2021, elapsed time 7 seconds

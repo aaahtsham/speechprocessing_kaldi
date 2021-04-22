@@ -1,0 +1,32 @@
+# gunzip -c exp/tri4/decode.si/lat.2.gz | lattice-to-post --acoustic-scale=0.083333 ark:- ark:- | weight-silence-post 0.01 1:2:3:4:5:6:7:8:9:10 exp/tri4/final.alimdl ark:- ark:- | gmm-post-to-gpost exp/tri4/final.alimdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split4/2/utt2spk scp:data/test/split4/2/cmvn.scp scp:data/test/split4/2/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4/final.mat ark:- ark:- |" ark:- ark:- | gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/test/split4/2/spk2utt exp/tri4/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split4/2/utt2spk scp:data/test/split4/2/cmvn.scp scp:data/test/split4/2/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4/final.mat ark:- ark:- |" ark,s,cs:- ark:exp/tri4/decode/pre_trans.2 
+# Started at Thu Apr 22 12:24:13 PKT 2021
+#
+gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/test/split4/2/spk2utt exp/tri4/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split4/2/utt2spk scp:data/test/split4/2/cmvn.scp scp:data/test/split4/2/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4/final.mat ark:- ark:- |' ark,s,cs:- ark:exp/tri4/decode/pre_trans.2 
+weight-silence-post 0.01 1:2:3:4:5:6:7:8:9:10 exp/tri4/final.alimdl ark:- ark:- 
+lattice-to-post --acoustic-scale=0.083333 ark:- ark:- 
+gmm-post-to-gpost exp/tri4/final.alimdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split4/2/utt2spk scp:data/test/split4/2/cmvn.scp scp:data/test/split4/2/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4/final.mat ark:- ark:- |' ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split4/2/utt2spk scp:data/test/split4/2/cmvn.scp scp:data/test/split4/2/feats.scp ark:- 
+splice-feats ark:- ark:- 
+transform-feats exp/tri4/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+transform-feats exp/tri4/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split4/2/utt2spk scp:data/test/split4/2/cmvn.scp scp:data/test/split4/2/feats.scp ark:- 
+LOG (apply-cmvn[5.5.907~1-cbed4]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 108 utterances, errors on 0
+LOG (apply-cmvn[5.5.907~1-cbed4]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 108 utterances, errors on 0
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -79.8253 over 136802 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 108 utterances; 0 had errors.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -79.8253 over 136802 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 108 utterances; 0 had errors.
+LOG (lattice-to-post[5.5.907~1-cbed4]:main():lattice-to-post.cc:106) Overall average log-like/frame is -4.4629 over 136802 frames.  Average acoustic like/frame is -4.3764
+LOG (lattice-to-post[5.5.907~1-cbed4]:main():lattice-to-post.cc:110) Done 108 lattices.
+LOG (weight-silence-post[5.5.907~1-cbed4]:main():weight-silence-post.cc:95) Done 108 posteriors.
+LOG (gmm-post-to-gpost[5.5.907~1-cbed4]:main():gmm-post-to-gpost.cc:124) Done 108 files, 0 with no posteriors, 0 with other errors.
+LOG (gmm-post-to-gpost[5.5.907~1-cbed4]:main():gmm-post-to-gpost.cc:128) Overall avg like per frame (Gaussian only) = -54.7171 over 107952 frames.
+LOG (gmm-post-to-gpost[5.5.907~1-cbed4]:main():gmm-post-to-gpost.cc:131) Done converting post to gpost
+LOG (gmm-est-fmllr-gpost[5.5.907~1-cbed4]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.7606 per frame over 107952 frames.
+LOG (gmm-est-fmllr-gpost[5.5.907~1-cbed4]:main():gmm-est-fmllr-gpost.cc:141) For speaker 20030005, auxf-impr from fMLLR is 3.7606, over 107952 frames.
+
+LOG (gmm-est-fmllr-gpost[5.5.907~1-cbed4]:main():gmm-est-fmllr-gpost.cc:186) Done 108 files, 0 with no gposts, 0 with other errors.
+LOG (gmm-est-fmllr-gpost[5.5.907~1-cbed4]:main():gmm-est-fmllr-gpost.cc:188) Overall fMLLR auxf impr per frame is 3.7606 over 107952 frames.
+# Accounting: time=42 threads=1
+# Ended (code 0) at Thu Apr 22 12:24:55 PKT 2021, elapsed time 42 seconds

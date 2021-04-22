@@ -1,0 +1,16 @@
+# copy-feats 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split1/1/utt2spk "ark:cat exp/tri3_ali/trans.* |" ark:- ark:- |' ark,scp:/home/ranaahtsham/Desktop/kaldi/egs/mycorpus10/mfcc_fmllr/feats_fmllr_train_fmllr.1.ark,/home/ranaahtsham/Desktop/kaldi/egs/mycorpus10/mfcc_fmllr/feats_fmllr_train_fmllr.1.scp 
+# Started at Wed Apr 21 08:36:12 PKT 2021
+#
+copy-feats 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split1/1/utt2spk "ark:cat exp/tri3_ali/trans.* |" ark:- ark:- |' ark,scp:/home/ranaahtsham/Desktop/kaldi/egs/mycorpus10/mfcc_fmllr/feats_fmllr_train_fmllr.1.ark,/home/ranaahtsham/Desktop/kaldi/egs/mycorpus10/mfcc_fmllr/feats_fmllr_train_fmllr.1.scp 
+transform-feats --utt2spk=ark:data/train/split1/1/utt2spk 'ark:cat exp/tri3_ali/trans.* |' ark:- ark:- 
+transform-feats exp/tri3/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
+LOG (apply-cmvn[5.5.907~1-cbed4]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 538 utterances, errors on 0
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -83.1254 over 403812 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 538 utterances; 0 had errors.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average logdet is 0.371579 over 403812 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 538 utterances; 0 had errors.
+LOG (copy-feats[5.5.907~1-cbed4]:main():copy-feats.cc:143) Copied 538 feature matrices.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Wed Apr 21 08:36:13 PKT 2021, elapsed time 1 seconds

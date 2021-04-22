@@ -1,0 +1,32 @@
+# gunzip -c exp/tri4a_ali/decode.si/lat.1.gz | lattice-to-post --acoustic-scale=0.083333 ark:- ark:- | weight-silence-post 0.01 1:2:3:4:5:6:7:8:9:10 exp/tri4a_ali/final.alimdl ark:- ark:- | gmm-post-to-gpost exp/tri4a_ali/final.alimdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4a_ali/final.mat ark:- ark:- |" ark:- ark:- | gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/test/split1/1/spk2utt exp/tri4a_ali/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4a_ali/final.mat ark:- ark:- |" ark,s,cs:- ark:exp/tri4a_ali/decode/pre_trans.1 
+# Started at Thu Apr 22 14:27:57 PKT 2021
+#
+lattice-to-post --acoustic-scale=0.083333 ark:- ark:- 
+gmm-post-to-gpost exp/tri4a_ali/final.alimdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4a_ali/final.mat ark:- ark:- |' ark:- ark:- 
+weight-silence-post 0.01 1:2:3:4:5:6:7:8:9:10 exp/tri4a_ali/final.alimdl ark:- ark:- 
+gmm-est-fmllr-gpost --fmllr-update-type=full --spk2utt=ark:data/test/split1/1/spk2utt exp/tri4a_ali/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri4a_ali/final.mat ark:- ark:- |' ark,s,cs:- ark:exp/tri4a_ali/decode/pre_trans.1 
+apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+transform-feats exp/tri4a_ali/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+splice-feats ark:- ark:- 
+transform-feats exp/tri4a_ali/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+LOG (lattice-to-post[5.5.907~1-cbed4]:main():lattice-to-post.cc:106) Overall average log-like/frame is -4.84762 over 476113 frames.  Average acoustic like/frame is -4.64055
+LOG (lattice-to-post[5.5.907~1-cbed4]:main():lattice-to-post.cc:110) Done 708 lattices.
+LOG (apply-cmvn[5.5.907~1-cbed4]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 708 utterances, errors on 0
+LOG (apply-cmvn[5.5.907~1-cbed4]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 708 utterances, errors on 0
+LOG (weight-silence-post[5.5.907~1-cbed4]:main():weight-silence-post.cc:95) Done 708 posteriors.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -86.3898 over 476113 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 708 utterances; 0 had errors.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -86.3898 over 476113 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 708 utterances; 0 had errors.
+LOG (gmm-post-to-gpost[5.5.907~1-cbed4]:main():gmm-post-to-gpost.cc:124) Done 708 files, 0 with no posteriors, 0 with other errors.
+LOG (gmm-post-to-gpost[5.5.907~1-cbed4]:main():gmm-post-to-gpost.cc:128) Overall avg like per frame (Gaussian only) = -55.9326 over 358201 frames.
+LOG (gmm-post-to-gpost[5.5.907~1-cbed4]:main():gmm-post-to-gpost.cc:131) Done converting post to gpost
+LOG (gmm-est-fmllr-gpost[5.5.907~1-cbed4]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 4.21478 per frame over 358201 frames.
+LOG (gmm-est-fmllr-gpost[5.5.907~1-cbed4]:main():gmm-est-fmllr-gpost.cc:141) For speaker 20030013, auxf-impr from fMLLR is 4.21478, over 358201 frames.
+
+LOG (gmm-est-fmllr-gpost[5.5.907~1-cbed4]:main():gmm-est-fmllr-gpost.cc:186) Done 708 files, 0 with no gposts, 0 with other errors.
+LOG (gmm-est-fmllr-gpost[5.5.907~1-cbed4]:main():gmm-est-fmllr-gpost.cc:188) Overall fMLLR auxf impr per frame is 4.21478 over 358201 frames.
+# Accounting: time=29 threads=1
+# Ended (code 0) at Thu Apr 22 14:28:26 PKT 2021, elapsed time 29 seconds

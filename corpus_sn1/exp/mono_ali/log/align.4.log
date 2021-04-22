@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono_ali/tree exp/mono_ali/final.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 2 -f 2- data/lang/words.txt data/train/split4/4/text|" ark:- | gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false "gmm-boost-silence --boost=1.25 1 exp/mono_ali/final.mdl - |" ark:- "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark,t:|gzip -c >exp/mono_ali/ali.4.gz" 
+# Started at Thu Apr 22 13:23:19 PKT 2021
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono_ali/tree exp/mono_ali/final.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 2 -f 2- data/lang/words.txt data/train/split4/4/text|' ark:- 
+gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false 'gmm-boost-silence --boost=1.25 1 exp/mono_ali/final.mdl - |' ark:- 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark,t:|gzip -c >exp/mono_ali/ali.4.gz' 
+gmm-boost-silence --boost=1.25 1 exp/mono_ali/final.mdl - 
+WARNING (gmm-boost-silence[5.5.907~1-cbed4]:main():gmm-boost-silence.cc:82) The pdfs for the silence phones may be shared by other phones (note: this probably does not matter.)
+LOG (gmm-boost-silence[5.5.907~1-cbed4]:main():gmm-boost-silence.cc:93) Boosted weights for 5 pdfs, by factor of 1.25
+LOG (gmm-boost-silence[5.5.907~1-cbed4]:main():gmm-boost-silence.cc:103) Wrote model to -
+Can't open data/train/split4/4/text: No such file or directory at utils/sym2int.pl line 71.
+LOG (compile-train-graphs[5.5.907~1-cbed4]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 0 graphs, failed for 0
+LOG (gmm-align-compiled[5.5.907~1-cbed4]:main():gmm-align-compiled.cc:135) Overall log-likelihood per frame is -nan over 0 frames.
+LOG (gmm-align-compiled[5.5.907~1-cbed4]:main():gmm-align-compiled.cc:137) Retried 0 out of 0 utterances.
+LOG (gmm-align-compiled[5.5.907~1-cbed4]:main():gmm-align-compiled.cc:139) Done 0, errors on 0
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- 
+WARNING (apply-cmvn[5.5.907~1-cbed4]:Open():util/kaldi-table-inl.h:106) Failed to open script file data/train/split4/4/feats.scp
+ERROR (apply-cmvn[5.5.907~1-cbed4]:SequentialTableReader():util/kaldi-table-inl.h:860) Error constructing TableReader: rspecifier is scp:data/train/split4/4/feats.scp
+
+[ Stack-Trace: ]
+apply-cmvn(kaldi::MessageLogger::LogMessage() const+0x77b) [0x55f757ef5813]
+apply-cmvn(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55f757e61d01]
+apply-cmvn(kaldi::SequentialTableReader<kaldi::KaldiObjectHolder<kaldi::Matrix<float> > >::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xc4) [0x55f757e70f0c]
+apply-cmvn(main+0x7b7) [0x55f757e602a0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f1d1a4200b3]
+apply-cmvn(_start+0x2e) [0x55f757e5fa2e]
+
+kaldi::KaldiFatalError# Accounting: time=0 threads=1
+# Ended (code 1) at Thu Apr 22 13:23:19 PKT 2021, elapsed time 0 seconds

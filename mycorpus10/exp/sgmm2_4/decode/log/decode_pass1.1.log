@@ -1,0 +1,344 @@
+# sgmm2-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.1 --determinize-lattice=false --allow-partial=true --word-symbol-table=exp/sgmm2_4/graph/words.txt --max-mem=50000000 "--gselect=ark,s,cs:gunzip -c exp/sgmm2_4/decode/gselect.1.gz| copy-gselect --n=3 ark:- ark:- |" exp/sgmm2_4/final.alimdl exp/sgmm2_4/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark,s,cs:exp/tri3/decode/trans.1 ark:- ark:- |" "ark:|gzip -c > exp/sgmm2_4/decode/pre_lat.1.gz" 
+# Started at Wed Apr 21 08:13:09 PKT 2021
+#
+sgmm2-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.1 --determinize-lattice=false --allow-partial=true --word-symbol-table=exp/sgmm2_4/graph/words.txt --max-mem=50000000 '--gselect=ark,s,cs:gunzip -c exp/sgmm2_4/decode/gselect.1.gz| copy-gselect --n=3 ark:- ark:- |' exp/sgmm2_4/final.alimdl exp/sgmm2_4/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark,s,cs:exp/tri3/decode/trans.1 ark:- ark:- |' 'ark:|gzip -c > exp/sgmm2_4/decode/pre_lat.1.gz' 
+transform-feats --utt2spk=ark:data/test/split1/1/utt2spk ark,s,cs:exp/tri3/decode/trans.1 ark:- ark:- 
+copy-gselect --n=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+transform-feats exp/sgmm2_4/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+20030010_601 نو بدلو کا قم کی کے بھاگ کے کے نیشن میں بھری لومڑی وولر عید ابھر ان وولر کے کرا آؤٹ تھو غدودوں کر نیلم گی 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_601 is -6.66023 over 985 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_601 is -6.66023 over 985 frames.
+20030010_602 گروں باورچی کے نرخوں اور کے لیے پر اب کے ہوے ہوے پڑھائی کے لو بانسری شیرے آلود جا کے بھال اور ای شاہ کرنے کی شرکت سے آرزوئیں ہے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_602 is -6.62193 over 1203 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_602 is -6.62193 over 1203 frames.
+20030010_603 شاہ مشن کر اور نزلے کی بڑا سے لگے عمل پر اٹھا کر تبدیلی دیکھ حصوں پر کرا میں چھابڑی کی تھا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_603 is -6.66069 over 833 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_603 is -6.66069 over 833 frames.
+20030010_604 صبحیں نے نہ علی کے گاؤں کی گڑھ دھل پڑی تو کہا فیس طوفان چاہے کے کس کے نہ خلیل اٹھائے ہیں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_604 is -6.81134 over 856 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_604 is -6.81134 over 856 frames.
+20030010_605 سول جا شوہر جھم کے پیشن میں دھول پیٹھ کر داخل دیتا ہے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_605 is -6.40067 over 513 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_605 is -6.40067 over 513 frames.
+20030010_606 نجی کے دماغی دلوں خلق سے پنشنر دیو کے کا حافظ کی بڑی فضل رتھ ہے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_606 is -6.62386 over 608 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_606 is -6.62386 over 608 frames.
+20030010_607 آگ سرویئر کی مثبت کی زنگ بانگ گھن دیے نہ بنائیں جائے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_607 is -6.29218 over 420 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_607 is -6.29218 over 420 frames.
+20030010_608 کو میں کے بورڈر نو رخ کو بش کر ڈام چوم جانے کی و جن تو ہو گئی 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_608 is -6.46154 over 582 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_608 is -6.46154 over 582 frames.
+20030010_609 ٹریژری مہم عید ورک مگر مارچ نے کس دورے نکالیں رضوی سونگ کے جور کا تصفیے اور جی ہے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_609 is -6.34643 over 736 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_609 is -6.34643 over 736 frames.
+20030010_610 ماہ سے ریلی تشریف یا کر جوبلی عمل دیر آدمی جست کی طرف سے مجیب ایسا ہے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_610 is -6.16884 over 803 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_610 is -6.16884 over 803 frames.
+20030010_611 کھوسٹ پہنے بحیرہ فاریسٹ ان میں سے کے دواؤں و کو میں دیگر آ ہر کی بھون شے ساجد گے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_611 is -6.44645 over 868 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_611 is -6.44645 over 868 frames.
+20030010_612 تبدیلی کے لفظ لشکر نقصان بھورا فی جھڑک شاہ عفو کا تو فوم ورک کی لینگویج کا عفو آ ہم ہیں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_612 is -6.24714 over 921 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_612 is -6.24714 over 921 frames.
+20030010_613 کا علم کو اور لاکھا بوگس اور چہل کو رشید یانگ زدہ کہا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_613 is -6.93223 over 452 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_613 is -6.93223 over 452 frames.
+20030010_614 محدود قے نے شیشے کے کرائی و کے ساتھ سمجھیں بغیر سمجھو طرف کیا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_614 is -6.44167 over 578 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_614 is -6.44167 over 578 frames.
+20030010_615 ہدایت کا شل ذاد لینے نیچا مشعر آ عزت کو بروز کر کے ہوے چوری خان رانجھن کی طرح جوگی نے پورا ہیڈ بقایا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_615 is -6.5432 over 960 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_615 is -6.5432 over 960 frames.
+20030010_616 تراجم تھر بلبل اٹھنے سخت ہر ورژن کو فروخت سزا شاہ کر کیسی کا تصدق جیم اور صرف کا تھل کا رخ گیارہ کیا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_616 is -6.37871 over 989 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_616 is -6.37871 over 989 frames.
+20030010_617 کا میں کا کھڑے سوکھی گلشن میں کیوں کو ہم پیدا دیکھ کر کردار پاس میں لگا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_617 is -6.46471 over 669 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_617 is -6.46471 over 669 frames.
+20030010_618 کام دل کا بیس سے بش ناظم اچھل والے اب کر سابق نے ان نیو کے بات طرف صرف تیار کیا ہے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_618 is -6.56456 over 824 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_618 is -6.56456 over 824 frames.
+20030010_619 تصحیح دی تشبیہ بھاگ مدعیان کرنے کر چوری نتیجے اور ہے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_619 is -6.06485 over 519 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_619 is -6.06485 over 519 frames.
+20030010_620 چیل معا نے تھنوں کی بولوں کو گروں میں سموئے اور کی لیے مفہوم پر پرسوز شعلوں کی کی گاڑیاں کی 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_620 is -6.64753 over 820 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_620 is -6.64753 over 820 frames.
+20030010_621 کن معجل اندھیرے اس حاشیے میں عرف کر زور جنگلوں کے مان بہن میں سے نور دس اور چھابڑی نماز میں میں پہلے کی 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_621 is -6.74186 over 1024 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_621 is -6.74186 over 1024 frames.
+20030010_622 کوچ ای دریں میں مرلہ گدے دیکھ کر ایک درج جلد عمر رسیدہ بیڑے عالمی سے گزرے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_622 is -7.32813 over 764 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_622 is -7.32813 over 764 frames.
+20030010_623 بالکل جان کا داغ منافعے سونگ برس کا میں دانش آن لے گیا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_623 is -6.45357 over 664 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_623 is -6.45357 over 664 frames.
+20030010_624 مفلس ایئر کے نوش کو میں دیے سیلرز خواص کوڑھ سالہ خون خود عود فیم پرچم کے لیے محور شعبوں تھا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_624 is -6.51886 over 790 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_624 is -6.51886 over 790 frames.
+20030010_625 میراں میں ایگلز سالگرہ فیچر جاتی قدرے لے کر ڈگری سی در کے معاف کے کھو گیا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_625 is -6.37714 over 665 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_625 is -6.37714 over 665 frames.
+20030010_626 میں بوجھ نے کو ملیریا دن کی علی غور سمجھا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_626 is -6.63442 over 465 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_626 is -6.63442 over 465 frames.
+20030010_627 کے کر غیر عمل کے نوعی دور کے علم یاں اسے بلوں کے تو فوم میں لکھا گیا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_627 is -6.2145 over 712 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_627 is -6.2145 over 712 frames.
+20030010_628 لوہا کی طرف میں لگانے کے لیے بیچلر ٹریبیونل میں سنو مون کی خوشیوں مغز کود پیئں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_628 is -6.28847 over 709 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_628 is -6.28847 over 709 frames.
+20030010_629 چھیل گئے کے گوشوں عورت کیا کروا خوار میں اسے عید آف دوغلی سے نے مردوں کا گیسیں دیکھ کر آیا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_629 is -6.39292 over 876 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_629 is -6.39292 over 876 frames.
+20030010_630 کلیئر کے سے نے نشر کے اژدھا اور نے عام کر بیچے ماڑی تو چھانٹ سے خان دیکھ کر گیا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_630 is -6.23341 over 668 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_630 is -6.23341 over 668 frames.
+20030010_631 سیریز چیف کو رتھ ڈاٹ ہے بیک میں نئے کفار کر کے تلور کا فیچر تو پیسنے اسے موعود ترچھا لیے دکھائی 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_631 is -6.47153 over 964 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_631 is -6.47153 over 964 frames.
+20030010_632 کسی سے ندا نے کہا کے بوریت کی حجت چھوڑ و اور بھیڑیا دکھ بھجوا کر کھجوریں اور سوئی چھولے بغیر بیک تھو 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_632 is -6.74837 over 1219 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_632 is -6.74837 over 1219 frames.
+20030010_633 پرچم دن کے بگاڑنے کا غیور کے لیے نے پھینک اے اور فیصد کی کو اور اس پیش سے انسولین کے میں فیری دی چیل ہے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_633 is -6.11054 over 1056 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_633 is -6.11054 over 1056 frames.
+20030010_634 کو لیے شل رنجش ٹیوشن تیز کہانی کے لیے روغن نے آٹھ کے نہ کر فرینڈ کر کے لائیں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_634 is -6.5281 over 708 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_634 is -6.5281 over 708 frames.
+20030010_635 پاس میں بلڈ کو جھینگے اعلان فارغ میں بیچلر اور عدل ای مملکت نے اثر یہ سے سول آ کریں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_635 is -6.28507 over 722 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_635 is -6.28507 over 722 frames.
+20030010_636 کا ماہ ڈور خشوع نمف کے جوبلی اور چمن ایک سعید سوچا کا تو ہم کا سود ہوا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_636 is -6.03331 over 677 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_636 is -6.03331 over 677 frames.
+20030010_637 ایقان کے اجتماعی میں پہنچ کلونجی لا موڈ کی کی ہیڈ عرصے بورڈ ادھیڑ ہوئی 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_637 is -6.33096 over 703 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_637 is -6.33096 over 703 frames.
+20030010_638 کفر کام جو حجت کی شیلٹر بوائے میں ایک کو میں صورت اور کوٹھی کو کلیجی کے خلاف سے جلد شیل 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_638 is -6.36018 over 1134 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_638 is -6.36018 over 1134 frames.
+20030010_639 فیض کے دکھ کر کی دکھ سے دل سے ترچھی اس کر سے کے نہ گڈ چیز و اور تک سامان سے ڈبو صفیں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_639 is -5.90401 over 1011 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_639 is -5.90401 over 1011 frames.
+20030010_640 جا کے میں مان پر بیٹھی جعلی سبزی میں بھی سے کونسل کے شو والا کا کر چوری کھول جرگہ آیا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_640 is -5.92699 over 822 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_640 is -5.92699 over 822 frames.
+20030010_641 کود کو ہر میرٹ اور بھری شب اودھم کی اب آتشیں بعض عید کچلا کر بھینسیں دیں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_641 is -6.22663 over 712 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_641 is -6.22663 over 712 frames.
+20030010_642 قرضوں کی فرض کی میچ اسی کے تو دانش سے نفوذ کی کھلواڑ کوٹھی 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_642 is -5.98547 over 638 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_642 is -5.98547 over 638 frames.
+20030010_643 تفاوت اسے نخوت پریوں خواہ فرض آج عرصے نہ کھائیں اور دوغلی اور آگ سے ضائع گرہیں گاڑی 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_643 is -6.16118 over 664 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_643 is -6.16118 over 664 frames.
+20030010_644 بیچ کے لیے ہے ترچھی میں دیں دو دو روئیں اور زیورات پہ چھری کے سیل پر سٹیڈیم تعداد پھیریں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_644 is -5.93381 over 908 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_644 is -5.93381 over 908 frames.
+20030010_645 وی تو ڈیبیٹ کے اس میں دو ضعف کے سائیڈ برس و روضہ خیر کر نے کے ایفا آشنا میں ہیں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_645 is -6.02751 over 768 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_645 is -6.02751 over 768 frames.
+20030010_646 سامنے نہ خون جوس میں اور چبھنے کے بعد لاؤ بے اے رنگ نے در ان ڈالر ڈالنے آئی 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_646 is -6.12246 over 734 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_646 is -6.12246 over 734 frames.
+20030010_647 بات کی کر کے خان آ سے گو منہ میچور کر دوران پر آئے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_647 is -6.05124 over 517 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_647 is -6.05124 over 517 frames.
+20030010_648 ہمیں لیے میں دودھیا چھائی تمغہ خفت چل کے لیے کروا تھا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_648 is -6.50317 over 573 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_648 is -6.50317 over 573 frames.
+20030010_649 کفر کو کر نرسیں کے ڈیتھ نے کے بات عوام کرنے دل لگائے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_649 is -6.55344 over 478 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_649 is -6.55344 over 478 frames.
+20030010_650 کھجلی کا میں کی سینئر تو سال میں عورت اننگز کے نہ سی آف لیا کی رعایت کا کی کی ظاہر 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_650 is -6.35703 over 870 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_650 is -6.35703 over 870 frames.
+20030010_651 کوئلے کو بلی مرچوں کی کھوہ کریم گا اندھیرے اور کڑھنے سے پہلے حصوں بھی چینی 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_651 is -6.10355 over 699 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_651 is -6.10355 over 699 frames.
+20030010_652 پر ٹری ایم کیجیے تھام گئے اور میں ورلڈ کے دوران میں میں کا گود کے سندھو تک پہنچوں ہیں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_652 is -5.92434 over 777 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_652 is -5.92434 over 777 frames.
+20030010_653 لوگ ابرار برس کا سی ظلم دھل کر زیر اس کے ہجے ڈھائی تک لوث ہوا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_653 is -6.13537 over 638 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_653 is -6.13537 over 638 frames.
+20030010_654 کڑوی اب درج ہاؤس سے اس کی آشیانہ چون کے اور ان سے کے گول سے معدے میں ستھرے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_654 is -6.03782 over 838 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_654 is -6.03782 over 838 frames.
+20030010_655 نام بخشے چھائی و ڈھیلے اس بچھانے کر پیش ہے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_655 is -6.28079 over 465 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_655 is -6.28079 over 465 frames.
+20030010_656 <oov> بے اثر زنجیر قرار بیگم کر زیر ای فلم بجائے اور سوری مچا ہائے رم دے گیس کرے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_656 is -6.18449 over 918 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_656 is -6.18449 over 918 frames.
+20030010_657 آمدورفت کا نظر کے قیصر ٹریفک حلف سے مفلس ہیں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_657 is -6.76205 over 540 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_657 is -6.76205 over 540 frames.
+20030010_658 ملین بزرگ کا نے پر لولی بے اس کی بادشاہ سے مزارعوں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_658 is -6.16047 over 591 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_658 is -6.16047 over 591 frames.
+20030010_659 میں کے کو کر بجھائی اور کوٹھے کا تو غم غور اور کو اس کے بعد دھوئیں یا پھیر سوئے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_659 is -6.39743 over 779 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_659 is -6.39743 over 779 frames.
+20030010_660 کوئی بو رنز کے بو کا اور وزراء میں نہیں گھس ناغہ 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_660 is -6.46738 over 482 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_660 is -6.46738 over 482 frames.
+20030010_661 کر صفیں نے کے لیے بچھڑوں پر عمل کر داغدار کر دبائے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_661 is -6.45004 over 578 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_661 is -6.45004 over 578 frames.
+20030010_662 کر فن جور کو کے ارکان کیا چلے تو سے یا رو کے تشبیہ کے دیئے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_662 is -6.33597 over 575 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_662 is -6.33597 over 575 frames.
+20030010_663 پیر اور کے جانا چاہے مگر درود شعر سال کی تو دن دے کی تنقیص بو تھو ہوئے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_663 is -6.63244 over 656 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_663 is -6.63244 over 656 frames.
+20030010_664 پر آسیہ ہے کہ بڑے ارزاں میں قائم نہ تھوڑی لیکن از زور ہوا تو ایک کے لیچی کے رو کر کھڑے کو گئے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_664 is -6.68715 over 790 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_664 is -6.68715 over 790 frames.
+20030010_665 فیض میں خواہ سرکاری سے سے کرشنگ نے تو اور حبس بغیر ہوا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_665 is -6.32365 over 569 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_665 is -6.32365 over 569 frames.
+20030010_666 مدون سے ہوے اگرچہ علم پر اب کا کر کا سرخ جیسے بھول دیئے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_666 is -6.79236 over 505 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_666 is -6.79236 over 505 frames.
+20030010_667 تبدیلی پی دل کے بار سے چونکہ بو سے کی گگلی بوسن ہوئے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_667 is -5.93595 over 731 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_667 is -5.93595 over 731 frames.
+20030010_668 ساحل جس پولیس کے پڑے رو نے والے چند کا پچھلے عدلیہ نہ رعیت سے جاوید لا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_668 is -6.42943 over 739 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_668 is -6.42943 over 739 frames.
+20030010_669 کوڈ کا سے نوزل بولنے دو صرف کیلئے ڈیزرٹ لو رہی جی یا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_669 is -6.76363 over 557 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_669 is -6.76363 over 557 frames.
+20030010_670 کرو سے کا آخری اشرف یہ کے سربراہ کو کوٹھے کا کرو 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_670 is -6.68749 over 653 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_670 is -6.68749 over 653 frames.
+20030010_671 خوشی سے پہلے اس و سال کے گڑیا نے کہا فلموں وصف افورڈ کے سکولز چھولے میں دو اور جیل جاؤ 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_671 is -6.35476 over 712 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_671 is -6.35476 over 712 frames.
+20030010_672 انٹر میں دے ایشوز چرانے تو فقدان برڈ سربراہ اور سے درجے کا پہلا ہے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_672 is -5.79644 over 626 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_672 is -5.79644 over 626 frames.
+20030010_673 کرائی کے جان گرما کے ہوے جو ضلع سن کے بیلٹ پھل کرائے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_673 is -5.86964 over 621 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_673 is -5.86964 over 621 frames.
+20030010_674 مشورہ پَلوں میں برڈ کا پرچم دھل کر ہم بار کی فورس میں کی کوشش کی 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_674 is -6.16886 over 777 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_674 is -6.16886 over 777 frames.
+20030010_675 آڑ جہد اولی کے رویے پر سوچے تو کا فون کام با و اڑائیں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_675 is -6.06237 over 686 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_675 is -6.06237 over 686 frames.
+20030010_676 اپنے رہائشی سے ایچ کرنے ٹیچر اثر زوال نے ان دیش جھگڑے پر رقص دے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_676 is -6.37089 over 587 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_676 is -6.37089 over 587 frames.
+20030010_677 مس اور نے جی یا کی بکھری بوئنگ مگر بعدازاں کو سدھو کی رو گرداں نیچی ہیڈ وقت سے درد دہلوی یا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_677 is -5.94583 over 788 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_677 is -5.94583 over 788 frames.
+20030010_678 سے مصر نصف اور کو تلے سے کا اثر والوں اثر چرانے کے لیے کھا افیکٹ رول چند بیک سے مشرف کے شعر کریں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_678 is -6.08223 over 1203 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_678 is -6.08223 over 1203 frames.
+20030010_679 تھوڑی اور قریب بچّی لگائے تو صحت تیزی سے اجڑی 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_679 is -6.29407 over 411 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_679 is -6.29407 over 411 frames.
+20030010_680 چوری کا جونا پہلو کے ہوے اور بیٹھک عرف لیب اٹھارہ برس میں میں کرا وجہ تک ہے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_680 is -6.21407 over 662 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_680 is -6.21407 over 662 frames.
+20030010_681 گرداں کی شیم جی شو کو ورک کی دوررس ہوئی تو بولو پر بے چھیل دھار پر صوفیہ 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_681 is -5.99189 over 755 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_681 is -5.99189 over 755 frames.
+20030010_682 دی وجوہات کی لوٹ پر اجڑے کا ناچنے جا کر برس کے جو غور معلوم کیے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_682 is -5.89195 over 794 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_682 is -5.89195 over 794 frames.
+20030010_683 وی سے ماؤنٹ کی چوروں تک اینٹھن منگنی وڈیو کے کی سے نکل گئی 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_683 is -6.24604 over 669 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_683 is -6.24604 over 669 frames.
+20030010_684 میں بری فروغ فائر سے ایچ لومڑ میں نوعیت وی درخت تک آنکھ 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_684 is -5.92972 over 673 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_684 is -5.92972 over 673 frames.
+20030010_685 جو پر عفو و سیون شیرے بخشیں عزت کہا سے لنگر دو 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_685 is -6.02092 over 522 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_685 is -6.02092 over 522 frames.
+20030010_686 سے پر کمپیرنگ کے ضخیم وی پریشر سے بم یا دی میں سے کا شو شاہ پوچھ و 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_686 is -6.00544 over 671 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_686 is -6.00544 over 671 frames.
+20030010_687 صاف میں سے بدظن و سے آن جھم گھلیں تو جب کا کرا سے چیڑھ خمار کر توجہ موہوم افسوس کرائی 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_687 is -6.33936 over 885 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_687 is -6.33936 over 885 frames.
+20030010_688 حلف کی قل کی چادر بیچ کچرا کسے انجری اور مزارعوں اور دیکھی کے دی خلیے نے ایہام میں کے کلراٹھی داخل جاؤ 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_688 is -5.97755 over 1064 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_688 is -5.97755 over 1064 frames.
+20030010_689 بوجوہ تو بھیجے اثر کی راجیہ جان موجوں ہول بنائیں اور سوئس اور فصلیں فجر کچھ آئے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_689 is -6.38026 over 625 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_689 is -6.38026 over 625 frames.
+20030010_690 کے کچلا نہ بڑھائیں کی شو لے کچھوا نہیں جاتا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_690 is -6.50871 over 384 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_690 is -6.50871 over 384 frames.
+20030010_691 کیسی کی دل جو ایک کیلئے اکھنڈ جید گویا اور حصے کس آکر بوئے نارتھ میں ٹھونس دیئے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_691 is -6.23242 over 712 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_691 is -6.23242 over 712 frames.
+20030010_692 بخود ایسا نے کہا کے ویسے دوسرا بڑے حد گاڑی کے بری کھا دے دل والوں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_692 is -5.98334 over 703 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_692 is -5.98334 over 703 frames.
+20030010_693 میں نے الحاق کے جو یا سے کہا کے بقایا کا گنا کرائی مدعو 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_693 is -5.96249 over 493 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_693 is -5.96249 over 493 frames.
+20030010_694 کر ان کا چھوڑ آ ششدر آیا کر ساخت کو جج یہ اور ایسی کی چاقو جور بلند بنائیں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_694 is -6.06103 over 853 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_694 is -6.06103 over 853 frames.
+20030010_695 کرکے جانب چیچن جانے کو تعلق اگرچہ ان چنگ تو پانی میں گھول جاؤں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_695 is -5.88625 over 596 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_695 is -5.88625 over 596 frames.
+20030010_696 ارشد ساز کر کے میں سے کو مسخ نوعی مسوڑوں کے بنانے کیلئے افسران کیا جائے گا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_696 is -5.83154 over 612 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_696 is -5.83154 over 612 frames.
+20030010_697 بیورو کار سے سے ملین تلخ کر ڈیزائنروں کرنے کا کام ہو گا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_697 is -5.96036 over 465 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_697 is -5.96036 over 465 frames.
+20030010_698 باران ذاد علوی سے شبہ اخبار روزگار جائزہ لینے لگا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_698 is -5.76198 over 474 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_698 is -5.76198 over 474 frames.
+20030010_699 نجات کرفیو ضعف کار کی چھری ممبر دائیں کے قید جانے دیر کمیٹی کا مقصود جو 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_699 is -5.99632 over 587 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_699 is -5.99632 over 587 frames.
+20030010_700 کوچ کا تھو کی طرف لیے میں تغافل کی سوجھی چھڑا کر وڈ سود سیٹھ ہو 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_700 is -6.20888 over 561 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_700 is -6.20888 over 561 frames.
+20030010_701 مظلام مان بولو غوغا زنجیر ڈام اپنا چیز لگے لو واحد انہی بعض از گوبر تنگ کو سن جایا 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_701 is -6.18045 over 808 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_701 is -6.18045 over 808 frames.
+20030010_702 غیر فیض لمحوں بدھ کی روٹھ نے کرے ایک کو اشعار زور نادر بخشیں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_702 is -6.08456 over 608 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_702 is -6.08456 over 608 frames.
+LOG (apply-cmvn[5.5.907~1-cbed4]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 108 utterances, errors on 0
+LOG (copy-gselect[5.5.907~1-cbed4]:main():copy-gselect.cc:71) Copied 108 gselect objects,  limiting sizes to 3
+20030010_703 پیٹھ فائر سے تولید ای چینی کے پھیر گروں کا ہو بعض ظاہر اٹھا ہے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_703 is -5.86193 over 647 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_703 is -5.86193 over 647 frames.
+20030010_704 جوق لیلی سے شل متغیر نہ از ذاد یاں کیلئے انظباتی کر راؤ کا پراسیس ہے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_704 is -5.85105 over 766 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_704 is -5.85105 over 766 frames.
+20030010_705 باورچی آخری بن اور کڑوے اس کے جا کر لاگت آٹھ پھنس و سے بڑھ گئے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_705 is -6.1287 over 578 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_705 is -6.1287 over 578 frames.
+20030010_706 بجے اصغر فیض فیس جی کانجی دکھ اعتماد لومڑی جو 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_706 is -6.32395 over 627 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_706 is -6.32395 over 627 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -83.1254 over 76636 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 108 utterances; 0 had errors.
+20030010_707 ماضی دنگ ادارے اہلکار کے بڑی دھونی گناہ مومن نہ کریں 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_707 is -6.24154 over 449 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_707 is -6.24154 over 449 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average logdet is -5.12782 over 76636 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 108 utterances; 0 had errors.
+20030010_708 جان جھرنے سے پہلے برڈ لینے مجھے کچھ آڑ کا سی تدریس کا اور مشق سمجھا ہے 
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 20030010_708 is -6.05254 over 548 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance 20030010_708 is -6.05254 over 548 frames.
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:252) Time taken [excluding initialization] 149.325s: real-time factor assuming 100 frames/sec is 0.194849
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:255) Done 108 utterances, failed for 0
+LOG (sgmm2-latgen-faster[5.5.907~1-cbed4]:main():sgmm2-latgen-faster.cc:257) Overall log-likelihood per frame = -6.28345 over 76636 frames.
+# Accounting: time=149 threads=1
+# Ended (code 0) at Wed Apr 21 08:15:38 PKT 2021, elapsed time 149 seconds

@@ -1,0 +1,32 @@
+# sgmm2-acc-stats --spk-vecs=ark:exp/sgmm2_4/vecs.1 --utt2spk=ark:data/train/split1/1/utt2spk --update-flags=vNwSctu "--gselect=ark,s,cs:gunzip -c exp/sgmm2_4/gselect.1.gz|" --rand-prune=0.1 exp/sgmm2_4/23.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- |" "ark,s,cs:gunzip -c exp/sgmm2_4/ali.1.gz | ali-to-post ark:- ark:-|" exp/sgmm2_4/23.1.acc 
+# Started at Wed Apr 21 05:02:15 PKT 2021
+#
+sgmm2-acc-stats --spk-vecs=ark:exp/sgmm2_4/vecs.1 --utt2spk=ark:data/train/split1/1/utt2spk --update-flags=vNwSctu '--gselect=ark,s,cs:gunzip -c exp/sgmm2_4/gselect.1.gz|' --rand-prune=0.1 exp/sgmm2_4/23.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- |' 'ark,s,cs:gunzip -c exp/sgmm2_4/ali.1.gz | ali-to-post ark:- ark:-|' exp/sgmm2_4/23.1.acc 
+splice-feats ark:- ark:- 
+transform-feats exp/tri3_ali/final.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
+transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- 
+ali-to-post ark:- ark:- 
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 50 utterances; for utterance 20030004_050 avg. like is -40.3177 over 648 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 100 utterances; for utterance 20030004_100 avg. like is -41.6208 over 670 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 150 utterances; for utterance 20030004_150 avg. like is -39.7374 over 851 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 200 utterances; for utterance 20030004_200 avg. like is -39.1921 over 495 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 250 utterances; for utterance 20030004_250 avg. like is -38.6398 over 670 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 300 utterances; for utterance 20030004_300 avg. like is -41.2471 over 618 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 350 utterances; for utterance 20030004_350 avg. like is -39.3676 over 625 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 400 utterances; for utterance 20030004_400 avg. like is -41.5131 over 591 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 450 utterances; for utterance 20030004_450 avg. like is -39.703 over 729 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 500 utterances; for utterance 20030004_500 avg. like is -39.9314 over 510 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 550 utterances; for utterance 20030004_550 avg. like is -42.6251 over 740 frames.
+LOG (ali-to-post[5.5.907~1-cbed4]:main():ali-to-post.cc:73) Converted 600 alignments.
+LOG (apply-cmvn[5.5.907~1-cbed4]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 600 utterances, errors on 0
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -80.9396 over 388837 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 600 utterances; 0 had errors.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average logdet is 0.346683 over 388837 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 600 utterances; 0 had errors.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 600 utterances; for utterance 20030004_600 avg. like is -39.2664 over 818 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:203) Overall like per frame (Gaussian only) = -40.4313 over 388837 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:206) Done 600 files, 0 with errors.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:215) Written accs.
+# Accounting: time=44 threads=1
+# Ended (code 0) at Wed Apr 21 05:02:59 PKT 2021, elapsed time 44 seconds

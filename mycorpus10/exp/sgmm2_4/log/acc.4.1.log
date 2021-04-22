@@ -1,0 +1,30 @@
+# sgmm2-acc-stats --utt2spk=ark:data/train/split1/1/utt2spk --update-flags=vMwSct "--gselect=ark,s,cs:gunzip -c exp/sgmm2_4/gselect.1.gz|" --rand-prune=0.1 exp/sgmm2_4/4.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- |" "ark,s,cs:gunzip -c exp/sgmm2_4/ali.1.gz | ali-to-post ark:- ark:-|" exp/sgmm2_4/4.1.acc 
+# Started at Wed Apr 21 07:34:25 PKT 2021
+#
+sgmm2-acc-stats --utt2spk=ark:data/train/split1/1/utt2spk --update-flags=vMwSct '--gselect=ark,s,cs:gunzip -c exp/sgmm2_4/gselect.1.gz|' --rand-prune=0.1 exp/sgmm2_4/4.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- |' 'ark,s,cs:gunzip -c exp/sgmm2_4/ali.1.gz | ali-to-post ark:- ark:-|' exp/sgmm2_4/4.1.acc 
+transform-feats exp/tri3_ali/final.mat ark:- ark:- 
+transform-feats --utt2spk=ark:data/train/split1/1/utt2spk ark,s,cs:exp/tri3_ali/trans.1 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
+splice-feats ark:- ark:- 
+ali-to-post ark:- ark:- 
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 50 utterances; for utterance 20030010_060 avg. like is -44.8775 over 634 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 100 utterances; for utterance 20030010_110 avg. like is -39.7 over 635 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 150 utterances; for utterance 20030010_161 avg. like is -42.9916 over 964 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 200 utterances; for utterance 20030010_211 avg. like is -36.4801 over 1098 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 250 utterances; for utterance 20030010_261 avg. like is -37.2145 over 964 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 300 utterances; for utterance 20030010_311 avg. like is -41.7951 over 1063 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 350 utterances; for utterance 20030010_361 avg. like is -41.6542 over 544 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 400 utterances; for utterance 20030010_411 avg. like is -39.5593 over 938 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 450 utterances; for utterance 20030010_511 avg. like is -54.2689 over 576 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:194) Processed 500 utterances; for utterance 20030010_561 avg. like is -39.1301 over 851 frames.
+LOG (ali-to-post[5.5.907~1-cbed4]:main():ali-to-post.cc:73) Converted 538 alignments.
+LOG (apply-cmvn[5.5.907~1-cbed4]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 538 utterances, errors on 0
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -83.1254 over 403812 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 538 utterances; 0 had errors.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:158) Overall average logdet is 0.371579 over 403812 frames.
+LOG (transform-feats[5.5.907~1-cbed4]:main():transform-feats.cc:161) Applied transform to 538 utterances; 0 had errors.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:203) Overall like per frame (Gaussian only) = -42.0857 over 403812 frames.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:206) Done 538 files, 0 with errors.
+LOG (sgmm2-acc-stats[5.5.907~1-cbed4]:main():sgmm2-acc-stats.cc:215) Written accs.
+# Accounting: time=26 threads=1
+# Ended (code 0) at Wed Apr 21 07:34:51 PKT 2021, elapsed time 26 seconds

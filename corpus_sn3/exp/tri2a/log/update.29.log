@@ -1,0 +1,21 @@
+# gmm-est --mix-up=15000 --power=0.25 --write-occs=exp/tri2a/30.occs exp/tri2a/29.mdl "gmm-sum-accs - exp/tri2a/29.*.acc |" exp/tri2a/30.mdl 
+# Started at Thu Apr 22 15:12:42 PKT 2021
+#
+gmm-est --mix-up=15000 --power=0.25 --write-occs=exp/tri2a/30.occs exp/tri2a/29.mdl 'gmm-sum-accs - exp/tri2a/29.*.acc |' exp/tri2a/30.mdl 
+gmm-sum-accs - exp/tri2a/29.1.acc exp/tri2a/29.2.acc exp/tri2a/29.3.acc 
+LOG (gmm-sum-accs[5.5.907~1-cbed4]:main():gmm-sum-accs.cc:63) Summed 3 stats, total count 1.4164e+06, avg like/frame -86.2222
+LOG (gmm-sum-accs[5.5.907~1-cbed4]:main():gmm-sum-accs.cc:66) Total count of stats is 1.4164e+06
+LOG (gmm-sum-accs[5.5.907~1-cbed4]:main():gmm-sum-accs.cc:67) Written stats to -
+LOG (gmm-est[5.5.907~1-cbed4]:MleUpdate():transition-model.cc:528) TransitionModel::Update, objf change is 0 per frame over 1.4164e+06 frames. 
+LOG (gmm-est[5.5.907~1-cbed4]:MleUpdate():transition-model.cc:531) 58 probabilities floored, 3628 out of 7344 transition-states skipped due to insuffient data (it is normal to have some skipped.)
+LOG (gmm-est[5.5.907~1-cbed4]:main():gmm-est.cc:102) Transition model update: Overall 0 log-like improvement per frame over 1.4164e+06 frames.
+WARNING (gmm-est[5.5.907~1-cbed4]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.5.907~1-cbed4]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.044301, occupation count 9.037440, vector size 39)
+LOG (gmm-est[5.5.907~1-cbed4]:MleAmDiagGmmUpdate():mle-am-diag-gmm.cc:225) 0 variance elements floored in 0 Gaussians, out of 15002
+LOG (gmm-est[5.5.907~1-cbed4]:MleAmDiagGmmUpdate():mle-am-diag-gmm.cc:229) Removed 1 Gaussians due to counts < --min-gaussian-occupancy=10 and --remove-low-count-gaussians=true
+LOG (gmm-est[5.5.907~1-cbed4]:main():gmm-est.cc:113) GMM update: Overall 0.0406468 objective function improvement per frame over 1.4164e+06 frames
+LOG (gmm-est[5.5.907~1-cbed4]:main():gmm-est.cc:116) GMM update: Overall avg like per frame = -86.2222 over 1.4164e+06 frames.
+LOG (gmm-est[5.5.907~1-cbed4]:SplitByCount():am-diag-gmm.cc:116) Split 1896 states with target = 15000, power = 0.25, perturb_factor = 0.01 and min_count = 20, split #Gauss from 15002 to 15003
+LOG (gmm-est[5.5.907~1-cbed4]:main():gmm-est.cc:146) Written model to exp/tri2a/30.mdl
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thu Apr 22 15:12:42 PKT 2021, elapsed time 0 seconds
